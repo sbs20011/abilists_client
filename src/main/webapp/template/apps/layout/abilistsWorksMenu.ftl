@@ -1,0 +1,8 @@
+<#import "/spring.ftl" as spring/>
+	<ul class="nav nav-tabs nav-top" role="tablist">
+		<li <#if model??><#if model.menu??><#if model.menu == "home">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/works/<#if model.users??>${model.users.userId?if_exists}</#if>"><@spring.message "navi.title.works.home"/></a></li>
+		<li <#if model??><#if model.menu??><#if model.menu == "sltProjectsList">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/works/<#if model.users??>${model.users.userId?if_exists}/sltProjectsList</#if>"><@spring.message "navi.title.works.projects"/></a></li>
+		<li <#if model??><#if model.menu??><#if model.menu == "sltTasksList">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/works/<#if model.users??>${model.users.userId?if_exists}/sltTasksList</#if>"><@spring.message "navi.title.works.tasks"/></a></li>
+		<li <#if model??><#if model.menu??><#if model.menu == "sltReportsList">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/works/<#if model.users??>${model.users.userId?if_exists}/sltReportsList</#if>"><@spring.message "navi.title.works.reports"/></a></li>
+		<li <#if model??><#if model.menu??><#if model.menu == "sltMemoList">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/works/<#if model.users??>${model.users.userId?if_exists}/sltMemoList</#if>"><@spring.message "navi.title.works.memo"/></a></li>
+	</ul>

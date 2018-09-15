@@ -1,0 +1,52 @@
+
+/* Post on mouseover */
+div.posts:hover {
+	background:#fafcff;
+}
+
+/* Main posts */
+div.main-posts {
+	margin-bottom: 7px;
+}
+
+ul.body-posts {
+	list-style-type: none;
+	width: 100%;
+	display: table;
+	padding-left: 0px; 
+	padding-right: 5px;
+}
+
+li.body-posts-name {
+	list-style-type: none;
+	display: table-cell; width:75%
+}
+
+li.body-posts-contents {
+	list-style-type: none;
+	display: table-cell;
+}
+
+ul.body-posts-menu {
+	left:10px; top: 15px;
+	min-width: 110px;
+}
+
+div.posts-link {
+	margin-top: 10px; 
+	padding-top: 8px; 
+	border-top: 1px solid #f3f3f3;
+}
+
+.show-more-out {
+	overflow: hidden;	
+}
+
+.show-more {
+	height: 100px;
+	overflow: hidden;	
+}
+
+.show-more-button {
+	float: right;
+}

@@ -1,0 +1,13 @@
+.right-symbol-button {
+	cursor: pointer;
+	float: right;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.left-symbol-button {
+	cursor: pointer;
+	float: left;
+	font-size: 20px;
+	margin-right: 5px;
+}
