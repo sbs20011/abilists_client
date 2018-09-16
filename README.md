@@ -1,7 +1,5 @@
 # Abilists for client
 
-[![Build Status](https://travis-ci.org/minziappa/abilists_client.svg?branch=master)](https://travis-ci.org/minziappa/abilists_client.svg)
-
 By Joon Kim
 
 ## About
@@ -12,18 +10,18 @@ By Joon Kim
 
 ## Requirements environment 
 
-* [Java7](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-* [Gradle](https://services.gradle.org/distributions/gradle-3.3-all.zip)
+* [Java7,8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [Gradle3.3](https://services.gradle.org/distributions/gradle-3.3-all.zip)
 
 Using your local repositories
 ```
 repositories {
-	mavenLocal()
+    mavenLocal()
     mavenCentral()
 }
 ```
 
-You have to install on your local system.
+You have to install on your local system.[utility](https://github.com/minziappa/utility)
 ```
 compile "io.utility:validate:0.0.4"
 compile "io.utility:security:0.0.1"
@@ -31,13 +29,12 @@ compile "io.utility:letter:0.0.1"
 compile "io.utility:image:0.0.1"
 compile "io.utility:email:0.0.1"
 ```
-[utility](https://github.com/minziappa/utility)
 
 ## Get started
 
 Download h2db file.
 ```
-http://www.abilists.com/home/download
+[http://www.abilists.com/home/download](http://www.abilists.com/home/download)
 ```
 
 Execute abilists with Jetty.
