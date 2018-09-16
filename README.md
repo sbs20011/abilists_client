@@ -32,10 +32,8 @@ compile "io.utility:email:0.0.1"
 
 ## Get started
 
-Download h2db file.
-```
-[http://www.abilists.com/home/download](http://www.abilists.com/home/download)
-```
+* Download h2db file  
+[http://www.abilists.com/home/download](http://www.abilists.com/home/download) from [Abilists.com](http://www.abilists.com).
 
 Execute abilists with Jetty.
 ```
