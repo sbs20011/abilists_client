@@ -1,4 +1,4 @@
-<#import "/client/layout/abilistsClientLayout.ftl" as layout>
+<#import "/apps/layout/indexLayout.ftl" as layout>
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
 
@@ -40,7 +40,7 @@
 	margin: 0 auto;
 	width: 100%;
 	max-width:100%;
-    background: url("${configBean.contextPath?if_exists}/static/img/home02.png?20180101");
+    background: url("${configBean.contextPath?if_exists}/static/apps/img/home02.png?20180101");
     background-size: cover;
     -moz-background-size: cover;
 }
@@ -106,7 +106,7 @@ h2 span {
 }
 
 .bgIndex {
-    background: url('${configBean.contextPath?if_exists}/static/img/bgIndex.jpg?20180101') no-repeat center center fixed;
+    background: url('${configBean.contextPath?if_exists}/static/apps/img/bgIndex.jpg?20180101') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -241,9 +241,9 @@ h2 span {
 		<a href="https://github.com/minziappa" class="social__button github"><i class="fa fa-github"></i></a>
 	</div>
 
-    <script src="${configBean.contextPath?if_exists}/static/lib/jquery/2.1.1/jquery.min.js"></script>
-	<script src="${configBean.contextPath?if_exists}/static/lib/jquery-ui-1.12.1/jquery-ui.js"></script>
-    <script src="${configBean.contextPath?if_exists}/static/lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="${configBean.contextPath?if_exists}/static/apps/lib/jquery/2.1.1/jquery.min.js"></script>
+	<script src="${configBean.contextPath?if_exists}/static/apps/lib/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
 
     <script>
     $(document).ready(function(){

@@ -21,7 +21,9 @@ ul.memo li a:hover {
 </div>
 <div class="col-sm-10 left-col-cus">
 	<div class="item-box">
-		<canvas id="myTechBar" height="125px"/>
+		<a href="http://www.abilists.com/" target="_blank">
+			<img src="/static/apps/img/abilists/adBanner01.png" width="810px" height="125px" alt="www.abilists.com">
+		</a>
 	</div>
 </div>
 </div>

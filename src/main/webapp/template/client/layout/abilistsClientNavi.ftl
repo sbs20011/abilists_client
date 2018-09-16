@@ -19,7 +19,7 @@
             	<li <#if model??><#if model.navi??><#if model.navi == "profile">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/profile"><@spring.message "navi.title.profile"/></a></li>
             	<li <#if model??><#if model.navi??><#if model.navi == "works">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/works"><@spring.message "navi.title.works"/></a></li>
                 <li class="dropdown">
-	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-plus"></span> Customize <span class="caret"></span></a>
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Customize <span class="caret"></span></a>
 	              <ul class="dropdown-menu">
 	                <li <#if model??><#if model.navi??><#if model.navi == "client">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/client">Client1</a></li>
 	                <li><a href="#">Client2</a></li>
