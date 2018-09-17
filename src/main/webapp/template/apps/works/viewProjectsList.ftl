@@ -34,7 +34,7 @@ ul.body-posts-menu {
 	</div>
 	<div class="col-sm-10">
 		<div class="item-box">
-			<canvas id="myTechBar" height="125px"/>
+			<canvas id="myProjectsBar" height="125px"/>
 		</div>
 	</div>
 </div>
@@ -225,5 +225,9 @@ ul.body-posts-menu {
 <#include "/apps/common/abilistsWorksLoadJs.ftl"/>
 <#include "js/viewProjectsListJs.ftl"/>
 <#include "js/uploadFileJs.ftl"/>
+
+<script type="text/javascript">
+<#include "charts/chartProjects.ftl"/>
+</script>
 
 </@layout.myLayout>

@@ -1,3 +1,22 @@
+/* Start - fix in scroll */
+.memo-fix {
+  padding: 5px 5px 5px 5px;
+  width: 145px;
+}
+.users-fix {
+  margin-bottom: 1px;
+  width: 230px;
+}
+
+.fix-scroll {
+  position: fixed;
+  top: 70px;
+}
+/* End - fix in scroll */
+
+ul.memo li a:hover {
+  transform: scale(1.0);
+}
 
 /* Post on mouseover */
 div.posts:hover {

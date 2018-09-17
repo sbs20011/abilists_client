@@ -3,17 +3,12 @@
 <@layout.myLayout>
 
 <link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/css/works/memo.css?20180205">
-<link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/css/abilists/posts.css?20180206">
+<link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/css/abilists/posts.css?20180207">
 
 <style>
-
-ul.memo li a:hover {
-  transform: scale(1.0);
-}
-
 </style>
 
-<div class="row" style="margin-top: 65px;">
+<div id="divBodyId" class="row" style="margin-top: 65px;">
 <div class="col-md-2 right-col-cus sideImg">
 	<div class="item-box">
 		<img style="border-radius: 4px;" src="${myPicture?if_exists}" id="showImg" width="125" alt="your picture" />
@@ -31,8 +26,7 @@ ul.memo li a:hover {
 <div class="row nav-top">
 	<div class="col-md-2 right-col-cus">
 
-		<div class="item-box" style="padding: 5px 5px 5px 5px;">
-
+		<div id="memoDivId" class="item-box memo-fix">
 		  	<ul style="list-style-type: none;width: 100%;display: table;padding-left: 5px; padding-right: 5px;">
 		  		<li style="list-style-type: none;display: table-cell;">
 			  		<h5 class="media-heading">My Memo</h5>
@@ -43,9 +37,7 @@ ul.memo li a:hover {
 			  		</a>
 			  	</li>
 		  	</ul>
-
 		  <ul id="memoUiId" class="memo" style="position:relative;">
-		  
 		  <#if model??>
 		  <#if model.userMemoList?has_content>
 		  <#list model.userMemoList as userMemo>
@@ -58,10 +50,8 @@ ul.memo li a:hover {
 		  </#list>
 		  </#if>
 		  </#if>
-
 		  </ul>
 		</div>
-
 	</div>
 
 	<div class="col-md-7  right-col-cus left-col-cus"> 
@@ -138,8 +128,7 @@ ul.memo li a:hover {
 	</div>
 	
 	<div class="col-md-3 left-col-cus">
-		<div class="item-box" style="margin-bottom: 1px;"> 
-
+		<div id="usersDivId" class="item-box users-fix"> 
 		  	<ul style="list-style-type: none;width: 100%;display: table;padding-left: 0px; padding-right: 5px;">
 		  		<li style="list-style-type: none;display: table-cell;">
 			  		<h5 class="media-heading">User List</h5>
@@ -173,15 +162,14 @@ ul.memo li a:hover {
 		  	</#if>
 		  	</#if>
 
-		</div>
+			  	<div style="margin-bottom: 10px; padding-top: 10px; border-top: 1px solid #efefef;">
+				About Help Center Terms Abilities Service for User <br/>
+				Copyright © 2018 Abilists.com
+				</div>
+			</div>
 
-		<div class="item-box">
-		About Help Center Terms Advertising Abilities Service for User <br/>
-		Copyright © 2018 Abilists.com
-		</div>
 	</div>
 </div><!-- row -->
-
 
 <!-- view user memo Modal -->
 <div class="modal fade" id="udtUserMemoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -207,70 +195,12 @@ ul.memo li a:hover {
 	</div>
 </div>
 
-
 <#include "/apps/common/abilistsLoadJs.ftl"/>
 <script src="${configBean.contextPath?if_exists}/static/apps/lib/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 
 <#include "js/indexJs.ftl"/>
 
 <script type="text/javascript">
-
-function udtUserMemo(self, umNo, bgColor) {
-
-	// no
-	var umNoInput = document.getElementById("umNoId");
-
-	umNoInput.value = umNo;
-	// memo
-	var memoTa = document.getElementById("udtUmMemoId");	
-	var memo = self.innerHTML.replace(/<br\s*\/?>/mg, "\n");
-	memoTa.value = memo;
-
-	if(isEmpty(bgColor)) {
-		// BgColor
-		udtUmMemoId.style.backgroundColor = "#ffffcc";
-		udtModalContentId.style.backgroundColor = "#ffffcc";	
-	} else {
-		// BgColor
-		udtUmMemoId.style.backgroundColor = bgColor;
-		udtModalContentId.style.backgroundColor = bgColor;
-	}
-
-	// Call the modal for deleting
-	$(window).ready(function(){
-		$('#udtUserMemoModal').modal('show');
-	});
-
-}
-
-function showMore(self, contentsId) {
-	self.style.display = 'none';
-	
-	var showContentsId = document.getElementById(contentsId);
-	showContentsId.style.height = 'auto';
-	
-	/*
-	var lineHeight = showContentsId.offsetHeight;
-	console.log("lineHeight >>> " + lineHeight);
-	if (lineHeight > 100) {
-		showContentsId.style.maxHeight = '100px';
-	}
-	*/
-
-}
-
-function countLines(contentsId) {
-	var divHeight = document.getElementById(contentsId);
-
-	d.style.overflow = 'visible';
-	console.log("divHeight >>> " + divHeight);
-	var lineHeight = document.getElementById(contentsId).style.lineHeight;
-	console.log("lineHeight >>> " + lineHeight);
-
-	var alineHeight = parseInt(lineHeight);
-	var lines = divHeight / alineHeight;
-	alert("Lines: " + lines);
-}
 
 </script>
 

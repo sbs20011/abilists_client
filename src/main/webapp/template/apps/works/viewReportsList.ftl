@@ -38,7 +38,7 @@ ul li.header {
 	</div>
 	<div class="col-sm-10">
 		<div class="item-box">
-			<canvas id="myTechBar" height="125px"/>
+			<canvas id="myReportsBar" height="125px"/>
 		</div>
 	</div>
 </div>
@@ -171,5 +171,9 @@ ul li.header {
 
 <#include "/apps/common/abilistsWorksLoadJs.ftl"/>
 <#include "js/viewReportsListJs.ftl"/>
+
+<script type="text/javascript">
+<#include "charts/chartReports.ftl"/>
+</script>
 
 </@layout.myLayout>

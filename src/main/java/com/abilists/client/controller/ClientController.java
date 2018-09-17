@@ -10,14 +10,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.abilists.bean.AbilistsModel;
-import com.abilists.core.controller.AbstractBaseController;
+import com.abilists.controller.host.HostController;
 
 @Controller
 @RequestMapping("/client")
-public class ClientController extends AbstractBaseController {
+public class ClientController extends HostController {
 
 	final Logger logger = LoggerFactory.getLogger(ClientController.class);
 
+	public ClientController() {
+		super();
+	}
+
+	@Override
     @RequestMapping(value = {"/", "", "index"}, method=RequestMethod.GET)
 	public String index(HttpSession session, ModelMap model) throws Exception {
 		AbilistsModel abilistsModel = new AbilistsModel();

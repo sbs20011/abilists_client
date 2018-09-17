@@ -43,7 +43,7 @@ div.ui-datepicker{
 	</div>
 	<div class="col-sm-10">
 		<div class="item-box">
-			<canvas id="myTechBar" height="125px"/>
+			<canvas id="myTasksBar" height="125px"/>
 		</div>
 	</div>
 </div>
@@ -241,5 +241,9 @@ div.ui-datepicker{
 
 <#include "/apps/common/abilistsWorksLoadJs.ftl"/>
 <#include "js/viewTasksListJs.ftl"/>
+
+<script>
+<#include "charts/chartTasks.ftl"/>
+</script>
 
 </@layout.myLayout>

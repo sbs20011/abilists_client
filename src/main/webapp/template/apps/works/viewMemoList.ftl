@@ -28,7 +28,7 @@
 	</div>
 	<div class="col-sm-10">
 		<div class="item-box">
-			<canvas id="myTechBar" height="125px"/>
+			<canvas id="myMemoLine" height="125px"/>
 		</div>
 	</div>
 </div>
@@ -99,5 +99,9 @@
 
 <#include "/apps/common/abilistsWorksLoadJs.ftl"/>
 <#include "js/viewMemoListJs.ftl"/>
+
+<script type="text/javascript">
+<#include "charts/chartMemo.ftl"/>
+</script>
 
 </@layout.myLayout>
