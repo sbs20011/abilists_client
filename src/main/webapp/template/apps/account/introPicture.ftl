@@ -1,9 +1,6 @@
-<#import "/apps/layout/abilistsAccountLayout.ftl" as layout>
+<#import "/apps/layout/account/abilistsAccountLayout.ftl" as layout>
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
-
-<link href="${configBean.contextPath?if_exists}/static/apps/lib/cropper-v3.0.0-rc.2/cropper.css" rel="stylesheet">
-<link href="${configBean.contextPath?if_exists}/static/apps/css/cropping.css?201706212171" rel="stylesheet">
 
 <div class="row">
   <div class="col-md-12">
@@ -11,15 +8,15 @@
 	<#include "/apps/common/abilistsSuccess.ftl"/>
 
 	<div class="row">
-	  <div class="col-sm-4 right-col-cus">
+	  <div class="col-sm-3 right-col-cus">
 	  	<div class="item-box">
 		<#include "sidebar.ftl"/>
 	  	</div>
 	  </div>
 
-	  <div class="col-sm-8 left-col-cus">
+	  <div class="col-sm-9 left-col-cus">
 
-<#include "modalUploadImage.ftl"/>
+		<#include "uploadImageBg.ftl"/>
 
 	  	<div class="item-box">
 	  		Change your profile photo
@@ -40,9 +37,7 @@ window.onload = function() {
 }
 </script>
 
-<script src="${configBean.contextPath?if_exists}/static/apps/lib/cropper-v3.0.0-rc.2/cropper.js"></script>
-<script src="${configBean.contextPath?if_exists}/static/apps/js/cropping.js?201706212181"></script>
-
-<#include "js/modalUploadImageJs.ftl"/>
+<#include "js/uploadImageAvatarJs.ftl"/>
+<#include "js/uploadImageBgJs.ftl"/>
 
 </@layout.myLayout>

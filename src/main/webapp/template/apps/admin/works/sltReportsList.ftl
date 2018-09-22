@@ -118,7 +118,7 @@
 	    <#list model.userReportsList as userReports>
 			<ul class="bgrow nthrow item-box ul-table" onmouseover="overChangeColor(this);"  onmouseout="outChangeColor(this);" onclick="selectUserReports(this, '${userReports.urWorkDay?string('yyyy-MM-dd')?if_exists}', '${userReports.userId?if_exists}');">
 				<li class="li-cell" style="border-width: 1px 1px 1px 1px; width: 5%;">${userReports.urNo?if_exists}</li>
-				<li class="li-cell" style="width: 10%;"><img width="32px" alt="image" src="${userReports.userImgData?if_exists}"></li>
+				<li class="li-cell" style="width: 10%;"><img width="32px" alt="image" src="${userReports.userImgAvatar?if_exists}"></li>
 				<li class="li-cell" style="width: 10%; border-width: 0px 1px 0px 1px; background-color:#eeeeee;">${userReports.userId?if_exists}</li>
 				<li class="li-cell" style="width: 15%;">${userReports.urWorkDay?string('yyyy-MM-dd')?if_exists}</li>
 				<li class="li-cell" style="width: 10%;">${userReports.urWorkHour?if_exists}H</li>

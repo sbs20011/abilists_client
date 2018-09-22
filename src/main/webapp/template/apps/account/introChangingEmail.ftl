@@ -1,4 +1,4 @@
-<#import "/apps/layout/abilistsAccountLayout.ftl" as layout>
+<#import "/apps/layout/account/abilistsAccountLayout.ftl" as layout>
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
 
@@ -8,16 +8,16 @@
 	<#include "/apps/common/abilistsSuccess.ftl"/>
 
 	<div class="row">
-	  <div class="col-sm-4 right-col-cus">
+	  <div class="col-sm-3 right-col-cus">
 	  	<div class="item-box">
 	  	  <#include "sidebar.ftl"/>
 	  	</div>
 	  </div>
 
-	  <div class="col-sm-8 left-col-cus">
-	  	<div class="item-box">
+	  <div class="col-sm-9 left-col-cus">
 
-	  	  <form class="form-horizontal" action="udtChangingEmail" method="post" id="contact_form">
+	  	<div class="item-box">
+	  	  <form id="contact_form" class="form-horizontal" action="udtChangingEmail" method="post" style="padding: 15px;">
 	  	  	<div class="form-group">
 	  			<label class="col-sm-3 control-label"><@spring.message "email.current.email"/></label>  
 	  			<div class="col-sm-9">
@@ -57,6 +57,11 @@
 	      </form>
 
 		</div><!-- /item-box-->
+
+		<div class="item-box">
+			You can change your email address.
+		</div>
+
 	  </div><!-- /col-sm-8 -->
 	</div><!-- /row-->
 
@@ -65,5 +70,6 @@
 
 <#include "/apps/common/abilistsLoadJs.ftl"/>
 <#include "js/introChangingEmailJs.ftl"/>
+<#include "js/uploadImageAvatarJs.ftl"/>
 
 </@layout.myLayout>

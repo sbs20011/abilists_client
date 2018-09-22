@@ -13,7 +13,6 @@
 		<div class="col-md-6">
 			<nav class="breadcrumbs">
 			<ul>
-			<li><a href="/abilists">${model.users.userId?if_exists}</a></li>
 			<li><a href="/works"><@spring.message "navi.title.works"/></a></li>
 			<li class="active"><a href="#"><@spring.message "navi.title.works.memo"/></a></li>
 			</ul>
@@ -41,7 +40,7 @@
 <div class="row">
 	<div class="col-md-2 right-col-cus sideImg">
 		<div class="item-box">
-			<img style="border-radius: 4px;" src="${model.users.userImgData?if_exists}" id="showImg" width="125" alt="your picture" />
+			<img style="border-radius: 4px;" src="${model.users.userImgAvatar?if_exists}" id="showImg" width="125" alt="your picture" />
 	    </div>
 	</div>
 	<div class="col-sm-10">
@@ -108,7 +107,7 @@
 	          <li style="background:#fbedff;" onClick="return changeBcColor(this,'colorId');"></li>
 	          <li style="background:#edffed;" onClick="return changeBcColor(this,'colorId');"></li>
           </ul>
-	      <button type="button" class="btn btn-primary" onclick="javascript: sbtIstUserMemoForm();">Save</button>
+	      <button type="button" class="btn btn-primary" onclick="javascript: sbtIstUserMemoForm();"><@spring.message "works.button.close"/></button>
 	      <button type="button" class="btn btn-default" data-dismiss="modal"><@spring.message "projects.button.close"/></button>
 	    </div>
 
@@ -140,7 +139,7 @@
 	          <li style="background:#edffed;" onClick="return udtChangeBcColor(this,'udtColorId');"></li>
           </ul>
 
-	      <button type="button" class="btn btn-primary" onclick="javascript: sbtUdtUserMemoForm();">Update</button>
+	      <button type="button" class="btn btn-primary" onclick="javascript: sbtUdtUserMemoForm();"><@spring.message "works.button.update"/></button>
 	      <button type="button" class="btn btn-default" data-dismiss="modal"><@spring.message "projects.button.close"/></button>
 	      <button type="button" class="btn btn-danger" onclick="removeMemo()"><@spring.message "reports.title.delete"/></button>
 	    </div>

@@ -137,7 +137,7 @@
 	    <#list model.usersList as user>
 	    	<ul class="bgrow nthrow item-box ul-table" onmouseover="overChangeColor(this);"  onmouseout="outChangeColor(this);" onclick="sltUsers(this, '${user.userId?if_exists}');" >
 				<li class="li-cell" style="border-width: 1px 1px 1px 1px; width: 5%;">${user.userNo?if_exists}</li>
-				<li class="li-cell"><img width="32px" alt="image" src="${user.userImgData?if_exists}"></li>
+				<li class="li-cell"><img width="32px" alt="image" src="${user.userImgAvatar?if_exists}"></li>
 				<li class="li-cell" style="border-width: 0px 1px 0px 1px; background-color:#eeeeee;"><a href="/profile/${user.userId?if_exists}">${user.userId?if_exists}</a></li>
 				<li class="li-cell">${user.userName?if_exists}</li>
 				<li class="li-cell">

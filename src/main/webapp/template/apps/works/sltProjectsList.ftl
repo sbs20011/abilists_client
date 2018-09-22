@@ -15,7 +15,6 @@ ul.body-posts-menu {
 		<div class="col-md-6" style="float:left;">
 			<nav class="breadcrumbs">
 			<ul>
-			<li><a href="/abilists">${model.users.userId?if_exists}</a></li>
 			<li><a href="/works"><@spring.message "navi.title.works"/></a></li>
 			<li class="active"><a href="#"><@spring.message "path.abilists.projects"/></a></li>
 			</ul>
@@ -29,7 +28,7 @@ ul.body-posts-menu {
 <div class="row">
 	<div class="col-md-2 right-col-cus sideImg">
 		<div class="item-box">
-			<img style="border-radius: 4px;" src="${model.users.userImgData?if_exists}" id="showImg" width="125" alt="your picture" />
+			<img style="border-radius: 4px;" src="${model.users.userImgAvatar?if_exists}" id="showImg" width="125" alt="your picture" />
 	    </div>
 	</div>
 	<div class="col-sm-10">

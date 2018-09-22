@@ -84,7 +84,7 @@
 	    <#list model.userMemoList as userMemo>
 			<ul class="bgrow nthrow item-box ul-table" onmouseover="overChangeColor(this);"  onmouseout="outChangeColor(this);" onclick="sltUserMemo(this, '${userMemo.umNo?if_exists}', '${userMemo.userId?if_exists}');">
 				<li class="li-cell" style="border-width: 1px 1px 1px 1px; width: 5%;">${userMemo.umNo?if_exists}</li>
-				<li class="li-cell" style="width: 10%;"><img width="32px" alt="image" src="${userMemo.userImgData?if_exists}"></li>
+				<li class="li-cell" style="width: 10%;"><img width="32px" alt="image" src="${userMemo.userImgAvatar?if_exists}"></li>
 				<li class="li-cell" style="width: 10%; border-width: 0px 1px 0px 1px; background-color:#eeeeee;"><a href="/profile/${userMemo.userId?if_exists}">${userMemo.userId?if_exists}</a></li>
 				<li class="li-cell line-break">
 	                <#if userMemo.umMemo??>

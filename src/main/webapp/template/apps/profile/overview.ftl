@@ -29,7 +29,6 @@ ul li.overview{
 	<div class="item-box">
 		<nav class="breadcrumbs">
 			<ul>
-			<li><a href="/abilists">${model.users.userId?if_exists}</a></li>
 			<li><a href="${configBean.baseURL?if_exists}/profile"><@spring.message "navi.title.profile"/></a></li>
 			<li class="active"><a href="#"><@spring.message "profile.menu.overview"/></a></li>
 			</ul>

@@ -19,7 +19,6 @@ ul li.header {
 		<div class="col-md-6" style="float:left;">
 			<nav class="breadcrumbs">
 			<ul>
-			<li><a href="/abilists">${model.users.userId?if_exists}</a></li>
 			<li><a href="/works"><@spring.message "navi.title.works"/></a></li>
 			<li class="active"><a href="#"><@spring.message "path.abilists.reports"/></a></li>
 			</ul>
@@ -34,7 +33,7 @@ ul li.header {
 <div class="row">
 	<div class="col-md-2 right-col-cus sideImg">
 		<div class="item-box">
-			<img style="border-radius: 4px;" src="${myPicture?if_exists}" id="showImg" width="125" alt="your picture" />
+			<img style="border-radius: 4px;" src="${myImgAvatar?if_exists}" id="showImg" width="125" alt="your picture" />
 	    </div>
 	</div>
 	<div class="col-sm-10">
@@ -64,9 +63,9 @@ ul li.header {
 	  		<div class="col-sm-3 col-md-3" style="padding-right: 5px;">
 	  		  <div class="row">
 	  			<div class="col-sm-12" style="padding-right: 5px;">
-			  	  	<label class="control-label">Select your project</label>
+			  	  	<label class="control-label"><@spring.message "home.title.reports.project"/></label>
 					<select class="form-control" onchange="return addProjectName(this, 'newUrReportsId');">
-						<option value="0">Select your project</option>
+						<option value="0"><@spring.message "home.title.reports.project"/></option>
 					<#if model.userProjectsList??>
 						<#list model.userProjectsList as userProjects>
 						<option value="${userProjects.upNo?if_exists}">${userProjects.upName?if_exists}</option>
@@ -77,7 +76,7 @@ ul li.header {
 			  </div>
   		  	  <div class="row">
   		  	    <div class="col-sm-12" style="padding-right: 5px;">
-		  		  <label class="control-label">Select Calander</label>
+		  		  <label class="control-label"><@spring.message "reports.title.calander"/></label>
 		  		  <div class="input-group" style="float:right; width: 100%;">
 		  		  	  <span class="input-group-addon"><span id="calendarId" class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
 		  		  	  <input type="text" class="form-control" id="newUrWorkDayId" name="urWorkDay">
@@ -86,7 +85,7 @@ ul li.header {
 	  		  </div>
   		  	  <div class="row">
 		  		<div class="col-sm-12" style="padding-right: 5px;">
-		  			<label class="control-label">Working Hours</label>
+		  			<label class="control-label"><@spring.message "reports.title.workhour"/></label>
 		  			<div class="input-group" style="float:right; width: 100%;">
 		  		  	  <span class="input-group-addon"><span id="calendarId" class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
 		  		  	  <input class="form-control" type="text" name="urWorkHour" />
@@ -95,15 +94,15 @@ ul li.header {
 	  		  </div>
 	  		</div>
 	  		<div class="col-sm-9 col-md-9">
-	  			<label class="control-label">Today your reports</label>
+	  			<label class="control-label"><@spring.message "reports.title.reports"/></label>
 	  			<textarea class="taForm" style="height: 155px;" id="newUrReportsId" name="urReport" placeholder="Detail" rows="35"></textarea>
 	  		</div>
 	  	</div>
 	  	<input type="hidden" name="token" value="<#if model??>${model.token?if_exists}</#if>" />
 	  	<br/>
 		<p align="center">
-			<button type="button" class="btn btn-primary" onclick="return confirmData('newFormId');" >Send</button>
-			<button class="btn btn-primary" type="button" onClick="newFormCancel();">Cancel</button>
+			<button type="button" class="btn btn-primary" onclick="return confirmData('newFormId');" ><@spring.message "works.button.save"/></button>
+			<button class="btn btn-primary" type="button" onClick="newFormCancel();"><@spring.message "works.button.cancel"/></button>
 		</p>
 		</form>
 
@@ -115,9 +114,9 @@ ul li.header {
   		    <div class="col-sm-3 col-md-3" style="padding-right: 5px;">
   		      <div class="row">
 		  	    <div class="col-sm-12" style="padding-right: 5px;">
-			  	  	<label class="control-label">Select your project</label>
+			  	  	<label class="control-label"><@spring.message "home.title.reports.project"/></label>
 					<select class="form-control" onchange="return addProjectName(this, 'udtUrReportsId');">
-						<option value="0">Select your project</option>
+						<option value="0"><@spring.message "home.title.reports.project"/></option>
 					<#if model.userProjectsList??>
 						<#list model.userProjectsList as userProjects>
 						<option value="${userProjects.upNo?if_exists}">${userProjects.upName?if_exists}</option>
@@ -128,7 +127,7 @@ ul li.header {
 			  </div>
 	  		  <div class="row">
 	  		  	<div class="col-sm-12" style="padding-right: 5px;">
-	  		  	  <label class="control-label">Select Calander</label>
+	  		  	  <label class="control-label"><@spring.message "reports.title.calander"/></label>
 			  	  <div class="input-group" style="float:right; width: 100%;">
 			  	    <span class="input-group-addon"><span id="calendarId" class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
 			  		<input type="text" class="form-control" id="udtUrWorkDayId" name="urWorkDay">
@@ -137,7 +136,7 @@ ul li.header {
 			  </div>
 	  		  <div class="row">
 			  	<div class="col-sm-12" style="padding-right: 5px;">
-		  			<label class="control-label">Working Hours</label>
+		  			<label class="control-label"><@spring.message "reports.title.workhour"/></label>
 				  	<div class="input-group" style="float:right; width: 100%;">
 				  		<span class="input-group-addon"><span id="calendarId" class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
 				  		<input class="form-control" type="text" id="udtUrWorkHourId" name="urWorkHour" />
@@ -146,7 +145,7 @@ ul li.header {
 			  </div>
 		  	</div>
 		  	<div class="col-sm-9 col-md-9">
-	  			<label class="control-label">Today your reports</label>
+	  			<label class="control-label"><@spring.message "reports.title.reports"/></label>
 	  			<textarea class="taForm" style="height: 155px;" id="udtUrReportsId" name="urReport" placeholder="Detail" rows="25"></textarea>
 		  	</div>
 	  	  </div>
@@ -157,7 +156,7 @@ ul li.header {
 		      <button type="button" onclick="return confirmData('updateFormId');" class="btn btn-primary" data-toggle="modal">
 		      	<@spring.message "reports.button.confirm"/>
 		      </button>
-		      <button class="btn btn-primary" type="button" onClick="updateFormCancel();"><@spring.message "reports.button.cancel"/></button>
+		      <button class="btn btn-primary" type="button" onClick="updateFormCancel();"><@spring.message "works.button.cancel"/></button>
 		      <button class="btn btn-danger" type="button" onclick="removeReports()"><@spring.message "reports.title.delete"/></button>
 			</p>
 		</form>

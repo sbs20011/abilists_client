@@ -228,7 +228,7 @@
 						onclick="selectUserProjectTech(this, '${userProjectTech.uptNo?if_exists}', '${userProjectTech.mtNo?if_exists}', '${userProjectTech.userId?if_exists}', skillsList);">
 								
 					<li class="li-cell" style="border-width: 1px 1px 1px 1px; width: 5%;">${userProjectTech.uptNo?if_exists}</li>
-					<li class="li-cell" style="width: 10%;"><img width="32px" alt="image" src="${userProjectTech.userImgData?if_exists}"></li>
+					<li class="li-cell" style="width: 10%;"><img width="32px" alt="image" src="${userProjectTech.userImgAvatar?if_exists}"></li>
 					<li class="li-cell" style="border-width: 0px 1px 0px 1px; background-color:#eeeeee;">${userProjectTech.userId?if_exists}</li>
 					<li class="li-cell">${userProjectTech.uptKind?if_exists}</li>
 					<li class="li-cell">

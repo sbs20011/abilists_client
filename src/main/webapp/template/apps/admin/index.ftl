@@ -140,7 +140,7 @@ window.onload = function() {
 					<div class="media-left">
 						<a href="${configBean.baseURL?if_exists}/profile/${reportsBean.userReports.userId?if_exists}">
 							<div class="media-object text-center">
-								<img width="64px" id="showImg" alt="image" src="${reportsBean.userImgData?if_exists}" />
+								<img width="64px" id="showImg" alt="image" src="${reportsBean.userImgAvatar?if_exists}" />
 							</div>
 						</a>
 					</div>

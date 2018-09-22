@@ -90,7 +90,7 @@ function sltUsers(x, userId) {
             		userEmailHtml.innerHTML = data.userEmail;
             		userAgesHtml.innerHTML = data.userAges;
             		userProfileHtml.innerHTML = data.userProfile;
-            		userImgDataInput.src = data.userImgData;
+            		userImgDataInput.src = data.userImgAvatar;
             		userStatusInput.value = data.userStatus;
             		
             		var insertTime = new Date(data.insertTime);

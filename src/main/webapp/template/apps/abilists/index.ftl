@@ -12,7 +12,7 @@
 <div id="divBodyId" class="row" style="margin-top: 65px;">
 <div class="col-md-2 right-col-cus sideImg">
 	<div class="item-box">
-		<img style="border-radius: 4px;" src="${myPicture?if_exists}" id="showImg" width="125" alt="your picture" />
+		<img style="border-radius: 4px;" src="${myImgAvatar?if_exists}" id="showImg" width="125" alt="your picture" />
     </div>
 </div>
 <div class="col-sm-10 left-col-cus">
@@ -65,7 +65,7 @@
 			<div class="media">
 			  <div class="media-left media-top">
 			    <a href="${configBean.baseURL?if_exists}/profile/${postsBean.userId?if_exists}">
-			    	<img style="border-radius: 4px;" src="${postsBean.userImgData?if_exists}" id="showImg" width="64" alt="your picture" />
+			    	<img style="border-radius: 4px;" src="${postsBean.userImgAvatar?if_exists}" id="showImg" width="64" alt="your picture" />
 			    </a>
 			  </div>
 			  <div class="media-body">
@@ -148,7 +148,7 @@
 				<div style="margin-bottom: 10px; padding-top: 10px; border-top: 1px solid #efefef;">
 		 			<div class="media">
 					  <div class="media-left media-top">
-					  	<img style="border-radius: 4px;" src="${users.userImgData?if_exists}" id="showImg" width="48px" alt="your picture" />
+					  	<img style="border-radius: 4px;" src="${users.userImgAvatar?if_exists}" id="showImg" width="48px" alt="your picture" />
 					  </div>
 					  <div class="media-body">
 					  	<a href="${configBean.baseURL?if_exists}/profile/${users.userId?if_exists}">

@@ -1,3 +1,6 @@
+<script src="${configBean.contextPath?if_exists}/static/apps/lib/cropper-v3.1.6/cropper.js"></script>
+<script src="${configBean.contextPath?if_exists}/static/apps/js/cropping.js?201706212181"></script>
+
 <script type="text/javascript">
 
 function uploadImg() {
@@ -15,7 +18,7 @@ function uploadImg() {
         	console.log("before send");
         },
         success: function(data, textStatus, request) {
-        	$('#myImg').attr('src', croppng);
+        	$('#myImgAvatarId').attr('src', croppng);
         	$('#mySmallImg').attr('src', croppng);
         },
         complete: function(xhr, textStatus) {

@@ -7,6 +7,7 @@
 		<div class="col-md-6" style="float:left;">
 			<nav class="breadcrumbs">
 			<ul>
+			<li><a href="/abilists">${user.userId?if_exists}</a></li>
 			<li><a href="#"><@spring.message "profile.menu.list"/></a></li>
 			<li class="active"><a href="#"><@spring.message "navi.title.works"/></a></li>
 			</ul>
@@ -107,7 +108,7 @@
 							<div class="media-left">
 								<a href="${configBean.baseURL?if_exists}/works/${userProjects.userId?if_exists}">
 									<div class="media-object text-center">
-										<img width="64px" alt="image" src="${userProjects.userImgData?if_exists}">
+										<img width="64px" alt="image" src="${userProjects.userImgAvatar?if_exists}">
 									</div>
 								</a>
 							</div>
@@ -159,7 +160,7 @@
 							<div class="media-left">
 								<a href="${configBean.baseURL?if_exists}/works/${userSkills.userId?if_exists}/skills">
 									<div class="media-object text-center">
-										<img width="64px" alt="image" src="${userSkills.userImgData?if_exists}">
+										<img width="64px" alt="image" src="${userSkills.userImgAvatar?if_exists}">
 									</div>
 								</a>
 							</div>

@@ -1,5 +1,5 @@
 		<div class="item-box">
-			<img style="border-radius: 4px;" src="${model.users.userImgData?if_exists}" id="showImg" width="210" alt="your picture" />
+			<img style="border-radius: 4px;" src="${model.users.userImgAvatar?if_exists}" id="showImg" width="210" alt="your picture" />
 		    <div style="margin-top: 7px;">
 				<span class="glyphicon glyphicon-tags"></span>
 				<#if model.users??>${model.users.userProfile?if_exists}</#if>

@@ -1,4 +1,4 @@
-<#import "/apps/layout/abilistsAccountLayout.ftl" as layout>
+<#import "/apps/layout/account/abilistsAccountLayout.ftl" as layout>
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
 
@@ -8,16 +8,16 @@
 		<#include "/apps/common/abilistsSuccess.ftl"/>
 
 		<div class="row">
-		  <div class="col-sm-4 right-col-cus">
+		  <div class="col-sm-3 right-col-cus">
 		  	<div class="item-box">
 		  	  <#include "sidebar.ftl"/>
 		  	</div>
 		  </div>
 
-		  <div class="col-sm-8 left-col-cus">
+		  <div class="col-sm-9 left-col-cus">
 
 		    <div class="item-box">
-		  	  <form class="form-horizontal" action="udtChangingPwd" method="post" id="contact_form">
+		  	  <form id="contact_form" class="form-horizontal" action="udtChangingPwd" method="post" style="padding: 15px;">
 		  	  	<#include "/apps/common/errorMessageNoButton.ftl"/>
 		  	  	<div class="form-group">
 		  			<label class="col-sm-3 control-label"><@spring.message "password.current.password"/></label>  
@@ -68,6 +68,10 @@
 	          </form>
 	        </div>
 
+			<div class="item-box">
+			  You can change your password.
+			</div>
+
 		  </div><!-- /col-md-8-->
 		</div><!-- /row -->
 
@@ -78,5 +82,6 @@
 <script src="${configBean.contextPath?if_exists}/static/apps/js/validatePassword.js"></script>
 
 <#include "js/introChangingPwdJs.ftl"/>
+<#include "js/uploadImageAvatarJs.ftl"/>
 
 </@layout.myLayout>

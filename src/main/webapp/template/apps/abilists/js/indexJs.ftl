@@ -55,7 +55,7 @@ function pageMore() {
 
 			// Add user image tag
 			divAHtml = '<a href="${configBean.baseURL?if_exists}/profile/' + cresult[i].userId + '">' + 
-						'<img style="border-radius: 4px;" src="' + cresult[i].userImgData +'" id="showImg" width="64" alt="your picture">'  + 
+						'<img style="border-radius: 4px;" src="' + cresult[i].userImgAvatar +'" id="showImg" width="64" alt="your picture">'  + 
 						'</a>';
 			mediaTopDiv.innerHTML = divAHtml;
 			mediaDiv.appendChild(mediaTopDiv);

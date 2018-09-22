@@ -20,7 +20,6 @@
 	<div class="col-md-6">
 		<nav class="breadcrumbs">
 		<ul>
-		<li><a href="/abilists">${model.users.userId?if_exists}</a></li>
 		<li><a href="${configBean.baseURL?if_exists}/works"><@spring.message "navi.title.works"/></a></li>
 		<li class="active"><a href="#"><@spring.message "navi.title.works.home"/></a></li>
 		</ul>
@@ -35,7 +34,7 @@
 <div class="row">
 <div class="col-md-3 right-col-cus sideImg">
 	<div class="item-box">
-		<img style="border-radius: 4px;" src="${model.users.userImgData?if_exists}" id="showImg" width="210" alt="your picture" />
+		<img style="border-radius: 4px;" src="${model.users.userImgAvatar?if_exists}" id="showImg" width="210" alt="your picture" />
     </div>
 </div>
 <div class="col-sm-9">
@@ -101,7 +100,7 @@
 	            <li class="media" style="margin-top: 5px;">
 	                <div class="pull-left thumbnail-hover">
 	                    <div class="overflow-hidden">
-	                        <img width="50" alt="image" src="${user.userImgData?if_exists}">
+	                        <img width="50" alt="image" src="${user.userImgAvatar?if_exists}">
 	                    </div>
 	                </div>
 	                <div style="float: left">

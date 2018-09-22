@@ -19,8 +19,7 @@ ul li.header {
 		<div class="col-md-6" style="float:left;">
 			<nav class="breadcrumbs">
 			<ul>
-			<li><a href="/abilists">${model.users.userId?if_exists}</a></li>
-			<li><a href="/works"><@spring.message "navi.title.works"/></a></li>
+			<li><a href="/works/${model.users.userId?if_exists}"><@spring.message "navi.title.works"/></a></li>
 			<li class="active"><a href="#"><@spring.message "path.abilists.reports"/></a></li>
 			</ul>
 			</nav>
@@ -33,7 +32,7 @@ ul li.header {
 <div class="row">
 	<div class="col-md-2 right-col-cus sideImg">
 		<div class="item-box">
-			<img style="border-radius: 4px;" src="${model.users.userImgData?if_exists}" id="showImg" width="125" alt="your picture" />
+			<img style="border-radius: 4px;" src="${model.users.userImgAvatar?if_exists}" id="showImg" width="125" alt="your picture" />
 	    </div>
 	</div>
 	<div class="col-sm-10">
@@ -62,9 +61,9 @@ ul li.header {
   		    <div class="col-sm-4 col-md-4" style="padding-right: 5px;">
   		      <div class="row">
 		  	    <div class="col-sm-12" style="padding-right: 5px;">
-			  	  	<label class="control-label">Select your project</label>
+			  	  	<label class="control-label"><@spring.message "home.title.reports.project"/></label>
 					<select class="form-control" onchange="return addProjectName(this, 'udtUrReportsId');" disabled>
-						<option value="0">Select your project</option>
+						<option value="0"><@spring.message "home.title.reports.project"/></option>
 					<#if model.userProjectsList??>
 						<#list model.userProjectsList as userProjects>
 						<option value="${userProjects.upNo?if_exists}">${userProjects.upName?if_exists}</option>
@@ -101,7 +100,7 @@ ul li.header {
 		  <input type="hidden" id="tokenId" name="token" />
 		  <br/>
 			<p align="center">
-		      <button class="btn btn-primary" type="button" onClick="updateFormCancel();"><@spring.message "reports.button.cancel"/></button>
+		      <button class="btn btn-primary" type="button" onClick="updateFormCancel();"><@spring.message "works.button.cancel"/></button>
 			</p>
 		</form>
 	  </div>

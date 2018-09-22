@@ -31,7 +31,6 @@ canvas {
 		<div class="col-md-6" style="float:left;">
 			<nav class="breadcrumbs">
 			<ul>
-			<li><a href="/abilists">${model.users.userId?if_exists}</a></li>
 			<li><a href="/works"><@spring.message "navi.title.works"/></a></li>
 			<li class="active"><a href="#"><@spring.message "path.abilists.tasks"/></a></li>
 			</ul>
@@ -45,7 +44,7 @@ canvas {
 <div class="row">
 	<div class="col-md-2 right-col-cus sideImg">
 		<div class="item-box">
-			<img style="border-radius: 4px;" src="${myPicture?if_exists}" id="showImg" width="125" alt="your picture" />
+			<img style="border-radius: 4px;" src="${myImgAvatar?if_exists}" id="showImg" width="125" alt="your picture" />
 	    </div>
 	</div>
 	<div class="col-sm-10">
@@ -74,9 +73,9 @@ canvas {
 	  		<div class="col-sm-4 col-md-4">
 		      <div class="row">
 		  	    <div class="col-sm-12" style="padding-right: 5px;">
-			  	  	<label class="control-label">Select your project</label>
+			  	  	<label class="control-label"><@spring.message "home.title.reports.project"/></label>
 					<select class="taForm" name="upNo">
-						<option value="0">Select your project</option>
+						<option value="0"><@spring.message "home.title.reports.project"/></option>
 					<#if model.userProjectsList??>
 						<#list model.userProjectsList as userProjects>
 						<option value="${userProjects.upNo?if_exists}">${userProjects.upName?if_exists}</option>
@@ -89,16 +88,16 @@ canvas {
 
 	  		  <div class="row">
 	  			<div class="col-sm-6" style="padding-right: 0px;">
-			      <label class="control-label">Status</label>
+			      <label class="control-label"><@spring.message "tasks.title.status"/></label>
 				  <select class="taForm" name="utStatus">
-					<option value="0">Select Status</option>
+					<option value="0"><@spring.message "tasks.select.status.default"/></option>
 					<option value="1">Progressing</option>
 					<option value="2">Holding</option>
 					<option value="3">Completed</option>
 				  </select>
 				</div>
 	  			<div class="col-sm-6" style="padding-left: 5px;padding-right: 5px;">
-			    <label class="control-label">Progress</label>
+			    <label class="control-label"><@spring.message "tasks.title.progress"/></label>
 				  <select class="taForm" name="utProgress">
 					<option value="0">0%</option>
 					<option value="10">10%</option>
@@ -117,14 +116,14 @@ canvas {
 
   		  	  <div class="row">
   		  	    <div class="col-sm-6" style="padding-right: 0px;">
-		  		  <label class="control-label">Start date</label>
+		  		  <label class="control-label"><@spring.message "tasks.title.start.day"/></label>
 		  		  <div class="input-group" style="float:right; width: 100%;">
 		  		  	  <span class="input-group-addon"><span id="calendarId" class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
 		  		  	  <input type="text" class="form-control" id="newUtStartDayId" name="utStartDay">
 		  		  </div>
 		  		</div>
   		  	    <div class="col-sm-6" style="padding-left: 5px;padding-right: 5px;">
-		  		  <label class="control-label">End date</label>
+		  		  <label class="control-label"><@spring.message "tasks.title.end.day"/></label>
 		  		  <div class="input-group" style="float:right; width: 100%;">
 		  		  	  <span class="input-group-addon"><span id="calendarId" class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
 		  		  	  <input type="text" class="form-control" id="newUtEndDayId" name="utEndDay">
@@ -133,14 +132,14 @@ canvas {
 	  		  </div>
   		  	  <div class="row">
 		  		<div class="col-sm-6" style="padding-right: 0px;">
-		  			<label class="control-label">Working Hours</label>
+		  			<label class="control-label"><@spring.message "tasks.title.task.hour"/></label>
 		  			<div class="input-group" style="float:right; width: 100%;">
 		  		  	  <span class="input-group-addon"><span id="calendarId" class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
 		  		  	  <input class="form-control" type="text" name="utTaskHour" />
 		  		    </div>
 		  		</div>
 		  		<div class="col-sm-6" style="padding-left: 5px;padding-right: 5px;">
-		  			<label class="control-label">Margin of Error</label>
+		  			<label class="control-label"><@spring.message "tasks.title.margin.hour"/></label>
 		  			<div class="input-group" style="float:right; width: 100%;">
 		  			  <span class="input-group-addon"><span style="font-size: 20px;">±</span></span>
 		  		  	  <input class="form-control" type="text" name="utMarginHour" />
@@ -151,13 +150,13 @@ canvas {
 	  		<div class="col-sm-8 col-md-8">
   		  	  <div class="row">
 		  		<div class="col-sm-9" style="padding-right: 0px;">
-		  		  <label class="control-label">Title</label>
+		  		  <label class="control-label"><@spring.message "tasks.title.title"/></label>
 		  		  <input class="form-control" type="text" name="utTitle" />
 		  		</div>
 		  		<div class="col-sm-3"> 
-			  	  	<label class="control-label">Kind</label>
+			  	  	<label class="control-label"><@spring.message "tasks.title.kind"/></label>
 					<select class="form-control" name="utKind">
-						<option value="0">Select kind</option>
+						<option value="0"><@spring.message "tasks.select.kind.default"/></option>
 						<option value="1">Project</option>
 						<option value="2">Email</option>
 						<option value="3">Docoments</option>
@@ -168,7 +167,7 @@ canvas {
 					</select>
 	  		  	</div>
 	  		  </div>
-	  		  <label class="control-label">Your tasks</label>
+	  		  <label class="control-label"><@spring.message "tasks.title.task"/></label>
 	  		  <textarea class="taForm" style="height: 155px;" id="newUtTasksId" name="utTask" placeholder="Detail" rows="35"></textarea>
 	  		</div>
 	  	</div>
@@ -189,9 +188,9 @@ canvas {
 	  		<div class="col-sm-4 col-md-4">
 		      <div class="row">
 		  	    <div class="col-sm-12" style="padding-right: 5px;">
-			  	  	<label class="control-label">Select your project</label>
+			  	  	<label class="control-label"><@spring.message "home.title.reports.project"/></label>
 					<select id="upNoId" class="taForm" name="upNo">
-						<option value="0">Select your project</option>
+						<option value="0"><@spring.message "home.title.reports.project"/></option>
 					<#if model.userProjectsList??>
 						<#list model.userProjectsList as userProjects>
 						<option value="${userProjects.upNo?if_exists}">${userProjects.upName?if_exists}</option>
@@ -204,18 +203,18 @@ canvas {
 
 	  		  <div class="row">
 	  			<div class="col-sm-6" style="padding-right: 0px;">
-			      <label class="control-label">Status</label>
+			      <label class="control-label"><@spring.message "tasks.title.status"/></label>
 				  <select id="utStatusId" class="taForm" name="utStatus">
-					<option value="0">Select Status</option>
+					<option value="0"><@spring.message "tasks.select.status.default"/></option>
 					<option value="1">Progressing</option>
 					<option value="2">Holding</option>
 					<option value="3">Completed</option>
 				  </select>
 				</div>
 	  			<div class="col-sm-6" style="padding-left: 5px;padding-right: 5px;">
-			    <label class="control-label">Progress</label>
+			    <label class="control-label"><@spring.message "tasks.title.progress"/></label>
 				  <select id="utProgressId" class="taForm" name="utProgress">
-					<option value="0">Select Progress</option>
+					<option value="0"><@spring.message "tasks.select.progress.default"/></option>
 					<option value="10">10%</option>
 					<option value="20">20%</option>
 					<option value="30">30%</option>
@@ -231,14 +230,14 @@ canvas {
 			  </div>
 			  <div class="row">
 			  	<div class="col-sm-6" style="padding-right: 0px;">
-		  		  <label class="control-label">Start date</label>
+		  		  <label class="control-label"><@spring.message "tasks.title.start.day"/></label>
 		  		  <div class="input-group" style="float:right; width: 100%;">
 		  		  	  <span class="input-group-addon"><span id="calendarId" class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
 		  		  	  <input id="utStartDayId" type="text" class="form-control input-height" name="utStartDay">
 		  		  </div>
 		  		</div>
 			  	<div class="col-sm-6" style="padding-left: 5px;padding-right: 5px;">
-		  		  <label class="control-label">End date</label>
+		  		  <label class="control-label"><@spring.message "tasks.title.end.day"/></label>
 		  		  <div class="input-group" style="float:right; width: 100%;">
 		  		  	  <span class="input-group-addon"><span id="calendarId" class="glyphicon glyphicon-calendar" aria-hidden="true"></span></span>
 		  		  	  <input id="utEndDayId" type="text" class="form-control input-height" name="utEndDay">
@@ -247,14 +246,14 @@ canvas {
 	  		  </div>
 			  <div class="row">
 		  		<div class="col-sm-6" style="padding-right: 0px;">
-		  			<label class="control-label">Working Hours</label>
+		  			<label class="control-label"><@spring.message "tasks.title.task.hour"/></label>
 		  			<div class="input-group" style="float:right; width: 100%;">
 		  		  	  <span class="input-group-addon"><span id="calendarId" class="glyphicon glyphicon-time" aria-hidden="true"></span></span>
 		  		  	  <input id="utTaskHourId" class="form-control input-height" type="text" name="utTaskHour" />
 		  		    </div>
 		  		</div>
 		  		<div class="col-sm-6" style="padding-left: 5px;padding-right: 5px;">
-		  			<label class="control-label">Margin of Error</label>
+		  			<label class="control-label"><@spring.message "tasks.title.margin.hour"/></label>
 		  			<div class="input-group" style="float:right; width: 100%;">
 		  			  <span class="input-group-addon"><span style="font-size: 17px;">±</span></span>
 		  		  	  <input id="utMarginHourId" class="form-control input-height" type="text" name="utMarginHour" />
@@ -265,13 +264,13 @@ canvas {
 	  		<div class="col-sm-8 col-md-8">
 	  		  <div class="row">
 		  		<div class="col-sm-9" style="padding-right: 0px;">
-		  		  <label class="control-label">Title</label>
+		  		  <label class="control-label"><@spring.message "tasks.title.title"/></label>
 		  		  <input id="utTitleId" class="form-control input-height" type="text" name="utTitle" />
 		  		</div>
 		  		<div class="col-sm-3"> 
-			  	  	<label class="control-label">Kind</label>
+			  	  	<label class="control-label"><@spring.message "tasks.title.kind"/></label>
 					<select id="utKindId" class="form-control input-height" name="utKind">
-						<option value="0">Select kind</option>
+						<option value="0"><@spring.message "tasks.select.kind.default"/></option>
 						<option value="1">Project</option>
 						<option value="2">Email</option>
 						<option value="3">Docoments</option>
@@ -282,7 +281,7 @@ canvas {
 			       </select>
 	  		  	</div>
 	  		  </div>
-	  		  <label class="control-label">Your tasks</label>
+	  		  <label class="control-label"><@spring.message "tasks.title.task"/></label>
 	  		  <textarea id="utTaskId" class="taForm" style="height: 155px;" name="utTask" placeholder="Detail" rows="35"></textarea>
 	  		</div>
 	  	  </div>
@@ -384,8 +383,8 @@ canvas {
       <div id="confirmMessage" class="modal-body">
 		<table id="t03" class="table-line-break">
 		<tr>
-			<td>Title</td>
-			<td>Task</td>
+			<td><@spring.message "tasks.title.title"/></td>
+			<td><@spring.message "tasks.title.task"/></td>
 		</tr>
 		<tr>
 			<td class="line-break"></td>

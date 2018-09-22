@@ -7,6 +7,7 @@
 		<div class="col-md-6" style="float:left;">
 			<nav class="breadcrumbs">
 			<ul>
+			<li><a href="/abilists">${user.userId?if_exists}</a></li>
 			<li><a href="#"><@spring.message "profile.menu.list"/></a></li>
 			<li class="active"><a href="#"><@spring.message "navi.title.profile"/></a></li>
 			</ul>
@@ -22,7 +23,8 @@
 
 <div class="item-box" id="srhFormUserList" style="display: none;">
 
-	<form name="newForm" class="form-horizontal" action="${configBean.baseURL?if_exists}/list/srhForUserProfile" method="post" id="contact_form" onkeypress="return captureReturnKey(event);">
+	<form name="newForm" class="form-horizontal" action="${configBean.baseURL?if_exists}/list/srhForUserProfile" method="post"
+			id="contact_form" onkeypress="return captureReturnKey(event);">
 		<table id="newFormId" style="width:100%">
 		<tr>
 			<td width="10%">ID</td>
@@ -114,12 +116,14 @@
 			<#else>
 				<div class="col-md-6" style="padding-left: 1px;">
 			</#if>
-				  	<div class="item-box bgrow" style="margin-bottom:2px;padding: 5px 5px 5px 5px;" onmouseover="overChangeColor(this);" onmouseout="outChangeColor(this);" onClick="window.location.href='${configBean.baseURL?if_exists}/profile/${user.userId?if_exists}';">
+				  	<div class="item-box bgrow" style="margin-bottom:2px;padding: 5px 5px 5px 5px;" 
+				  		onmouseover="overChangeColor(this);" onmouseout="outChangeColor(this);" 
+				  			onClick="window.location.href='${configBean.baseURL?if_exists}/profile/${user.userId?if_exists}';">
 						<div class="media">
 							<div class="media-left">
 								<a href="${configBean.baseURL?if_exists}/profile/${user.userId?if_exists}">
 									<div class="media-object text-center">
-										<img width="64px" alt="image" src="${user.userImgData?if_exists}">
+										<img width="64px" alt="image" src="${user.userImgAvatar?if_exists}">
 									</div>
 								</a>
 							</div>
@@ -165,12 +169,14 @@
 		<#else>
 				<div class="col-md-6" style="padding-left: 1px;">
 		</#if>
-				  	<div class="item-box bgrow" style="margin-bottom:2px;padding: 5px 5px 5px 5px;" onmouseover="overChangeColor(this);" onmouseout="outChangeColor(this);" onClick="window.location.href='${configBean.baseURL?if_exists}/profile/${userSkills.userId?if_exists}/skills';">
+				  	<div class="item-box bgrow" style="margin-bottom:2px;padding: 5px 5px 5px 5px;" 
+				  		onmouseover="overChangeColor(this);" onmouseout="outChangeColor(this);" 
+				  			onClick="window.location.href='${configBean.baseURL?if_exists}/profile/${userSkills.userId?if_exists}/skills';">
 						<div class="media">
 							<div class="media-left">
 								<a href="${configBean.baseURL?if_exists}/profile/${userSkills.userId?if_exists}/skills">
 									<div class="media-object text-center">
-										<img width="64px" alt="image" src="${userSkills.userImgData?if_exists}">
+										<img width="64px" alt="image" src="${userSkills.userImgAvatar?if_exists}">
 									</div>
 								</a>
 							</div>
@@ -216,12 +222,14 @@
 			<#else>
 				<div class="col-md-6" style="padding-left: 1px;">
 			</#if>
-				  	<div class="item-box bgrow" style="margin-bottom:2px;padding: 5px 5px 5px 5px;" onmouseover="overChangeColor(this);" onmouseout="outChangeColor(this);" onClick="window.location.href='${configBean.baseURL?if_exists}/profile/${userProjects.userId?if_exists}/skills';">
+				  	<div class="item-box bgrow" style="margin-bottom:2px;padding: 5px 5px 5px 5px;" 
+				  		onmouseover="overChangeColor(this);" onmouseout="outChangeColor(this);" 
+				  			onClick="window.location.href='${configBean.baseURL?if_exists}/profile/${userProjects.userId?if_exists}/skills';">
 						<div class="media">
 							<div class="media-left">
 								<a href="${configBean.baseURL?if_exists}/profile/${userProjects.userId?if_exists}/career">
 									<div class="media-object text-center">
-										<img width="64px" alt="image" src="${userProjects.userImgData?if_exists}">
+										<img width="64px" alt="image" src="${userProjects.userImgAvatar?if_exists}">
 									</div>
 								</a>
 							</div>

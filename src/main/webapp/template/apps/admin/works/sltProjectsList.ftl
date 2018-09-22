@@ -213,7 +213,7 @@
 	    <#list model.userProjectsList as userProjects>
 			<ul class="bgrow nthrow item-box ul-table" onmouseover="overChangeColor(this);"  onmouseout="outChangeColor(this);" onclick="selectUserProjects(this, '${userProjects.upNo?if_exists?c}');" >
 				<li class="li-cell" style="border-width: 1px 1px 1px 1px; width: 5%;">${userProjects.upNo?if_exists}</li>
-				<li class="li-cell" style="width: 10%;"><img width="32px" alt="image" src="${userProjects.userImgData?if_exists}"></li>
+				<li class="li-cell" style="width: 10%;"><img width="32px" alt="image" src="${userProjects.userImgAvatar?if_exists}"></li>
 				<li class="li-cell" style="border-width: 0px 1px 0px 1px; background-color:#eeeeee;">${userProjects.userId?if_exists}</li>
 				<li class="li-cell">${userProjects.upName?if_exists}</li>
 				<li class="li-cell">

@@ -4,6 +4,7 @@
 	<div class="col-md-6" style="float:left;">
 		<nav class="breadcrumbs">
 		<ul>
+		<li><a href="/abilists">${user.userId?if_exists}</a></li>
 		<li class="active"><a href="#"><@spring.message "account.menu.settings"/></a></li>
 		</ul>
 		</nav>

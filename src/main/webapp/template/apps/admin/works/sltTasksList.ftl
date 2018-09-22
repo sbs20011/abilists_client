@@ -76,9 +76,9 @@
 	  		<div class="col-sm-4 col-md-4">
 		      <div class="row">
 		  	    <div class="col-sm-12" style="padding-right: 5px;">
-			  	  	<label class="control-label">Select your project</label>
+			  	  	<label class="control-label"><@spring.message "home.title.reports.project"/></label>
 					<select id="upNoId" class="taForm taForm-disable" name="upNo" disabled>
-						<option value="0">Select your project</option>
+						<option value="0"><@spring.message "home.title.reports.project"/></option>
 					<#if model.userProjectsList??>
 						<#list model.userProjectsList as userProjects>
 						<option value="${userProjects.upNo?if_exists}">${userProjects.upName?if_exists}</option>
@@ -208,7 +208,7 @@
 			<ul class="bgrow nthrow item-box ul-table" onmouseover="overChangeColor(this);"  onmouseout="outChangeColor(this);" 
 				onclick="selectUserTasks(this, '${userTasks.userId?if_exists}', '${userTasks.utNo?if_exists}');">
 				<li class="li-cell" style="border-width: 1px 1px 1px 1px; width: 5%;">${userTasks.utNo?if_exists}</li>
-				<li class="li-cell" style="width: 10%;"><img width="32px" alt="image" src="${userTasks.userImgData?if_exists}"></li>
+				<li class="li-cell" style="width: 10%;"><img width="32px" alt="image" src="${userTasks.userImgAvatar?if_exists}"></li>
 				<li class="li-cell" style="width: 10%; border-width: 0px 1px 0px 1px; background-color:#eeeeee;">${userTasks.userId?if_exists}</li>
 				<li class="li-cell" style="width: 10%;">${userTasks.utKind?if_exists}</li>
 				<li class="li-cell" style="width: 10%;">${userTasks.utProgress?if_exists}</li>

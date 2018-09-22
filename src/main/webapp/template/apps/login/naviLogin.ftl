@@ -36,7 +36,7 @@
 
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle navi-bar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">
-					<img id="mySmallImg" style="border-radius: 4px;" src="${myPicture?if_exists}" height="30" width="30" alt="my picture" /><span class="caret"></span>
+					<img id="mySmallImg" style="border-radius: 4px;" src="${myImgAvatar?if_exists}" height="30" width="30" alt="my picture" /><span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu">
 					<li><a href="${configBean.baseURL?if_exists}/profile/${user.userId?if_exists}"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> ${user.userName?if_exists} <@spring.message "profile.menu.profile"/></a></li>

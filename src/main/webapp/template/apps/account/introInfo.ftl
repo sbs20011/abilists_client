@@ -1,4 +1,4 @@
-<#import "/apps/layout/abilistsAccountLayout.ftl" as layout>
+<#import "/apps/layout/account/abilistsAccountLayout.ftl" as layout>
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
 
@@ -8,7 +8,7 @@
 	<#include "/apps/common/abilistsSuccess.ftl"/>
 
 	<div class="row">
-	<div class="col-sm-4 right-col-cus">
+	<div class="col-sm-3 right-col-cus">
 
 	  	<div class="item-box">
 	  	  <#include "sidebar.ftl"/>
@@ -16,14 +16,13 @@
 
 	</div>
 
-	<div class="col-sm-8 left-col-cus">
+	<div class="col-sm-9 left-col-cus">
 
 	  <div class="item-box">
 	  <#if model??>
 	  <#if model.users?has_content>
 
-	  	<form class="form-horizontal" action="udtInfo" method="post">
-
+	  	<form class="form-horizontal" action="udtInfo" method="post" style="padding: 15px;">
 	  		<div class="form-group">
 	  			<label class="col-sm-3 control-label"><@spring.message "info.user.id"/></label>  
 	  			<div class="col-sm-9">
@@ -118,6 +117,11 @@
         </#if>
         </#if>
         </div><!-- /item-box -->
+
+		<div class="item-box">
+			You can change your information.
+		</div>
+
       </div><!-- /col-md-8 -->
 	</div><!-- /row -->
 
@@ -132,5 +136,7 @@ window.onload = function() {
 }
 
 </script>
+
+<#include "js/uploadImageAvatarJs.ftl"/>
 
 </@layout.myLayout>

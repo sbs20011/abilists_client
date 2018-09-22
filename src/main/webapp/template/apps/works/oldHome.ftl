@@ -22,7 +22,7 @@
 <div class="row">
 <div class="col-md-3 right-col-cus sideImg">
 	<div class="item-box">
-		<img style="border-radius: 4px;" src="${model.users.userImgData?if_exists}" id="showImg" width="210" alt="your picture" />
+		<img style="border-radius: 4px;" src="${model.users.userImgAvatar?if_exists}" id="showImg" width="210" alt="your picture" />
     </div>
 </div>
 <div class="col-sm-9">

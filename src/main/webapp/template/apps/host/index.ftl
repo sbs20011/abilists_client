@@ -5,7 +5,7 @@
 <div class="row" style="margin-top: 65px;">
 <div class="col-md-2 right-col-cus sideImg">
 	<div class="item-box">
-		<img style="border-radius: 4px;" src="${myPicture?if_exists}" id="showImg" width="125" alt="your picture" />
+		<img style="border-radius: 4px;" src="${myImgAvatar?if_exists}" id="showImg" width="125" alt="your picture" />
     </div>
 </div>
 <div class="col-sm-10 left-col-cus">

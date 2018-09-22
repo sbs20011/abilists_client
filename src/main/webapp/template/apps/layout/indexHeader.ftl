@@ -14,6 +14,6 @@
     <link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.3.7/css/bootstrap-theme.min.css">
 
-    <link href="${configBean.contextPath?if_exists}/static/apps/css/abilists.css?201706212211" rel="stylesheet">
+    <link href="${configBean.contextPath?if_exists}/static/apps/css/abilists.css?201706212212" rel="stylesheet">
 
 	</head>
