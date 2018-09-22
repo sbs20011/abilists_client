@@ -1,11 +1,31 @@
+/* Start - side title */
+ul.title-right-memo-posts {
+	list-style-type: none;
+	width: 100%;
+	display: table;
+	padding-left: 5px; 
+	padding-right: 5px; 
+	margin-bottom: 0px;
+}
+
+ul.title-right-users-posts {
+	list-style-type: none;
+	width: 100%;
+	display: table;
+	padding-left: 0px; 
+	padding-right: 5px; 
+	margin-bottom: 5px;
+}
+/* End - side title */
+
 /* Start - fix in scroll */
 .memo-fix {
   padding: 5px 5px 5px 5px;
-  width: 145px;
+/*  width: 145px; */
 }
 .users-fix {
   margin-bottom: 1px;
-  width: 230px;
+/*  width: 230px; */
 }
 
 .fix-scroll {

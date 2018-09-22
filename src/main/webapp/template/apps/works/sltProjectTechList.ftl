@@ -1,4 +1,4 @@
-<#import "/apps/layout/abilistsWorksLayout.ftl" as layout>
+<#import "/apps/layout/works/abilistsWorksLayout.ftl" as layout>
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
 
@@ -7,6 +7,7 @@
 	<div class="col-md-6">
 		<nav class="breadcrumbs">
 		<ul>
+		<li><a href="/abilists">${model.users.userId?if_exists}</a></li>
 		<li><a href="/works"><@spring.message "navi.title.works"/></a></li>
 		<li><a href="/works/<#if model.users??>${model.users.userId?if_exists}/sltProjectsList</#if>"><@spring.message "navi.title.works.projects"/></a></li>
 		<li class="active"><a href="#"><@spring.message "navi.title.project.tech"/>[${model.userProjects.upName?if_exists}]</a></li>

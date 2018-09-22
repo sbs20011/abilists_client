@@ -1,4 +1,4 @@
-<#import "/apps/layout/abilistsWorksLayout.ftl" as layout>
+<#import "/apps/layout/works/abilistsWorksLayout.ftl" as layout>
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
 

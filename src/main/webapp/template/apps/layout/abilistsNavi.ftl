@@ -18,7 +18,7 @@
     			<li <#if model??><#if model.navi??><#if model.navi == "list">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/list"><@spring.message "profile.menu.list"/></a></li>
             	<li <#if model??><#if model.navi??><#if model.navi == "profile">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/profile"><@spring.message "navi.title.profile"/></a></li>
             	<li <#if model??><#if model.navi??><#if model.navi == "works">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/works"><@spring.message "navi.title.works"/></a></li>
-            	<li <#if model??><#if model.navi??><#if model.navi == "client">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/client"><span class="glyphicon glyphicon-plus"></span></a></li>
+            	<li <#if model??><#if model.navi??><#if model.navi == "host">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/host"><span class="glyphicon glyphicon-plus"></span></a></li>
             </#if>
           </ul>
 

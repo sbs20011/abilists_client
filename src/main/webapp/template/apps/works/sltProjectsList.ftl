@@ -1,4 +1,4 @@
-<#import "/apps/layout/abilistsWorksLayout.ftl" as layout>
+<#import "/apps/layout/works/abilistsWorksLayout.ftl" as layout>
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
 
@@ -15,7 +15,7 @@ ul.body-posts-menu {
 		<div class="col-md-6" style="float:left;">
 			<nav class="breadcrumbs">
 			<ul>
-			<li><a href="#">${model.users.userId?if_exists}</a></li>
+			<li><a href="/abilists">${model.users.userId?if_exists}</a></li>
 			<li><a href="/works"><@spring.message "navi.title.works"/></a></li>
 			<li class="active"><a href="#"><@spring.message "path.abilists.projects"/></a></li>
 			</ul>
@@ -329,8 +329,8 @@ ul.body-posts-menu {
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal"><@spring.message "projects.button.close"/></button>
         <button id="submitForm" type="button" class="btn btn-primary"><@spring.message "projects.button.save"/></button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><@spring.message "projects.button.close"/></button>
       </div>
     </div>
   </div>
@@ -352,10 +352,10 @@ ul.body-posts-menu {
     </div>
 
     <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal"><@spring.message "projects.button.close"/></button>
       <button id="submitForm" type="button" class="btn btn-danger" onclick="javascript: submitDeleteFormProjects();">
-      	  <@spring.message "projects.button.delete"/>
-      </button>
+	    <@spring.message "projects.button.delete"/>
+	  </button>
+      <button type="button" class="btn btn-default" data-dismiss="modal"><@spring.message "projects.button.close"/></button>
     </div>
   </div>
 </div>

@@ -7,6 +7,7 @@
 		<div class="col-md-6">
 			<nav class="breadcrumbs">
 			<ul>
+			<li><a href="/abilists">abilists</a></li>
 			<li><a href="sltNotiForUserList">Notification</a></li>
 			<li class="active"><a href="#">${model.notification.notiTitle?if_exists}</a></li>
 			</ul>

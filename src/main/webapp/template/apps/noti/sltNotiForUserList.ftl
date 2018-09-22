@@ -7,6 +7,7 @@
 		<div class="col-md-6">
 			<nav class="breadcrumbs">
 			<ul>
+			<li><a href="/abilists">${user.userId?if_exists}</a></li>
 			<li class="active"><a href="#">Notification</a></li>
 			</ul>
 			</nav>

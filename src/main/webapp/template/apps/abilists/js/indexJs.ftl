@@ -206,21 +206,23 @@ function countLines(contentsId) {
 
 }
 
-window.onscroll = function() {fixSideDiv()};
+<#if device == "Computer">
+	window.onscroll = function() {fixSideDiv()};
+	var memoJsId = document.getElementById("memoDivId");
+	var usersJsId = document.getElementById("usersDivId");
+	function fixSideDiv() {
+		var y = window.scrollY;
 
-var memoJsId = document.getElementById("memoDivId");
-var usersJsId = document.getElementById("usersDivId");
-
-function fixSideDiv() {
-	var y = window.scrollY;
-
-    if (y > 160) {
-    	memoJsId.classList.add("fix-scroll");
-    	usersJsId.classList.add("fix-scroll");
-    } else {
-    	memoJsId.classList.remove("fix-scroll");
-    	usersJsId.classList.remove("fix-scroll");
-    }
-}
+	    if (y > 160) {
+	    	memoJsId.classList.add("fix-scroll");
+	    	usersJsId.classList.add("fix-scroll");
+	    	memoJsId.style.width = "145px";
+	    	usersJsId.style.width = "230px";
+	    } else {
+	    	memoJsId.classList.remove("fix-scroll");
+	    	usersJsId.classList.remove("fix-scroll");
+	    }
+	}
+</#if>
 
 </script>

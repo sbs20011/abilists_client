@@ -1,4 +1,4 @@
-<#import "/apps/layout/abilistsProfileLayout.ftl" as layout>
+<#import "/apps/layout/profile/abilistsProfileLayout.ftl" as layout>
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
 
@@ -6,7 +6,7 @@
 <div class="item-box">
 <nav class="breadcrumbs">
 	<ul>
-	<li><a href="#">${model.users.userId?if_exists}</a></li>
+	<li><a href="/abilists">${model.users.userId?if_exists}</a></li>
 	<li><a href="${configBean.baseURL?if_exists}/profile"><@spring.message "navi.title.profile"/></a></li>
 	<li class="active">
 		<a href="#">

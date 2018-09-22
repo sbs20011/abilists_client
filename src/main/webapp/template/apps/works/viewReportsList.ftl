@@ -1,4 +1,4 @@
-<#import "/apps/layout/abilistsWorksLayout.ftl" as layout>
+<#import "/apps/layout/works/abilistsWorksLayout.ftl" as layout>
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
 
@@ -19,7 +19,7 @@ ul li.header {
 		<div class="col-md-6" style="float:left;">
 			<nav class="breadcrumbs">
 			<ul>
-			<li><a href="#">${model.users.userId?if_exists}</a></li>
+			<li><a href="/abilists">${model.users.userId?if_exists}</a></li>
 			<li><a href="/works"><@spring.message "navi.title.works"/></a></li>
 			<li class="active"><a href="#"><@spring.message "path.abilists.reports"/></a></li>
 			</ul>

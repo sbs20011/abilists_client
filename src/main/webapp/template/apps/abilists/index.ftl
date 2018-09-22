@@ -3,9 +3,10 @@
 <@layout.myLayout>
 
 <link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/css/works/memo.css?20180205">
-<link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/css/abilists/posts.css?20180207">
+<link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/css/abilists/posts.css?20180210">
 
 <style>
+
 </style>
 
 <div id="divBodyId" class="row" style="margin-top: 65px;">
@@ -17,7 +18,7 @@
 <div class="col-sm-10 left-col-cus">
 	<div class="item-box">
 		<a href="http://www.abilists.com/" target="_blank">
-			<img src="/static/apps/img/abilists/adBanner01.png" width="810px" height="125px" alt="www.abilists.com">
+			<img src="/static/apps/img/abilists/adBanner01.png"  width="100%" height="125px" alt="www.abilists.com">
 		</a>
 	</div>
 </div>
@@ -27,9 +28,9 @@
 	<div class="col-md-2 right-col-cus">
 
 		<div id="memoDivId" class="item-box memo-fix">
-		  	<ul style="list-style-type: none;width: 100%;display: table;padding-left: 5px; padding-right: 5px;">
-		  		<li style="list-style-type: none;display: table-cell;">
-			  		<h5 class="media-heading">My Memo</h5>
+		  	<ul class="title-right-memo-posts">
+		  		<li>
+			  		<h5 class="media-heading"><@spring.message "posts.title.works.memo"/></h5>
 			  	</li>
 			  	<li style="list-style-type: none;display: table-cell;">
 			  		<a href="${configBean.baseURL?if_exists}/works/<#if user??>${user.userId?if_exists}/sltMemoList</#if>">
@@ -129,9 +130,9 @@
 	
 	<div class="col-md-3 left-col-cus">
 		<div id="usersDivId" class="item-box users-fix"> 
-		  	<ul style="list-style-type: none;width: 100%;display: table;padding-left: 0px; padding-right: 5px;">
+		  	<ul class="title-right-users-posts">
 		  		<li style="list-style-type: none;display: table-cell;">
-			  		<h5 class="media-heading">User List</h5>
+			  		<h5 class="media-heading"><@spring.message "posts.title.works.users"/></h5>
 			  	</li>
 			  	<li style="list-style-type: none;display: table-cell;">
 			  		<a href="${configBean.baseURL?if_exists}/list">
