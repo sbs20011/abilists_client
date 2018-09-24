@@ -4,3 +4,6 @@
 .right-col-cus {
     padding-right: 10px;
 }
+.nav-tabs > li > a {
+    background-color: #dedede;
+}

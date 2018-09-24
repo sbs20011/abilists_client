@@ -41,10 +41,10 @@ ul.body-posts-menu {
 <div class="row">
   <div class="col-md-12">
   	<div class="caption mittle-size-title middle-works-bg">
-  		<h4>
+  		<h5>
   			<@spring.message "navi.title.projects"/>
   			<span id="newToggleId" class="glyphicon glyphicon-chevron-down right-symbol-button" style="color:#337ab7;" aria-hidden="true" onClick="newFormToggle();"></span>
-  		</h4>
+  		</h5>
   	</div>
 
 	<#include "/apps/common/errorMessageNoButton.ftl"/>

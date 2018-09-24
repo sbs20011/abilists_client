@@ -10,17 +10,12 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<title>Profile</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.3.7/css/bootstrap-theme.min.css">
-
-<!-- Custom styles for this template -->
-<#include "/apps/common/headerCss.ftl"/>
+	<!-- Custom styles for this template -->
+	<#include "/apps/common/headerCss.ftl"/>
 
     <link href="${configBean.contextPath?if_exists}/static/apps/css/button.css?201706212168" rel="stylesheet">
     <link href="${configBean.contextPath?if_exists}/static/apps/css/image/image.css?201706212169" rel="stylesheet">
     <link href="${configBean.contextPath?if_exists}/static/apps/css/form.css?2017110105" rel="stylesheet">
-    <link href="${configBean.contextPath?if_exists}/static/apps/css/title.css?2018081860" rel="stylesheet">
-    <link href="${configBean.contextPath?if_exists}/static/apps/css/loading.css" rel="stylesheet">
 
+	<#include "/apps/common/bgImageCss.ftl"/>
 	</head>

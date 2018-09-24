@@ -1,5 +1,5 @@
 <script src="${configBean.contextPath?if_exists}/static/apps/lib/cropper-v3.1.6/cropper.js"></script>
-<script src="${configBean.contextPath?if_exists}/static/apps/js/cropping.js?201706212181"></script>
+<script src="${configBean.contextPath?if_exists}/static/apps/js/cropping.js?201706212183"></script>
 
 <script type="text/javascript">
 
@@ -12,7 +12,8 @@ function uploadImg() {
 		url: '${configBean.baseURL?if_exists}/file/uploadUserFileAjax',
         cache: false,
 		data: {
-			pngimageData: croppng
+			pngimageData: croppng, 
+			kind: '1'
 		},
         beforeSend: function(xhr, settings) {
         	console.log("before send");

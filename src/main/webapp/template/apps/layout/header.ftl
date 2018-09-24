@@ -10,14 +10,11 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<title>index</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.3.7/css/bootstrap-theme.min.css">
-    <!-- These are needed for Autocompliete to input a input form. -->
-    <link href="${configBean.contextPath?if_exists}/static/apps/css/jquery/1.11.4/smoothness/jquery-ui.css" rel="stylesheet">
-
 	<!-- Custom styles for this template -->
 	<#include "/apps/common/headerCss.ftl"/>
+
+    <!-- These are needed for Autocompliete to input a input form. -->
+    <link href="${configBean.contextPath?if_exists}/static/apps/css/jquery/1.11.4/smoothness/jquery-ui.css" rel="stylesheet">
 
     <link href="${configBean.contextPath?if_exists}/static/apps/css/signin.css" rel="stylesheet">
     <link href="${configBean.contextPath?if_exists}/static/apps/css/form.css" rel="stylesheet">

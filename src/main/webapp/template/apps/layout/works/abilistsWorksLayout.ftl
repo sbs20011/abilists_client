@@ -3,26 +3,14 @@
 <html>
 	<#include "abilistsWorksHeader.ftl"/>
 	<body>
-	<style>
-		.bg-image {
-			max-width:100%;
-			height: 415px;
-			background-image: url("/static/apps/img/bgIndex.jpg?201809230021");
-			background-color: #cccccc;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			position: relative;
-		}
-	</style>
 		<#include "/apps/common/abilistsLoading.ftl"/>
 		<#include "/apps/layout/abilistsNavi.ftl"/>
 		<div class="bg-image">
 		    <div class="container">
 				<#include "abilistsWorksMenu.ftl"/>
-	
+
 				<#nested/>
-	
+
 				<#include "/apps/common/abilistsFooder.ftl"/>
 				<#include "/apps/common/footer.ftl">
 		    </div><!-- /container -->

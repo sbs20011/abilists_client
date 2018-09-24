@@ -20,11 +20,10 @@
 	<#include "/apps/common/headerCss.ftl"/>
 
     <link href="${configBean.contextPath?if_exists}/static/apps/css/title.css?2018081860" rel="stylesheet">
-    <link href="${configBean.contextPath?if_exists}/static/apps/css/image/thumbnail.css?201706212167" rel="stylesheet">
-    <link href="${configBean.contextPath?if_exists}/static/apps/css/loading.css" rel="stylesheet">
+    <link href="${configBean.contextPath?if_exists}/static/apps/css/image/thumbnail.css?201706212168" rel="stylesheet">
     <link href="${configBean.contextPath?if_exists}/static/apps/css/form.css?2017110111" rel="stylesheet">
-
     <link href="${configBean.contextPath?if_exists}/static/apps/lib/cropper-v3.1.6/cropper.css" rel="stylesheet">
-    <link href="${configBean.contextPath?if_exists}/static/apps/css/cropping.css?201706212175" rel="stylesheet">
+    <link href="${configBean.contextPath?if_exists}/static/apps/css/cropping.css?201706212176" rel="stylesheet">
 
+	<#include "/apps/common/bgImageCss.ftl"/>
 	</head>

@@ -5,13 +5,13 @@
 	<body id="bodyId">
 		<#include "/apps/common/abilistsLoading.ftl"/>
 		<#include "abilistsNavi.ftl"/>
-	    <div class="container">
-
-			<#nested/>
-
-			<#include "/apps/common/abilistsFooder.ftl"/>
-			<#include "/apps/common/footer.ftl">
-	    </div><!-- /container -->
+		<div class="bg-image">
+		    <div class="container">
+				<#nested/>
+				<#include "/apps/common/abilistsFooder.ftl"/>
+				<#include "/apps/common/footer.ftl">
+		    </div><!-- /container -->
+	    </div>
 	</body>
 </html>
 </#macro>

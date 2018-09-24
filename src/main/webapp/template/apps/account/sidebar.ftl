@@ -1,9 +1,7 @@
 <#import "/spring.ftl" as spring/>
 
     <div class="list-group">
-
     	<#include "uploadImageAvatar.ftl"/>
-
         <a href="${configBean.baseURL?if_exists}/account/introInfo" class="list-group-item <#if model??><#if model.sidebar??><#if model.sidebar == "introInfo">active</#if></#if></#if>">
             <@spring.message "settings.subtitle.change.info"/>
             <span class="pull-right"><#if model??><#if model.sidebar??><#if model.sidebar == "introInfo"> <i class="glyphicon glyphicon-menu-right"></i></#if></#if></#if></span>

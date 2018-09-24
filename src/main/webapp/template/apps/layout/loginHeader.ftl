@@ -10,12 +10,10 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<title>index</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.3.7/css/bootstrap-theme.min.css">
+	<!-- Custom styles for this template -->
+	<#include "/apps/common/headerCss.ftl"/>
 
-    <link href="${configBean.contextPath?if_exists}/static/apps/css/abilists.css?201706212217" rel="stylesheet">
-    <link href="${configBean.contextPath?if_exists}/static/apps/css/abilists/header_menu.css?201803292170" rel="stylesheet">
     <link href="${configBean.contextPath?if_exists}/static/apps/css/signin.css" rel="stylesheet">
     <link href="${configBean.contextPath?if_exists}/static/apps/css/form.css" rel="stylesheet">
+
 	</head>

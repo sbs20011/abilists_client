@@ -2,29 +2,7 @@
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
 
-<link href="${configBean.contextPath?if_exists}/static/apps/css/works/tasks.css?20180723" rel="stylesheet">
-
-<style>
-
-div.ui-datepicker{
-	width: 270px;
-}
-.highlight {
-    border: 1px solid #d886a1;
-    background-color: lightblue;
-}
-
-.input-height {
-	height: 32px;
-}
-
-canvas {
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-}
-
-</style>
+<link href="${configBean.contextPath?if_exists}/static/apps/css/works/tasks.css?20180725" rel="stylesheet">
 
 <div class="item-box">
 	<div class="row">
@@ -57,10 +35,10 @@ canvas {
 <div class="row">
   <div class="col-md-12">
   	<div class="caption mittle-size-title middle-works-bg">
-  		<h4>
+  		<h5>
   			<@spring.message "path.abilists.tasks"/>
   			<span id="newToggleId" class="glyphicon glyphicon-chevron-down right-symbol-button" style="color:#337ab7;" aria-hidden="true" onClick="newFormToggle();"></span>
-  		</h4>
+  		</h5>
   	</div>
 
 	<#include "/apps/common/errorMessage.ftl"/>

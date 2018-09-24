@@ -135,6 +135,7 @@ window.onload = function() {
 		<#if model??>
 		<#if model.reportsBeanList?has_content>
 		<#list model.reportsBeanList as reportsBean>
+
 			<div class="item-box bgrow" style="margin-bottom:2px;padding: 5px 5px 5px 5px;" onmouseover="overChangeColor(this);" onmouseout="outChangeColor(this);" onClick="window.location.href='/profile/${reportsBean.userReports.userId?if_exists}';">
 				<div class="media">
 					<div class="media-left">
@@ -158,8 +159,6 @@ window.onload = function() {
 									${reportsBean.userReports.urReport?if_exists}
 									</#if>
 								</#if>
-								
-								
 							</small>
 					        </div>
 					        <div class="col-md-6">

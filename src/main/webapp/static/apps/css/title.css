@@ -6,3 +6,7 @@
 .middle-works-bg {
 	background: #8cbdda !important;	
 }
+
+.h5, h5 {
+    font-size: 15px;
+}

@@ -1,4 +1,4 @@
-<script src="${configBean.contextPath?if_exists}/static/apps/js/croppingBg.js?201706212181"></script>
+<script src="${configBean.contextPath?if_exists}/static/apps/js/croppingBg.js?201706212189"></script>
 
 <script type="text/javascript">
 
@@ -11,14 +11,15 @@ function uploadImgBg() {
 		url: '${configBean.baseURL?if_exists}/file/uploadUserFileAjax',
         cache: false,
 		data: {
-			pngimageData: croppng
+			pngimageData: croppng, 
+			kind: '2'
 		},
         beforeSend: function(xhr, settings) {
         	console.log("before send bg data");
         },
         success: function(data, textStatus, request) {
         	$('#myImgBgId').attr('src', croppng);
-        	// $('#mySmallImg').attr('src', croppng);
+        	$('#bgImageId').css('background-image', 'url(' + croppng + ')');
         },
         complete: function(xhr, textStatus) {
         	console.log("complete");

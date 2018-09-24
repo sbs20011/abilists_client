@@ -53,10 +53,10 @@
 <div class="row">
 	<div class="col-sm-12">
 	  	<div class="caption mittle-size-title middle-works-bg">
-	  		<h4>
+	  		<h5>
 	  			<@spring.message "navi.title.works.memo"/>
 	  			<span class="glyphicon glyphicon-plus right-symbol-button" style="color:#337ab7;" aria-hidden="true" onClick="istUserMemo();"></span>
-	  		</h4>
+	  		</h5>
 	  	</div>
 		<#include "/apps/common/errorMessageNoButton.ftl"/>
 		<#include "/apps/common/abilistsSuccess.ftl"/>

@@ -102,7 +102,7 @@
 <#if model.usersList?? && model.usersList?has_content>
 
 	<div class="caption mittle-size-title">
-		<h4><@spring.message "profile.list.search.result.id"/></h4>
+		<h5><@spring.message "profile.list.search.result.id"/></h5>
 	</div>
 	<div style="margin-bottom: 20px;">
 	<#list model.usersList as user>

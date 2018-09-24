@@ -1,7 +1,7 @@
 	<div id="crop-avatar-bg" class="item-box" style="box-shadow: 0px 0px 0px; margin-bottom: 10px; padding: 5px 5px 5px 5px;">
 	    <!-- Current avatar -->
 	    <div class="avatar-view-bg thumbnail-hover" title="Change the back ground">
-	      <img id="myImgBgId" src="${myImgBg?if_exists}" alt="backGround">
+	      <img id="myImgBgId" src="${myImgBg?if_exists}" alt="backGround" style="width: 100%; padding: 35px;">
 	    </div>
 
 	    <!-- Cropping modal -->
@@ -28,7 +28,7 @@
 	                  <div class="col-md-12">
 	                    <div class="avatar-wrapper-bg">
 	                    <#if myImgBg??>
-	                    	<img id="profileImgBg" src="${myImgBg?if_exists}" style="width: 50%; margin-left: auto;margin-right: auto">
+	                    	<img id="profileImgBg" src="${myImgBg?if_exists}" style="width: 100%; margin-left: auto;margin-right: auto">
 	                    <#else>
 	                    	<img id="profileImgBg" src="${configBean.contextPath?if_exists}/static/apps/img/defaultBg01.png">
 	                    </#if>

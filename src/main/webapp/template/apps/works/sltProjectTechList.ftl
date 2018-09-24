@@ -25,7 +25,9 @@
 		<#include "/apps/common/errorMessage.ftl"/>
 		<#include "/apps/common/abilistsSuccess.ftl"/>
 
-		<div class="caption mittle-size-title middle-works-bg"><h4><@spring.message "admin.menu.projects"/></h4></div>
+		<div class="caption mittle-size-title middle-works-bg">
+			<h5><@spring.message "admin.menu.projects"/></h5>
+		</div>
 		<div class="item-box" style="background:#fbfbfb;">
 		<#if model.userProjects??>
 			<table id="t01" class="table-line-break">
@@ -82,7 +84,7 @@
 		<div class="caption mittle-size-title middle-works-bg">
 			<div class="row">
 				<div class="col-md-6" style="float:left;">
-					<h4><@spring.message "admin.menu.projects.tech.list"/></h4>
+					<h5><@spring.message "admin.menu.projects.tech.list"/></h5>
 				</div>
 				<div class="col-md-6">
 					<#if model.userProjects??>

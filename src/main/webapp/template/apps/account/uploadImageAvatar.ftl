@@ -1,4 +1,3 @@
-<!-- start - model windows -->
 	<div id="crop-avatar" class="item-box" style="box-shadow: 0px 0px 0px; margin-bottom: 10px; padding: 5px 5px 5px 5px;">
 
 		<!-- Current avatar -->

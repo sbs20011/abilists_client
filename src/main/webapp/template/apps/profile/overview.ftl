@@ -16,7 +16,7 @@ ul.center {
 	margin: 0px;
 }
 
-ul li.overview{
+ul li.overview {
 	float:left;
 	width: 48.5%;
 	max-width:100%;

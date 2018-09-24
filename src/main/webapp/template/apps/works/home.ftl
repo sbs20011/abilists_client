@@ -47,7 +47,7 @@
 <div class="row nav-top">
 	<div class="col-md-6 right-col-cus">
 
-		<div class="caption mittle-size-title middle-works-bg"><h4><@spring.message "home.title.reports"/></h4></div>
+		<div class="caption mittle-size-title middle-works-bg"><h5><@spring.message "home.title.reports"/></h5></div>
 		<div class="item-box">
 			<form id="reportsFormId" class="form-horizontal" action="${configBean.baseURL?if_exists}/works/udtReports" method="post">
 
@@ -91,7 +91,7 @@
 			</form>
 		</div><!-- item-box -->
 
-		<div class="caption mittle-size-title middle-works-bg"><h4><@spring.message "home.title.profile"/></h4></div>
+		<div class="caption mittle-size-title middle-works-bg"><h5><@spring.message "home.title.profile"/></h5></div>
 		<div class="item-box">
 		<#if model??>
 		<#if model.usersList?has_content>
@@ -120,7 +120,7 @@
 
 	<div class="col-md-6 left-col-cus">
 
-		<div class="caption mittle-size-title middle-works-bg"><h4><@spring.message "home.title.reports.timeline"/></h4></div>
+		<div class="caption mittle-size-title middle-works-bg"><h5><@spring.message "home.title.reports.timeline"/></h5></div>
 		<div class="item-box">
 	      <#if model??>
 	      <#if model.userReportsList?has_content>

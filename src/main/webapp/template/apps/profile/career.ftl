@@ -17,9 +17,9 @@
 	</div>
 	<div class="col-sm-9 left-col-cus">
 		<div class="caption mittle-size-title">
-			<h4><@spring.message "profile.career.summary"/>
+			<h5><@spring.message "profile.career.summary"/>
 				<span class="glyphicon glyphicon-pencil right-symbol-button" style="color:#337ab7;" aria-hidden="true" onclick="udtUserSummary();"></span>
-			</h4>
+			</h5>
 		</div>
 		<div align="center" id="updatedId" class="list-group-item list-group-item-info">success</div>
 		<div class="item-box" style="height: 260px; overflow-x: hidden; overflow: auto;">
@@ -30,9 +30,9 @@
 </div>
 
 <div id="skills" class="caption mittle-size-title">
-	<h4> <@spring.message "profile.career.experience"/>
+	<h5> <@spring.message "profile.career.experience"/>
 	<span id="newToggleId" class="glyphicon glyphicon-chevron-down right-symbol-button" style="color:#337ab7;" aria-hidden="true" onclick="newFormToggle();"></span>
-	</h4>
+	</h5>
 </div>
 
 <div class="row">
@@ -415,10 +415,10 @@
     <#if model.userCareerList?has_content>
     	<#list model.userCareerList as userCareer>
     	<div class="item-box bgrow" style="margin-bottom: 1px;" onmouseover="overChangeColor(this);" onmouseout="outChangeColor(this);" onclick="selectUserCareer(this, '${userCareer.ucNo?if_exists}', '${model.users.userId?if_exists}');">
-	      	<h4>
+	      	<h5>
 	    		${userCareer.ucStartYear?if_exists}/${userCareer.ucStartMonth?if_exists} ~ ${userCareer.ucEndYear?if_exists}/${userCareer.ucEndMonth?if_exists} 
 	    		${userCareer.ucCompanyName?if_exists}
-	    	</h4>
+	    	</h5>
 			<div class="media">
 				<div class="media-left">
 					<a href="#">

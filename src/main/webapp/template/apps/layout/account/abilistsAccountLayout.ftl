@@ -5,14 +5,16 @@
 	<body>
 		<#include "/apps/common/abilistsLoading.ftl"/>
 		<#include "/apps/layout/abilistsNavi.ftl"/>
-	    <div class="container">
-			<#include "abilistsAccountCrumbing.ftl"/>
+		<div id="bgImageId" class="bg-image">
+		    <div class="container">
+				<#include "abilistsAccountCrumbing.ftl"/>
 
-			<#nested/>
+				<#nested/>
 
-			<#include "/apps/common/abilistsFooder.ftl"/>
-			<#include "/apps/common/footer.ftl">
-	    </div><!-- /container -->
+				<#include "/apps/common/abilistsFooder.ftl"/>
+				<#include "/apps/common/footer.ftl">
+		    </div><!-- /container -->
+	    </div>
 	</body>
 </html>
 </#macro>

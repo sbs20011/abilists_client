@@ -90,7 +90,7 @@
 <#if model.userProjectsList?? && model.userProjectsList?has_content>
 
 	<div class="caption mittle-size-title middle-works-bg">
-		<h4><@spring.message "profile.list.search.result.works"/></h4>
+		<h5><@spring.message "profile.list.search.result.works"/></h5>
 	</div>
 	<div style="margin-bottom: 20px;">
 	<#list model.userProjectsList as userProjects>

@@ -22,11 +22,11 @@ var data = {
 			</#if>
 				],
 			backgroundColor: [
-	            window.chartColors.red,
-	            window.chartColors.orange,
-	            window.chartColors.yellow,
-	            window.chartColors.green,
 	            window.chartColors.blue,
+	            window.chartColors.green,
+	            window.chartColors.yellow,
+	            window.chartColors.orange,
+	            window.chartColors.red,
 	        ]
 		}
 	]

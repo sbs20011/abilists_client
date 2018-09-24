@@ -21,7 +21,7 @@
 <#include "/apps/common/abilistsProfile.ftl"/>
 	</div>
 	<div class="col-sm-9 left-col-cus">
-		<div class="caption mittle-size-title"><h4>${model.users.userId?if_exists}<@spring.message "profile.graph.title.user"/></h4></div>
+		<div class="caption mittle-size-title"><h5>${model.users.userId?if_exists}<@spring.message "profile.graph.title.user"/></h5></div>
 		<div class="item-box">
 			<canvas id="myChart" height="230px" width="700px"></canvas>
 		</div>
@@ -34,10 +34,10 @@
 	<#include "/apps/common/abilistsSuccess.ftl"/>
 
   	<div id="skills" class="caption mittle-size-title">
-  		<h4>
+  		<h5>
 			<@spring.message "profile.menu.techs"/>
 			<span id="newToggleSkillsId" class="glyphicon glyphicon-chevron-down right-symbol-button" style="color:#337ab7;" aria-hidden="true" onclick="newFormSkills();"></span>
-  		</h4>
+  		</h5>
   	</div>
 
   	<!-- skills form - start -->
@@ -196,10 +196,10 @@
 	</div>
 
   	<div id="lang" class="caption mittle-size-title">
-  		<h4>
+  		<h5>
 			<@spring.message "profile.menu.lang"/>
 			<span id="newToggleLangId" class="glyphicon glyphicon-chevron-down right-symbol-button" style="color:#337ab7;" aria-hidden="true" onclick="newFormLang();"></span>
-  		</h4>
+  		</h5>
   	</div>
 
   	<!-- lang form - start -->
@@ -360,10 +360,10 @@
 	</div>
 
   	<div id="certi" class="caption mittle-size-title">
-  		<h4>
+  		<h5>
 			<@spring.message "profile.menu.certi"/>
 			<span id="newToggleCertiId" class="glyphicon glyphicon-chevron-down right-symbol-button" style="color:#337ab7;" aria-hidden="true" onclick="newFormCerti();"></span>
-  		</h4>
+  		</h5>
   	</div>
 
   	<!-- certi form - start -->

@@ -153,7 +153,7 @@
 
               _this.$avatarData.val(json);
             },
-  	      aspectRatio: 1,
+  	      aspectRatio: 2,
 	      viewMode: 1,
 	      dragMode: 'move',
 	      autoCropArea: 0.8,
@@ -188,7 +188,7 @@
 
     alert: function (msg) {
       var $alert = [
-            '<div class="alert alert-danger avatar-alert alert-dismissable">',
+            '<div class="alert alert-danger avatar-alert-bg alert-dismissable">',
               '<button type="button" class="close" data-dismiss="alert">&times;</button>',
               msg,
             '</div>'

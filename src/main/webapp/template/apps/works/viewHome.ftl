@@ -72,7 +72,6 @@
 	      <#if model.userReportsList?has_content>
 	      <ul class="timeline">
 	      	<#list model.userReportsList as userReports>
-	
 	      		<#if (userReports_index % 2) == 0 >
 	      			<li>
 		                <div class="timeline-badge" style="background-color: #4670b5;">
@@ -105,7 +104,6 @@
 	                    </div>
 	                </div>
 	            </li>
-	
 			</#list>
 	      </ul>
 	      </#if>
