@@ -43,15 +43,6 @@ h2 span {
 }
 </style>
 
-
-<script type="text/javascript">
-
-window.onload = function() {
-	$('#loading').hide();
-}
-
-</script>
-
 <div class="bgIndex">
 	<div class="transbox">
 		<div class="row">
@@ -82,5 +73,13 @@ window.onload = function() {
 </div>
 
 <#include "/apps/common/abilistsAdminLoadJs.ftl"/>
+
+<script type="text/javascript">
+
+window.onload = function() {
+	$('#loading').hide();
+}
+
+</script>
 
 </@layout.myLayout>

@@ -20,6 +20,8 @@
 		<#include "uploadImageBg.ftl"/>
 
 	  	<div class="item-box">
+	  		You can change your back ground image
+	  		<!--
 	  		<label class="radio-inline">
 		  	  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
 		  	  <img src="/static/apps/img/defaultBg01.png" alt="backGround" width="200px" height="120px" />
@@ -32,7 +34,7 @@
 		  	  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
 		  	  <img src="/static/apps/img/defaultBg01.png" alt="backGround" width="200px" height="120px" />
 		  	</label>
-
+		  	-->
 		</div><!-- /item-box-->
 
 	  </div><!-- /col-sm-8 left-col-cus8-->

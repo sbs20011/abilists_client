@@ -22,7 +22,7 @@
 	  <#if model??>
 	  <#if model.users?has_content>
 
-	  	<form class="form-horizontal" action="udtInfo" method="post" style="padding: 15px;">
+	  	<form class="form-horizontal" action="${configBean.baseURL?if_exists}/account/udtInfo" method="post" style="padding: 15px;">
 	  		<div class="form-group">
 	  			<label class="col-sm-3 control-label"><@spring.message "info.user.id"/></label>  
 	  			<div class="col-sm-9">
@@ -86,12 +86,12 @@
             		<div class="input-group">
             			<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 			            <select class="form-control" name="userAges" style="width: 100%;">
-		                <option value="10" ><@spring.message "ages.select.10"/></option>
-		                <option value="20" ><@spring.message "ages.select.20"/></option>
-		                <option value="30" ><@spring.message "ages.select.30"/></option>
-		                <option value="40" ><@spring.message "ages.select.40"/></option>
-		                <option value="50" ><@spring.message "ages.select.50"/></option>
-		                <option value="60" ><@spring.message "ages.select.60"/></option>
+		                <option value="10" <#if model.users.userAges??><#if model.users.userAges == "10">selected</#if></#if>><@spring.message "ages.select.10"/></option>
+		                <option value="20" <#if model.users.userAges??><#if model.users.userAges == "20">selected</#if></#if>><@spring.message "ages.select.20"/></option>
+		                <option value="30" <#if model.users.userAges??><#if model.users.userAges == "30">selected</#if></#if>><@spring.message "ages.select.30"/></option>
+		                <option value="40" <#if model.users.userAges??><#if model.users.userAges == "40">selected</#if></#if>><@spring.message "ages.select.40"/></option>
+		                <option value="50" <#if model.users.userAges??><#if model.users.userAges == "50">selected</#if></#if>><@spring.message "ages.select.50"/></option>
+		                <option value="60" <#if model.users.userAges??><#if model.users.userAges == "60">selected</#if></#if>><@spring.message "ages.select.60"/></option>
 		                </select>
             		</div>
             	</div>
