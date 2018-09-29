@@ -21,12 +21,12 @@
                 <li class="dropdown">
 	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Customize <span class="caret"></span></a>
 	              <ul class="dropdown-menu">
-	                <li <#if model??><#if model.navi??><#if model.navi == "client">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/client">Client1</a></li>
-	                <li><a href="#">Client2</a></li>
+	                <li <#if model??><#if model.navi??><#if model.navi == "host">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/host"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Client</a></li>
 	                <li role="separator" class="divider"></li>
-	                <li><a href="#">Help</a></li>
+	                <li><a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Guide Development </a></li>
 	              </ul>
 	            </li>
+          	
             </#if>
           </ul>
 
