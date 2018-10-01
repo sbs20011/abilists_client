@@ -21,7 +21,7 @@
 				<span class="glyphicon glyphicon-pencil right-symbol-button" style="color:#337ab7;" aria-hidden="true" onclick="udtUserSummary();"></span>
 			</h5>
 		</div>
-		<div align="center" id="updatedId" class="list-group-item list-group-item-info">success</div>
+		<div id="updatedId" align="center" class="list-group-item list-group-item-info">success</div>
 		<div class="item-box" style="height: 260px; overflow-x: hidden; overflow: auto;">
 			${model.users.userSummary?if_exists}
 		</div>
@@ -34,6 +34,8 @@
 	<span id="newToggleId" class="glyphicon glyphicon-chevron-down right-symbol-button" style="color:#337ab7;" aria-hidden="true" onclick="newFormToggle();"></span>
 	</h5>
 </div>
+
+
 
 <div class="row">
   <div class="col-md-12">
@@ -179,7 +181,7 @@
 				<td width="10%"><@spring.message "profile.career.business"/></td>
 				<td>
 				<select class="taForm" name="ucCodeIndustry">
-					<option value="0"><@spring.message "projects.title.industy"/></option>
+					<option value="0" selected><@spring.message "select.default.industy"/></option>
 					<#if commonBean??>
 					<#if commonBean.mIndustryMapList?has_content>
 						<#if commonBean.mIndustryMapList["${lang?if_exists}"]??>
@@ -194,7 +196,7 @@
 				<td><@spring.message "profile.career.role"/></td>
 				<td>
 					<select class="taForm" name="ucCodeRole">
-					<option value="0"><@spring.message "projects.title.role"/></option>
+					<option value="0" selected><@spring.message "select.default.role"/></option>
 				    <#if commonBean??>
 				    <#if commonBean.mRoleMap?has_content>
 					    <#if commonBean.mRoleMap["${lang?if_exists}"]??>
@@ -210,7 +212,7 @@
 			<tr>
 				<td width="10%"><@spring.message "profile.career.contents"/></td>
 				<td colspan='3'>
-					<textarea class="taForm" style="height: 70px;" name="ucContents" placeholder="contents" rows="3"></textarea>
+					<textarea id="newUcContentsId" class="taForm" style="height: 120px;" name="ucContents" placeholder="contents" rows="5"></textarea>
 				</td>
 			</tr>
 			</table>
@@ -364,7 +366,7 @@
 				<td width="10%"><@spring.message "profile.career.business"/></td>
 				<td>
 				<select id="ucCodeIndustryId" class="taForm" name="ucCodeIndustry">
-					<option value="0" selected><@spring.message "projects.title.industy"/></option>
+					<option value="0" selected><@spring.message "select.default.industy"/></option>
 					<#if commonBean??>
 					<#if commonBean.mIndustryMapList?has_content>
 						<#if commonBean.mIndustryMapList["${lang?if_exists}"]??>
@@ -379,7 +381,7 @@
 				<td><@spring.message "profile.career.role"/></td>
 				<td>
 					<select id="ucCodeRoleId" class="taForm" name="ucCodeRole">
-					<option value="0" selected><@spring.message "projects.title.role"/></option>
+					<option value="0"><@spring.message "select.default.role"/></option>
 				    <#if commonBean??>
 				    <#if commonBean.mRoleMap?has_content>
 					    <#if commonBean.mRoleMap["${lang?if_exists}"]??>
@@ -395,7 +397,7 @@
 			<tr>
 				<td width="10%"><@spring.message "profile.career.contents"/></td>
 				<td colspan='3'>
-					<textarea id="ucContentsId" class="taForm" style="height: 70px;" name="ucContents" placeholder="contents" rows="3"></textarea>
+					<textarea id="ucContentsId" class="taForm" style="height: 120px;" name="ucContents" placeholder="contents" rows="5"></textarea>
 				</td>
 			</tr>
 			</table>
@@ -446,8 +448,8 @@
 </div><!-- row -->
 
 <!-- Updateb user summary Modal -->
-<div class="modal fade" id="udtUserSummaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
+<div class="modal fade counter" id="udtUserSummaryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" style="width: 50%">
 	  <div class="modal-content">
 
 	    <div class="modal-header">

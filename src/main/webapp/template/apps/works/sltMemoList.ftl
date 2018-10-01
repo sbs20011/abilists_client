@@ -107,7 +107,7 @@
 	          <li style="background:#fbedff;" onClick="return changeBcColor(this,'colorId');"></li>
 	          <li style="background:#edffed;" onClick="return changeBcColor(this,'colorId');"></li>
           </ul>
-	      <button type="button" class="btn btn-primary" onclick="javascript: sbtIstUserMemoForm();"><@spring.message "works.button.close"/></button>
+	      <button type="button" class="btn btn-primary" onclick="javascript: sbtIstUserMemoForm();"><@spring.message "works.button.save"/></button>
 	      <button type="button" class="btn btn-default" data-dismiss="modal"><@spring.message "projects.button.close"/></button>
 	    </div>
 

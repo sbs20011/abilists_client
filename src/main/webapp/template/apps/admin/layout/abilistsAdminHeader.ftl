@@ -21,7 +21,7 @@
     <link href="${configBean.contextPath?if_exists}/static/apps/css/admin/cus_breadcrumb.css" rel="stylesheet">
 
     <link href="${configBean.contextPath?if_exists}/static/apps/css/signin.css" rel="stylesheet">
-    <link href="${configBean.contextPath?if_exists}/static/apps/css/form.css?2017110105" rel="stylesheet">
+    <link href="${configBean.contextPath?if_exists}/static/apps/css/form.css?2017110106" rel="stylesheet">
     <link href="${configBean.contextPath?if_exists}/static/apps/css/title.css?2018081859" rel="stylesheet">
     <link href="${configBean.contextPath?if_exists}/static/apps/css/image/image.css?201706212167" rel="stylesheet">
 

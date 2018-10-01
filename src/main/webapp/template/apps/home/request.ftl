@@ -32,9 +32,9 @@
 		</div>
 	</div>
 
-<#include "/apps/common/abilistsFooder.ftl"/>
 <script src="${configBean.contextPath?if_exists}/static/apps/lib/jquery/2.1.1/jquery.min.js"></script>
 <script src="${configBean.contextPath?if_exists}/static/apps/lib/jquery-ui-1.12.1/jquery-ui.js"></script>
 <script src="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<#include "/apps/common/abilistsFooder.ftl"/>
 
 </@layout.myLayout>

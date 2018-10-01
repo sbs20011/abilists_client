@@ -1,10 +1,6 @@
 	
 	<script type="text/javascript">
-	
-	window.onload = function() {
-		$('#loading').hide();
-	}
-	
+
 	/* Load select data from the server.*/
 	var mtechList = {};
 	<#if commonBean??>

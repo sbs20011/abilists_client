@@ -1,4 +1,8 @@
-<script>
+
+<script type="text/javascript">
+window.onload = function() {
+	$('#loading').hide();
+}
 /* Show the complete message to save.*/
 var ecompany = document.getElementById("completeId");
 <#if save??>

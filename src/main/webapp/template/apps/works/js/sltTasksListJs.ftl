@@ -1,8 +1,4 @@
 	<script type="text/javascript">
-	
-	window.onload = function() {
-		$('#loading').hide();
-	}
 
 	$(document).ready(function(){
 	    $("#flip").click(function(){
@@ -357,5 +353,12 @@
 
 	  $( "#userTasksId" ).disableSelection();
 	} );
+
+	/* Input Text size */
+	var errorText = "<@spring.message "input.text.size.max"/>";
+	$('textarea').textcounter({
+		max:2500, counterText:"Total Count: %d/2500", maximumErrorText:errorText,
+		stopInputAtMaximum:false, countSpaces:true, twoCharCarriageReturn:false, countExtendedCharacters:true
+	});
 
 	</script>

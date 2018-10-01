@@ -4,8 +4,6 @@
 window.onload = function() {
 	//var reports = document.getElementsByName("userReports");
 	//selectUserReports(reports[5], '8')
-
-	$('#loading').hide();
 }
 
 function removeReports() {

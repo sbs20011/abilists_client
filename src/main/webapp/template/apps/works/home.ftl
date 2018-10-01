@@ -184,19 +184,11 @@
 </div>
 </div>
 -->
-
 <#include "/apps/common/abilistsWorksLoadJs.ftl"/>
 
-<#include "js/homeJs.ftl"/>
-
 <script type="text/javascript">
-
-window.onload = function() {
-	$('#loading').hide();
-}
-
+<#include "js/homeJs.ftl"/>
 <#include "home/chartTech.ftl"/>
-
 </script>
 
 </@layout.myLayout>

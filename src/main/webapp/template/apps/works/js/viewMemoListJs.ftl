@@ -2,12 +2,11 @@
 
 var allCount = ${model.paging.allCount?c};
 
-window.onload = function() {
-	$('#loading').hide();
+$(document).ready(function() {
 	if(allCount < 11) {
 		pageMoreId.style.display = "none";
 	}
-}
+});
 
 var umMemoId = document.getElementById('umMemoId');
 var modalContentId = document.getElementById('modalContentId');

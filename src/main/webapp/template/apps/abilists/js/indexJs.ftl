@@ -6,7 +6,7 @@ var postsDivId = document.getElementById('postsDivId');
 var pageMoreId = document.getElementById('pageMoreId');
 
 window.onload = function() {
-	$('#loading').hide();
+//	$('#loading').hide();
 	if(allCount < 6) {
 		pageMoreId.style.display = "none";
 	}

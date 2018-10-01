@@ -65,10 +65,6 @@
 
 <script type="text/javascript">
 
-window.onload = function() {
-	$('#loading').hide();
-}
-
 <#include "home/chartTech.ftl"/>
 <#include "home/chartWorkingHours.ftl"/>
 <#include "home/chartRole.ftl"/>

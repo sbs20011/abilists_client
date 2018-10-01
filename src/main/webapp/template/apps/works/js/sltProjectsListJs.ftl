@@ -1,9 +1,5 @@
 <script type="text/javascript">
 
-window.onload = function() {
-	$('#loading').hide();
-}
-
 $(document).ready(function(){
     $("#flip").click(function(){
         $("#newMdataFormId").slideUp("slow");
@@ -290,5 +286,12 @@ function submitDeleteFormProjects() {
 	document.updateForm.action = "dltProjects";
 	document.updateForm.submit();
 }
+
+/* Input Text size */
+var errorText = "<@spring.message "input.text.size.max"/>";
+$('textarea').textcounter({
+	max:2500, counterText:"Total Count: %d/2500", maximumErrorText:errorText,
+	stopInputAtMaximum:false, countSpaces:true, twoCharCarriageReturn:false, countExtendedCharacters:true
+});
 
 </script>

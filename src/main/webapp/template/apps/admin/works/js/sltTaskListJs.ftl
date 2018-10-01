@@ -1,11 +1,6 @@
 
 <script type="text/javascript"> 
 
-window.onload = function() {
-	console.log("test");
-	$('#loading').hide();
-}
-
 function removeTasks() {
 	// Call the modal for deleting
 	$(window).ready(function(){

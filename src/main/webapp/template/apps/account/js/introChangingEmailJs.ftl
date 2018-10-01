@@ -1,9 +1,5 @@
 <script type="text/javascript">
 
-window.onload = function() {
-	$('#loading').hide();
-}
-
 var email = document.getElementById("newUserEmailId");
 function validateEmail() {
 	// how to convert javascript object to jquery object

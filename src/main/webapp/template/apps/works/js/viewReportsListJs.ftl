@@ -1,8 +1,4 @@
 	<script type="text/javascript">
-	
-	window.onload = function() {
-		$('#loading').hide();
-	}
 
 	var ajaxLastNum = 0;
 	

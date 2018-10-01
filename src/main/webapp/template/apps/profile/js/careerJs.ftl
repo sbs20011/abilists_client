@@ -1,3 +1,4 @@
+<#import "/spring.ftl" as spring/>
 
 	<script type="text/javascript">
 
@@ -11,10 +12,6 @@
 		</#if>
 	</#if>
 	</#if>
-
-	window.onload = function() {
-		$('#loading').hide();
-	}
 
 	function udtUserSummary() {
 
@@ -45,7 +42,7 @@
 		$(window).ready(function(){
 			$('#istUserCareerModal').modal('show');
 		});
-	
+
 		var table1 = document.getElementById(tableName);
 		// Create a table on Motal 
 		var table3 = document.getElementById("t03");
@@ -87,9 +84,10 @@
 		var ucCodeRoleElement = row13.cells[3].getElementsByTagName("select")[0];
 		var selectMrNoHtml = ucCodeRoleElement.options[ucCodeRoleElement.selectedIndex].text;
 		row33.cells[3].innerHTML = selectMrNoHtml;
+
 		// Contents
 		row34.cells[1].innerHTML = row14.cells[1].getElementsByTagName("textarea")[0].value;
-	
+
 		if(tableName == "newFormId") {
 			document.getElementById("confirmUcPresentId").innerHTML = document.getElementById("udtUcPresentId").checked;
 			document.getElementById("submitFormId").setAttribute( "onClick", "javascript: sbtNewFormUserCareer();" );
@@ -299,5 +297,21 @@
 	    	ucEndMonthId.style.backgroundColor = "";
 	    }
 	}
+
+	/* Input Text size */
+	var errorText = "<@spring.message "input.text.size.max"/>";
+	$('#userSummaryId').textcounter({
+		max:8000, counterText:"Total Count: %d/8000", maximumErrorText:errorText,
+		stopInputAtMaximum:false, countSpaces:true, twoCharCarriageReturn:false, countExtendedCharacters:true
+	});
+
+	$('#newUcContentsId').textcounter({
+		max:5000, counterText:"Total Count: %d/5000", maximumErrorText:errorText, 
+		stopInputAtMaximum:false, countSpaces:true, twoCharCarriageReturn:false, countExtendedCharacters:true
+	});
+	$('#ucContentsId').textcounter({
+		max:5000, counterText:"Total Count: %d/5000", maximumErrorText:errorText, 
+		stopInputAtMaximum:false, countSpaces:true, twoCharCarriageReturn:false, countExtendedCharacters:true
+	});
 
 	</script>

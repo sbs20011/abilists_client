@@ -162,9 +162,8 @@ ul.body-posts-menu {
 			<div class="col-sm-8 col-md-8">
 				<@spring.message "projects.title.explain"/>
 				<textarea id="upExplainId" class="taForm" name="upExplain" style="height:180px;" placeholder="explian" ></textarea>
-			    <@spring.message "file.title.projects"/>
-			    <div id="projectsFileId"> 
-			    </div>
+			    <p style="float: left;padding-top: 10px;"><@spring.message "file.title.projects"/></p>
+			    <div id="projectsFileId"></div>
 			</div>
 		  </div>
 		  <input type="hidden" id="upNoId" name="upNo" />

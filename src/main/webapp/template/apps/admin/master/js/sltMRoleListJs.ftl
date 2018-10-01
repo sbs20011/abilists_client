@@ -7,10 +7,6 @@ $(document).ready(function(){
     });
 });
 
-window.onload = function() {
-	$('#loading').hide();
-}
-
 function removeProject() {
 	// Call the modal for deleting
 	$(window).ready(function(){

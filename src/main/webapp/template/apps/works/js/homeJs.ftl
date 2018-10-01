@@ -1,10 +1,3 @@
-
-<script type="text/javascript">
-
-window.onload = function() {
-	$('#loading').hide();
-}
-
 function viewReports(day) {
 	// Call the modal
 	$(window).ready(function(){
@@ -121,4 +114,9 @@ function destroyPopover(event) {
 	$jevent.popover('destroy');
 }
 
-</script>
+/* Input Text size */
+var errorText = "<@spring.message "input.text.size.max"/>";
+$('textarea').textcounter({
+	max:2500, counterText:"Total Count: %d/2500", maximumErrorText:errorText,
+	stopInputAtMaximum:false, countSpaces:true, twoCharCarriageReturn:false, countExtendedCharacters:true
+});

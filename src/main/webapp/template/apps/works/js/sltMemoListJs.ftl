@@ -2,12 +2,11 @@
 
 var allCount = <#if model.paging??>${model.paging.allCount?c}<#else>0</#if>;
 
-window.onload = function() {
-	$('#loading').hide();
+$(document).ready(function() {
 	if(allCount < 11) {
 		pageMoreId.style.display = "none";
 	}
-}
+});
 
 function istUserMemo() {
 	// Call the modal for deleting
@@ -190,5 +189,13 @@ $( function() {
 
   $( "#memoUiId" ).disableSelection();
 } );
+
+
+/* Input Text size */
+var errorText = "<@spring.message "input.text.size.max"/>";
+$('textarea').textcounter({
+	max:2500, counterText:"Total Count: %d/2500", maximumErrorText:errorText,
+	stopInputAtMaximum:false, countSpaces:true, twoCharCarriageReturn:false, countExtendedCharacters:true
+});
 
 </script>

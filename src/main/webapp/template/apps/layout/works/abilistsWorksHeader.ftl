@@ -17,7 +17,7 @@
 
 	<!-- For Table -->
 	<link href="${configBean.contextPath?if_exists}/static/apps/css/button.css?201706212168" rel="stylesheet">
-	<link href="${configBean.contextPath?if_exists}/static/apps/css/form.css?2017110107" rel="stylesheet">
+	<link href="${configBean.contextPath?if_exists}/static/apps/css/form.css?2017110108" rel="stylesheet">
 	<link href="${configBean.contextPath?if_exists}/static/apps/css/image/thumbnail.css?201706212168" rel="stylesheet">
 
 	<#include "/apps/common/bgImageCss.ftl"/>

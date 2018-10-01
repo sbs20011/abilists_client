@@ -11,10 +11,11 @@
 
 		    	<#nested/>
 
-				<#include "/apps/common/abilistsFooder.ftl"/>
 				<#include "/apps/common/footer.ftl">
 		    </div><!-- /container -->
 	    </div>
+	    <#include "/apps/common/headerJs.ftl"/>
+		<#include "/apps/common/abilistsFooder.ftl"/>
 	</body>
 </html>
 </#macro>

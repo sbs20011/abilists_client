@@ -4,8 +4,6 @@
 window.onload = function() {
 	//var task = document.getElementsByName("userTask");
 	//selectUserTask(task[5], '8')
-
-	$('#loading').hide();
 }
 
 function removeProject() {

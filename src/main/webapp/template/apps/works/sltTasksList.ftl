@@ -152,8 +152,8 @@
 	  	<input id="newTokenId" type="hidden" name="token" value="<#if model??>${model.token?if_exists}</#if>" />
 	  	<br/>
 		<p align="center">
-			<button type="button" class="btn btn-primary" onclick="return confirmData('newFormId');" >Send</button>
-			<button class="btn btn-primary" type="button" onClick="newFormCancel();">Cancel</button>
+			<button type="button" class="btn btn-primary" onclick="return confirmData('newFormId');" ><@spring.message "works.button.confirm"/></button>
+			<button class="btn btn-primary" type="button" onClick="newFormCancel();"><@spring.message "works.button.cancel"/></button>
 		</p>
 		</form>
 
@@ -372,8 +372,8 @@
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal"><@spring.message "projects.button.close"/></button>
-        <button id="submitForm" type="button" class="btn btn-primary"><@spring.message "projects.button.delete"/></button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><@spring.message "works.button.close"/></button>
+        <button id="submitForm" type="button" class="btn btn-primary"><@spring.message "works.button.update"/></button>
       </div>
     </div>
   </div>
@@ -393,7 +393,7 @@
     </div>
 
     <div class="modal-footer">
-      <button type="button" class="btn btn-default" data-dismiss="modal"><@spring.message "projects.button.close"/></button>
+      <button type="button" class="btn btn-default" data-dismiss="modal"><@spring.message "works.button.close"/></button>
       <button id="submitForm" type="button" class="btn btn-danger" onclick="javascript: submitDeleteFormTasks();">
       	<@spring.message "projects.button.delete"/>
       </button>

@@ -1,11 +1,6 @@
 
 <script type="text/javascript">
 
-window.onload = function() {
-	// $("#udtMdataFormId").hide();
-	$('#loading').hide();
-}
-
 /*
  * Make the table on the Modal for confirming the data.
  */

@@ -74,12 +74,4 @@ h2 span {
 
 <#include "/apps/common/abilistsAdminLoadJs.ftl"/>
 
-<script type="text/javascript">
-
-window.onload = function() {
-	$('#loading').hide();
-}
-
-</script>
-
 </@layout.myLayout>

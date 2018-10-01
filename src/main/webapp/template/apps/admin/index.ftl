@@ -2,14 +2,6 @@
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
 
-<script type="text/javascript">
-
-window.onload = function() {
-	$('#loading').hide();
-}
-
-</script>
-
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header" style="margin: 15px 0 00px;"><@spring.message "dashboard.title.home"/></h1>

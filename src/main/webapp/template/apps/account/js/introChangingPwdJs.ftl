@@ -1,7 +1,4 @@
 <script type="text/javascript">
-window.onload = function() {
-	$('#loading').hide();
-}
 
 function validateConfirmePassword() {
 	var currentPwdId = document.getElementById("currentPwdId");

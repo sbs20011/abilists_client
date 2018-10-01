@@ -1,3 +1,11 @@
+/* Input Text size */
+.error-text-max {
+	color: red;
+}
+.text-count-wrapper {
+	text-align: left;
+}
+
 input.readonly {
   border-width: 0px;
   background-color: rgba(255, 255, 255, 0.0);;

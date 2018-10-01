@@ -1,10 +1,5 @@
 <script type="text/javascript">
 
-// Hide the new form
-window.onload = function() {
-	$('#loading').hide();
-}
-
 function removeSkills(skillsName) {
 	// Call the modal for deleting
 	$(window).ready(function(){
@@ -538,5 +533,12 @@ function sbtDeleteForm(dltForm) {
 	dltForm.action = "${configBean.baseURL?if_exists}/profile/dltUserSkills";
 	dltForm.submit();
 }
+
+/* Input Text size */
+var errorText = "<@spring.message "input.text.size.max"/>";
+$('textarea').textcounter({
+	max:700, counterText:"Total Count: %d/700", maximumErrorText:errorText,
+	stopInputAtMaximum:false, countSpaces:true, twoCharCarriageReturn:false, countExtendedCharacters:true
+});
 
 </script>

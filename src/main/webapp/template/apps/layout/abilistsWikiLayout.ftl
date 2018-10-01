@@ -9,9 +9,9 @@
 
 			<#nested/>
 
-			<#include "/apps/common/abilistsFooder.ftl"/>
 			<#include "/apps/common/footer.ftl">
 	    </div><!-- /container -->
+		<#include "/apps/common/abilistsFooder.ftl"/>
 	</body>
 </html>
 </#macro>

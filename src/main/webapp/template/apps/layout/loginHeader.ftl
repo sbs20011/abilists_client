@@ -14,6 +14,6 @@
 	<#include "/apps/common/headerCss.ftl"/>
 
     <link href="${configBean.contextPath?if_exists}/static/apps/css/signin.css" rel="stylesheet">
-    <link href="${configBean.contextPath?if_exists}/static/apps/css/form.css" rel="stylesheet">
+    <link href="${configBean.contextPath?if_exists}/static/apps/css/form.css?201810012011" rel="stylesheet">
 
 	</head>

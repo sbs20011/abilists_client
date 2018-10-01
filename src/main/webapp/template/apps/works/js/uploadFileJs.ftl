@@ -22,7 +22,6 @@ function uploadFile() {
         	console.log("before send");
         },
         success: function(data, textStatus, request) {
-        	console.log(">>>>>>>> 3 ");
         	// $('#myImg').attr('src', croppng);
         	// $('#mySmallImg').attr('src', croppng);
         },
@@ -70,10 +69,8 @@ fileId.addEventListener('change', function(e) {
     });
     xhr.addEventListener('load', function(e) {
     	var resJson = JSON.parse(this.responseText);
-        console.log('ufNo >>>> ' + resJson.ufNo);
         console.log('ufNum(upNo) >>>> ' + upNoInput.value);
-        console.log('file.name >>>> ' + file.name);
-        
+
         // Clear
         file.value='';
 

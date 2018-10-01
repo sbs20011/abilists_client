@@ -25,12 +25,6 @@
   </div><!-- #col-md-12 -->
 </div><!-- #row -->
 
-<script type="text/javascript">
-	window.onload = function() {
-		$('#loading').hide();
-	}
-</script>
-
 <#include "/apps/common/abilistsAdminLoadJs.ftl"/>
 
 </@layout.myLayout>

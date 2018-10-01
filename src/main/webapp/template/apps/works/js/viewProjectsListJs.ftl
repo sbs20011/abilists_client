@@ -1,9 +1,5 @@
 <script type="text/javascript">
 
-window.onload = function() {
-	$('#loading').hide();
-}
-
 var table = document.getElementById("userProjectsId");
 var tr = table.getElementsByTagName("tr");
 

@@ -2,13 +2,6 @@
 <#import "/spring.ftl" as spring/>
 <@layout.myLayout>
 
-<script type="text/javascript">
-
-window.onload = function() {
-	$('#loading').hide();
-}
-</script>
-
 <div class="item-box">
 	<div class="row">
 		<div class="col-md-6">

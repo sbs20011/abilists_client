@@ -7,10 +7,6 @@ $(document).ready(function(){
     });
 });
 
-window.onload = function() {
-	$('#loading').hide();
-}
-
 /* Load select data from the server.*/
 var skillsList = {};
 <#if commonBean??>

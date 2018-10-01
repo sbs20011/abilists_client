@@ -7,10 +7,6 @@ $(document).ready(function(){
     });
 });
 
-window.onload = function() {
-	$('#loading').hide();
-}
-
 function removeMTechDetail(obj) {
 	document.updateForm.action = "${configBean.baseURL?if_exists}/admin/master/deletedMTechDetail";
 	document.updateForm.submit();

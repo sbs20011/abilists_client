@@ -65,8 +65,6 @@ function confirmData(tableName,rowCnt) {
 	  var cell31, cell32, cell33, cell34;
 	  var selectLevelElement;
 
-	  console.log("cnt >>> " + cnt);
-
 	  for(i=1; i <= cnt; i++) {
 		  row1 = table1.rows[i];
 		  row3 = table3.insertRow(i);

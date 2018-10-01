@@ -1,13 +1,6 @@
 
 <script type="text/javascript"> 
 
-window.onload = function() {
-	//var memo = document.getElementsByName("userMemo");
-	//selectUserMemo(memo[5], '8')
-
-	$('#loading').hide();
-}
-
 function removeMemo() {
 	// Call the modal for deleting
 	$(window).ready(function(){

@@ -7,11 +7,6 @@ $(document).ready(function(){
     });
 });
 
-window.onload = function() {
-	$('#loading').hide();
-}
-
-
 function validateForm(tableName) {
 
 	var blnPopover = true;

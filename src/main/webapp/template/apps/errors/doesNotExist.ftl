@@ -22,12 +22,5 @@
 </div>
 
 <#include "/apps/common/abilistsLoadJs.ftl"/>
-<script type="text/javascript">
-
-window.onload = function() {
-	$('#loading').hide();
-}
-
-</script>
 
 </@layout.myLayout>

@@ -9,6 +9,4 @@
     <script src="${configBean.contextPath?if_exists}/static/apps/lib/chart-2.7/Chart.min.js?2017092301"></script>
     <!-- <script src="${configBean.contextPath?if_exists}/static/apps/lib/chart-2.7/ChartPlugin.js?2017092301"></script> -->
     <script src="${configBean.contextPath?if_exists}/static/apps/lib/utils.js?2017092302"></script>
-
-	<!-- Abilists -->
-	<script src="${configBean.contextPath?if_exists}/static/apps/js/abilists.js??201706212186"></script>
+    <script src="${configBean.contextPath?if_exists}/static/apps/lib/jquery/plugin/textcounter.min.js?2017092302"></script>
