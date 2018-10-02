@@ -39,7 +39,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="master/sltMTechList">
+                <a href="${configBean.baseURL?if_exists}/admin/master/sltMTechList">
                     <div class="panel-footer">
                         <span class="pull-left">View Details</span>
                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="master/sltMIndustryList">
+                <a href="${configBean.baseURL?if_exists}/admin/master/sltMIndustryList">
                     <div class="panel-footer">
                         <span class="pull-left">View Details</span>
                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -85,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="master/sltMRoleList">
+                <a href="${configBean.baseURL?if_exists}/admin/master/sltMRoleList">
                     <div class="panel-footer">
                         <span class="pull-left">View Details</span>
                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="noti/sltNotiList">
+                <a href="${configBean.baseURL?if_exists}/admin/noti/sltNotiList">
                     <div class="panel-footer">
                         <span class="pull-left">View Details</span>
                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>

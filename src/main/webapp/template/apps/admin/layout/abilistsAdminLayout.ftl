@@ -11,6 +11,7 @@
 
 		<#include "abilistsAdminFooter.ftl">
 	    </div><!-- /#page-wrapper -->
+	    <#include "/apps/common/headerJs.ftl"/>
 		<#include "/apps/common/abilistsFooder.ftl"/>
 	  </body>
 </html>
