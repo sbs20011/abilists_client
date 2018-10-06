@@ -1,1 +1,0 @@
-		<li><a href="${configBean.baseURL?if_exists}/login/"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> <@spring.message "login.menu.signin"/>(Demo) <span class="sr-only">(current)</span></a></li>
