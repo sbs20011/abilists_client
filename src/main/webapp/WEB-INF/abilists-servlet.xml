@@ -25,7 +25,7 @@
 		<property name="templateLoaderPaths" value="classpath:template/, /templates/" />
 		<!-- Hot detection of template changes should be true.-->
 		<!-- If files on resource should be read, preferFileSystemAccess should be false.-->
-		<property name="preferFileSystemAccess" value="false" />
+		<property name="preferFileSystemAccess" value="true" />
 
 	    <property name="freemarkerVariables">
 	        <map>
