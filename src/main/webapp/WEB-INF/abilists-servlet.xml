@@ -58,12 +58,6 @@
 		<bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
 			<property name="paramName" value="lang" />
 		</bean>
-		<!-- This is only for Home -->
-		<mvc:interceptor>
- 			<mvc:mapping path="/home"/>
-			<mvc:mapping path="/home/**"/>
-			<bean class="com.abilists.home.interceptor.HomeInterceptor" />
-		</mvc:interceptor>
 		<mvc:interceptor>
  			<mvc:mapping path="/admin"/>
 			<mvc:mapping path="/admin/**"/>
