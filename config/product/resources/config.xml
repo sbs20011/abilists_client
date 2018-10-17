@@ -62,41 +62,41 @@
 	<template>
 		<users>
 			<from>
-				<path>template/apps/abilists/temp</path>
+				<path>templates/temp/abilists</path>
 				<filename>users.ftlh</filename>
 			</from>
 			<to>
-				<path>template/apps/abilists/temp/</path>
+				<path>templates/temp/abilists/</path>
 				<filename>users.ftlo</filename>
 			</to>		
 		</users>
 		<projects>
 			<from>
-				<path>template/apps/abilists/temp</path>
+				<path>templates/temp/abilists</path>
 				<filename>projects.ftlh</filename>
 			</from>
 			<to>
-				<path>template/apps/abilists/temp/</path>
+				<path>templates/temp/abilists/</path>
 				<filename>projects.ftlo</filename>
 			</to>
 		</projects>
 		<reports>
 			<from>
-				<path>template/apps/abilists/temp</path>
+				<path>templates/temp/abilists/temp</path>
 				<filename>reports.ftlh</filename>
 			</from>
 			<to>
-				<path>template/apps/abilists/temp/</path>
+				<path>templates/temp/abilists/temp/</path>
 				<filename>reports.ftlo</filename>
 			</to>
 		</reports>
 		<noti>
 			<from>
-				<path>template/apps/abilists/temp</path>
+				<path>templates/temp/abilists</path>
 				<filename>noti.ftlh</filename>
 			</from>
 			<to>
-				<path>template/apps/abilists/temp/</path>
+				<path>templates/temp/abilists/</path>
 				<filename>noti.ftlo</filename>
 			</to>
 		</noti>
