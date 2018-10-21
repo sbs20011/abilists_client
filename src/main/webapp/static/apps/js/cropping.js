@@ -11,7 +11,8 @@
   }
 })(function ($) {
 
-  'use strict';
+// Comment for IE10
+//  'use strict';
 
   var console = window.console || { log: function () {} };
 

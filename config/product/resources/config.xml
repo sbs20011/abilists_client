@@ -112,22 +112,22 @@
 		<id>heyguybug@gmail.com</id>
 		<pwd></pwd>
 		<signup>
-			<path>template/apps/email</path>
+			<path>WEB-INF/classes/template/apps/email</path>
 			<filename>signup.ftlh</filename>
-			<outfile>template/apps/email/signup.ftl</outfile>
+			<outfile>WEB-INF/classes/template/apps/email/signup.ftl</outfile>
 			<url>http://www.abilists.com/login/confirmSingup</url>
 		</signup>
 		<resetpwd>
-			<path>template/apps/email</path>
+			<path>WEB-INF/classes/template/apps/email</path>
 			<filename>resetpwd.ftlh</filename>
-			<outfile>template/apps/email/resetpwd.ftl</outfile>
+			<outfile>WEB-INF/classes/template/apps/email/resetpwd.ftl</outfile>
 			<url>http://www.abilists.com/login/resetPwd</url>
 		</resetpwd>
 		<request>
 			<title>This is a request from guest.</title>
-			<path>template/apps/email</path>
+			<path>WEB-INF/classes/template/apps/email</path>
 			<filename>request.ftlh</filename>
-			<outfile>template/apps/email/request.ftl</outfile>
+			<outfile>WEB-INF/classes/template/apps/email/request.ftl</outfile>
 		</request>
 	</email>
 

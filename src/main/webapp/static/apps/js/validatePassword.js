@@ -76,7 +76,7 @@ function validateConfirmePassword() {
 		password2Id.style.border = "1px solid red";
         return false;
 	} else {
-		passwordId.style.border = "";
+		password2Id.style.border = "";
 	}
 
 	if(passwordId.value != password2Id.value){
