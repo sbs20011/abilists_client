@@ -11,6 +11,28 @@ APP_PATH_FROM_WAR="/home/joonk/git/abilists_client/build/libs/ROOT.war"
 USER_ID=joonk
 
 case "$1" in
+build)
+    printf "Starting base_bean."
+    cd ~/git/base_bean
+    gradle buildJar
+    
+    printf "Starting base_core."
+    cd ~/git/base_core
+    gradle buildJar
+    
+    printf "Starting abilists_bean."
+    cd ~/git/abilists_bean
+    gradle buildJar
+
+    printf "Starting abilists_core."
+    cd ~/git/abilists_core
+    gradle buildJar
+
+    printf "Starting abilists_apps."
+    cd ~/git/abilists_apps
+    gradle buildJar
+;;
+
 start)
 
 	# Check the process count

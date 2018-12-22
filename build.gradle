@@ -10,8 +10,8 @@ apply plugin: 'jacoco'
 apply plugin: 'project-report'
 // apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
 
-sourceCompatibility = '1.7'
-targetCompatibility = '1.7'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
 
 //./gradlew sonarqube
 //./gradlew sonarqube -x test
@@ -42,7 +42,7 @@ buildscript {
 	}
 }
 
-version = '0.1.1'
+version = '1.0.0'
 
 jar {
 	manifest {
