@@ -82,6 +82,6 @@ stop)
 ;;
 
 *)
-	echo "Usage: $0 {start|stop}"
+	echo "Usage: $0 {build|start|stop}"
 	exit 1
 esac

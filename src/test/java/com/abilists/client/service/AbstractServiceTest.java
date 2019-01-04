@@ -9,7 +9,8 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 @WebAppConfiguration("config/develop")
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"file:src/main/webapp/WEB-INF/applicationContext.xml"})
+//@ContextConfiguration(locations = {"file:src/main/webapp/WEB-INF/applicationContext.xml"})
+@ContextConfiguration(locations = {"classpath:applicationContext.xml"})
 public abstract class AbstractServiceTest {
 
 	@BeforeClass
