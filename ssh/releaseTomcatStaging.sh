@@ -31,6 +31,10 @@ build)
     printf "Starting abilists_apps."
     cd ~/git/abilists_apps
     gradle buildJar
+    
+    printf "Starting abilists_client."
+    cd ~/git/abilists_client
+    gradle deployWar
 ;;
 
 start)

@@ -21,7 +21,7 @@ ul.title-right-users-posts {
 /* Start - fix in scroll */
 .memo-fix {
   padding: 5px 5px 5px 5px;
-/*  width: 145px; */
+  border: 0.5px solid #dadada;
 }
 .users-fix {
   margin-bottom: 1px;
@@ -30,6 +30,7 @@ ul.title-right-users-posts {
 
 .fix-scroll {
   position: fixed;
+  border: 0.5px solid #dadada;
   top: 70px;
 }
 /* End - fix in scroll */
@@ -40,12 +41,13 @@ ul.memo li a:hover {
 
 /* Post on mouseover */
 div.posts:hover {
-	background:#fafcff;
+	background:#f2f6ff;
 }
 
 /* Main posts */
 div.main-posts {
 	margin-bottom: 7px;
+	border: 0.5px solid #dadada;
 }
 
 ul.body-posts {
@@ -83,7 +85,7 @@ div.posts-link {
 
 .show-more {
 	height: 100px;
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 .show-more-button {

@@ -1,0 +1,8 @@
+.breadcrumbs-right-before:before {
+    content: none !important;
+}
+
+.right-works {
+    background: #dc7272; 
+    color: #ffffff;
+}

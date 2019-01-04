@@ -1,8 +1,17 @@
-.right-symbol-button {
+.right-symbol-profile-button {
 	cursor: pointer;
 	float: right;
 	font-size: 20px;
 	margin-right: 10px;
+	color:#d4ebff;
+}
+
+.right-symbol-works-button {
+	cursor: pointer;
+	float: right;
+	font-size: 20px;
+	margin-right: 10px;
+	color:#ffe8e8;
 }
 
 .left-symbol-button {
@@ -10,4 +19,8 @@
 	float: left;
 	font-size: 20px;
 	margin-right: 5px;
+}
+
+.menu-works-button {
+	color:#b73333;
 }
