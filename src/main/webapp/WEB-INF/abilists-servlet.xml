@@ -26,7 +26,6 @@
 		<!-- Hot detection of template changes should be true.-->
 		<!-- If files on resource should be read, preferFileSystemAccess should be false.-->
 		<property name="preferFileSystemAccess" value="true" />
-
 	    <property name="freemarkerVariables">
 	        <map>
 	            <entry key="xml_escape" value-ref="fmXmlEscape"/>
@@ -34,6 +33,7 @@
 	        </map>
 	    </property>
 	</bean>
+
 	<bean id="fmXmlEscape" class="freemarker.template.utility.XmlEscape"/>
 	<bean id="fmHtmlEscape" class="freemarker.template.utility.HtmlEscape"/>
 

@@ -14,6 +14,7 @@ case "$1" in
 build)
     printf "Starting base_bean."
     cd ~/git/base_bean
+    gradle clean
     gradle buildJar
     
     printf "Starting base_core."
@@ -34,6 +35,7 @@ build)
     
     printf "Starting abilists_client."
     cd ~/git/abilists_client
+    gradle clean
     gradle deployWar
 ;;
 

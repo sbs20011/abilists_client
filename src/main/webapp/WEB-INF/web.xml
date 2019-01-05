@@ -59,6 +59,11 @@
 
 	<listener>
 		<listener-class>
+			com.abilists.listener.InitServletContextListener
+		</listener-class>
+	</listener>
+	<listener>
+		<listener-class>
 			org.springframework.web.context.ContextLoaderListener
 		</listener-class>
 	</listener>
@@ -77,15 +82,15 @@
 
 	<error-page>
 		<error-code>404</error-code>
-		<location>/static/error/404error.html</location>
+		<location>/static/apps/error/404error.html</location>
 	</error-page>
 	<error-page>
 		<error-code>500</error-code>
-		<location>/static/error/500error.html</location>
+		<location>/static/apps/error/500error.html</location>
 	</error-page>
 	<error-page>
 	<error-code>503</error-code>
-		<location>/static/error/503error.html</location>
+		<location>/static/apps/error/503error.html</location>
 	</error-page>
 
 	<welcome-file-list>
