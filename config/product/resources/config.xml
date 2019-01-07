@@ -82,11 +82,11 @@
 		</projects>
 		<reports>
 			<from>
-				<path>templates/temp/abilists/temp</path>
+				<path>templates/temp/abilists</path>
 				<filename>reports.ftlh</filename>
 			</from>
 			<to>
-				<path>templates/temp/abilists/temp/</path>
+				<path>templates/temp/abilists/</path>
 				<filename>reports.ftlo</filename>
 			</to>
 		</reports>

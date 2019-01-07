@@ -36,7 +36,7 @@ build)
     printf "Starting abilists_client."
     cd ~/git/abilists_client
     gradle clean
-    gradle deployWar
+    gradle -Pprofile=product deployWar
 ;;
 
 start)
@@ -53,7 +53,7 @@ start)
 
 	# Build with gradle
 	cd ~/git/abilists_client
-	gradle -Pprofile=staging deployWar
+	gradle -Pprofile=product deployWar
 	echo "Finished the builds."
   
   if [ -d "${APP_PATH_ROOT}" ]; then
