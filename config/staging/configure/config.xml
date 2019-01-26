@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+
+	<slavedb>
+		<cnt>2</cnt>
+	</slavedb>
+
+	<paging>
+		<row>
+			<ten>10</ten>
+			<twenty>20</twenty>
+			<thirty>30</thirty>
+		</row>
+		<limit>
+			<total>2000</total>
+		</limit>
+	</paging>
+
+	<tech>
+		<count>2</count>
+		<title>
+			<skill>tech</skill>
+			<skill>lang</skill>
+			<skill>certi</skill>
+		</title>
+		<color>
+			<bg>rgba(255\,99\,132\,0.7)</bg>
+			<bg>rgba(54\,162\,235\,0.7)</bg>
+			<bg>rgba(255\,206\,86\,0.7)</bg>
+		</color>
+	</tech>
+
+	<usertech>
+		<path>tech</path>
+		<path>skills</path>
+		<path>lang</path>
+		<path>certi</path>
+	</usertech>
+
+	<default>
+		<img>
+			<user>/static/apps/img/defaultUser.png</user>
+			<bg>/static/apps/img/defaultBg01.png</bg>
+		</img>
+		<abilists>
+			<five>5</five>
+			<three>3</three>
+		</abilists>
+	</default>
+
+	<upload>
+		<path>
+			<img>
+				<avatar>/img/avatar/</avatar>
+				<bg>/img/bg/</bg>
+				<temp>/img/temp/</temp>
+			</img>
+			<files>/files/</files>
+		</path>
+	</upload>
+
+	<template>
+		<users>
+			<from>
+				<path>templates/temp/abilists</path>
+				<filename>users.ftlh</filename>
+			</from>
+			<to>
+				<path>templates/temp/abilists/</path>
+				<filename>users.ftlo</filename>
+			</to>		
+		</users>
+		<projects>
+			<from>
+				<path>templates/temp/abilists</path>
+				<filename>projects.ftlh</filename>
+			</from>
+			<to>
+				<path>templates/temp/abilists/</path>
+				<filename>projects.ftlo</filename>
+			</to>
+		</projects>
+		<reports>
+			<from>
+				<path>templates/temp/abilists</path>
+				<filename>reports.ftlh</filename>
+			</from>
+			<to>
+				<path>templates/temp/abilists/</path>
+				<filename>reports.ftlo</filename>
+			</to>
+		</reports>
+		<noti>
+			<from>
+				<path>templates/temp/abilists</path>
+				<filename>noti.ftlh</filename>
+			</from>
+			<to>
+				<path>templates/temp/abilists/</path>
+				<filename>noti.ftlo</filename>
+			</to>
+		</noti>
+	</template>
+
+	<email>
+		<from>
+			<address>heyguybug@gmail.com</address>
+		</from>
+		<to>
+			<address>abilists@gmail.com</address>
+		</to>
+		<id>heyguybug@gmail.com</id>
+		<pwd></pwd>
+		<signup>
+			<path>WEB-INF/classes/template/apps/email</path>
+			<filename>signup.ftlh</filename>
+			<outfile>WEB-INF/classes/template/apps/email/signup.ftl</outfile>
+			<url>http://www.abilists.com/login/confirmSingup</url>
+		</signup>
+		<resetpwd>
+			<path>WEB-INF/classes/template/apps/email</path>
+			<filename>resetpwd.ftlh</filename>
+			<outfile>WEB-INF/classes/template/apps/email/resetpwd.ftl</outfile>
+			<url>http://www.abilists.com/login/resetPwd</url>
+		</resetpwd>
+		<request>
+			<title>This is a request from guest.</title>
+			<path>WEB-INF/classes/template/apps/email</path>
+			<filename>request.ftlh</filename>
+			<outfile>WEB-INF/classes/template/apps/email/request.ftl</outfile>
+		</request>
+	</email>
+
+	<login>
+		<userid>
+			<length>
+				<min>3</min>
+			</length>
+		</userid>
+		<seedkey>
+			<path>WEB-INF/classes/application.properties</path>
+			<filename>application.properties</filename>
+		</seedkey>
+	</login>
+
+	<system>
+		<environment>Staging</environment>
+	</system>
+
+</config>
