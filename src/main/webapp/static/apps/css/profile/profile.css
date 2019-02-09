@@ -6,3 +6,24 @@
     background: #dc7272; 
     color: #ffffff;
 }
+
+ul.center {
+	display: inline-block;
+	list-style: none;
+	overflow: hidden; 
+	width:100%; 
+	padding-left:0px;
+	margin: 0px;
+}
+
+ul li.overview {
+	float:left;
+	width: 48.5%;
+	max-width:100%;
+	background: #fff none repeat scroll 0 0;
+	margin: 5px;
+}
+
+.pull-right {
+    float: right;
+}
