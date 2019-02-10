@@ -35,7 +35,7 @@ content: "ON";
 
 .slider:before {
 	position: absolute;
-	content: " ||||||||||||||||";
+	content: " |||||||||||||||||";
 	padding: 2px;
 	height: 26px;
 	width: 70px;

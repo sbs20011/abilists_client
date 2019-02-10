@@ -16,27 +16,6 @@
 		</limit>
 	</paging>
 
-	<tech>
-		<count>2</count>
-		<title>
-			<skill>tech</skill>
-			<skill>lang</skill>
-			<skill>certi</skill>
-		</title>
-		<color>
-			<bg>rgba(255\,99\,132\,0.7)</bg>
-			<bg>rgba(54\,162\,235\,0.7)</bg>
-			<bg>rgba(255\,206\,86\,0.7)</bg>
-		</color>
-	</tech>
-
-	<usertech>
-		<path>tech</path>
-		<path>skills</path>
-		<path>lang</path>
-		<path>certi</path>
-	</usertech>
-
 	<default>
 		<img>
 			<user>/static/apps/img/defaultUser.png</user>
@@ -58,6 +37,60 @@
 			<files>/files/</files>
 		</path>
 	</upload>
+
+	<files>
+		<file>
+			<ext>aac</ext>
+			<ext>ace</ext>
+			<ext>ai</ext>
+			<ext>aut</ext>
+			<ext>avi</ext>
+			<ext>bin</ext>
+			<ext>bmp</ext>
+			<ext>cad</ext>
+			<ext>cdr</ext>
+			<ext>css</ext>
+			<ext>db</ext>
+			<ext>dmg</ext>
+			<ext>doc</ext>
+			<ext>docx</ext>
+			<ext>dwf</ext>
+			<ext>dwg</ext>
+			<ext>eps</ext>
+			<ext>exe</ext>
+			<ext>flac</ext>
+			<ext>gif</ext>
+			<ext>hlp</ext>
+			<ext>htm</ext>
+			<ext>html</ext>
+			<ext>ini</ext>
+			<ext>iso</ext>
+			<ext>java</ext>
+			<ext>jpg</ext>
+			<ext>js</ext>
+			<ext>mkv</ext>
+			<ext>mov</ext>
+			<ext>mp3</ext>
+			<ext>mp4</ext>
+			<ext>pdf</ext>
+			<ext>php</ext>
+			<ext>png</ext>
+			<ext>ppt</ext>
+			<ext>ps</ext>
+			<ext>psd</ext>
+			<ext>rar</ext>
+			<ext>rss</ext>
+			<ext>rtf</ext>
+			<ext>svg</ext>
+			<ext>swf</ext>
+			<ext>sys</ext>
+			<ext>tiff</ext>
+			<ext>txt</ext>
+			<ext>xls</ext>
+			<ext>xlsx</ext>
+			<ext>zip</ext>
+		</file>
+	</files>
 
 	<template>
 		<users>
