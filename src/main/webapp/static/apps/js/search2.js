@@ -246,7 +246,7 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 		var dataValue;
                 		if(kind == "users") {
                 			var uiAuto = $( "<li>" ).attr( "data-value", item.userId );
-                			uiAuto.append('<img src="' + item.userImgData + '" height="50">');
+                			uiAuto.append('<img src="' + item.userImgAvatar + '" height="50">');
                 			if(optionItem.value == "userId") {
                     			uiAuto.append('<span>' + item.userId + '</span>');
                 			}
@@ -266,8 +266,10 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 				uiAuto.append('<span>' + item.userStatus + '</span>');
                 			}
                 		} else if(kind == "projects") {
+
                 			var uiAuto = $( "<li>" ).attr( "data-value", item.userId );
-                			uiAuto.append('<img src="' + item.userImgData + '" height="50">');
+
+                			uiAuto.append('<img src="' + item.userImgAvatar + '" height="50">');
                 			if(optionItem.value == "userId") {
                 				uiAuto.append('<span>' + item.userId + '</span>');
                 			}
@@ -290,7 +292,7 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 			}
                 		} else if(kind == "projectTech") {
                 			var uiAuto = $( "<li>" ).attr( "data-value", item.userId );
-                			uiAuto.append('<img src="' + item.userImgData + '" height="50">');
+                			uiAuto.append('<img src="' + item.userImgAvatar + '" height="50">');
                 			if(optionItem.value == "userId") {
                 				uiAuto.append('<span>' + item.userId + '</span>');
                 			}
@@ -327,7 +329,7 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 			}
                 		} else if(kind == "tasks") {
                 			var uiAuto = $( "<li>" ).attr( "data-value", item.userId );
-                			uiAuto.append('<img src="' + item.userImgData + '" height="50">');
+                			uiAuto.append('<img src="' + item.userImgAvatar + '" height="50">');
                 			if(optionItem.value == "userId") {
                 				uiAuto.append('<span>' + item.userId + '</span>');
                 			}
@@ -367,7 +369,7 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 			}
                 		} else if(kind == "reports") {
                 			var uiAuto = $( "<li>" ).attr( "data-value", item.userId );
-                			uiAuto.append('<img src="' + item.userImgData + '" height="50">');
+                			uiAuto.append('<img src="' + item.userImgAvatar + '" height="50">');
                 			if(optionItem.value == "userId") {
                 				uiAuto.append('<span>' + item.userId + '</span>');
                 			}
@@ -384,7 +386,7 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 			}
                 		} else if(kind == "memo") {
                 			var uiAuto = $( "<li>" ).attr( "data-value", item.userId );
-                			uiAuto.append('<img src="' + item.userImgData + '" height="50">');
+                			uiAuto.append('<img src="' + item.userImgAvatar + '" height="50">');
                 			if(optionItem.value == "userId") {
                 				uiAuto.append('<span>' + item.userId + '</span>');
                 			}

@@ -13,7 +13,7 @@
 
 	<!-- Application Properties -->
 	<context:property-placeholder 
-		location="classpath:default.properties,file:${user.home}/application.properties" local-override="true"/><!-- /home/user/application.properties -->
+		location="classpath:default.properties,file:${user.home}/.abilists/application.properties" local-override="true"/><!-- /home/user/.abilists/application.properties -->
 
 	<bean id="proConfig" class="org.apache.commons.configuration.PropertiesConfiguration" />
 
