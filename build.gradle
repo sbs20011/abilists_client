@@ -106,7 +106,7 @@ dependencies {
 	compile "io.utility:security:0.0.1"
 	compile "io.utility:letter:0.0.1"
 	compile "io.utility:image:0.0.1"
-	compile "io.utility:email:0.0.1"
+	compile "io.utility:email:0.0.2"
 	compile "io.paging:paging:" + pagingVersion
 	testCompile 'org.springframework:spring-test:' + springVersion
 	testCompile "junit:junit:4.12"

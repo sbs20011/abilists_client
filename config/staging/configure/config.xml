@@ -30,11 +30,11 @@
 	<upload>
 		<path>
 			<img>
-				<avatar>/.abilists/img/avatar/</avatar>
-				<bg>/.abilists/img/bg/</bg>
-				<temp>/.abilists/img/temp/</temp>
+				<avatar>/img/avatar/</avatar>
+				<bg>/img/bg/</bg>
+				<temp>/img/temp/</temp>
 			</img>
-			<files>/.abilists/files/</files>
+			<files>/files/</files>
 		</path>
 	</upload>
 
