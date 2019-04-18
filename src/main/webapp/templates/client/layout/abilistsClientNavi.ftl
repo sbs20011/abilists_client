@@ -23,7 +23,7 @@
 	              <ul class="dropdown-menu">
 	                <li <#if model??><#if model.navi??><#if model.navi == "host">class="active"</#if></#if></#if>><a href="${configBean.baseURL?if_exists}/host"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Client</a></li>
 	                <li role="separator" class="divider"></li>
-	                <li><a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Guide Development </a></li>
+	                <li><a href="http://www.abilists.com/home/help/helpDevelop" target="_blank"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Guide Development </a></li>
 	              </ul>
 	            </li>
           	

@@ -42,7 +42,7 @@ buildscript {
 	}
 }
 
-version = '0.2.0'
+version = '0.2.1'
 
 jar {
 	manifest {
@@ -101,13 +101,13 @@ dependencies {
 	}
 	compile 'com.h2database:h2:1.4.196'
 	compile 'eu.bitwalker:UserAgentUtils:1.21'
-	compile fileTree(dir: 'libs', include: '*.jar')
 	compile "io.utility:validate:0.0.5"
 	compile "io.utility:security:0.0.1"
 	compile "io.utility:letter:0.0.1"
 	compile "io.utility:image:0.0.1"
 	compile "io.utility:email:0.0.2"
 	compile "io.paging:paging:" + pagingVersion
+	compile fileTree(dir: 'libs', include: '*.jar')
 	testCompile 'org.springframework:spring-test:' + springVersion
 	testCompile "junit:junit:4.12"
 	testCompile 'javax.servlet:javax.servlet-api:4.0.1'

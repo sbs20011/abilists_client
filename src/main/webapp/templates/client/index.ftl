@@ -13,7 +13,12 @@ img.border-line {
 	border-width: 1px 1px 1px 1px;
 	border-color: #eeeeee;	
 }
-
+.download-title { 
+	position: absolute; 
+	top: 7%; 
+	left: 40%;; 
+	width: 50%; 
+}
 </style>
 
 	<div class="row" style="margin-top: 65px;">
@@ -25,7 +30,11 @@ img.border-line {
 		<div class="col-sm-10 left-col-cus">
 			<div class="item-box">
 				<a href="http://www.abilists.com/" target="_blank">
-					<img src="/static/apps/img/abilists/adBanner01.png"  width="100%" height="125px" alt="www.abilists.com">
+					<img style="border: 0.5px solid #dadada; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);" src="/static/apps/img/abilists/adBanner01.png?2019010101" width="100%" height="125px" alt="www.abilists.com">
+		    	    <div class="download-title" style="color: #4363a2;">
+						<h2>Platform for Experts</h2>
+						<p style="color: #5a5a5a;">Abilists is a talent management system that grasps the current technology and growth trends from an objective point of view.</p>
+					</div>
 				</a>
 			</div>
 		</div>

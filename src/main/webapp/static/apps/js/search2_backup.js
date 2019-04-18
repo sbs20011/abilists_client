@@ -105,20 +105,20 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 			if(kind == "users") {
                 				$inputSname.val( ui.item.userId );        			
                     		} else if(kind == "tech") {
-                    			if(optionItem.value == "mtSkill") {
-                    				$inputSname.val( ui.item.mtSkill );
+                    			if(optionItem.value == "msSkill") {
+                    				$inputSname.val( ui.item.msSkill );
                     			}
-                    			if(optionItem.value == "mtKind") {
-                    				$inputSname.val( ui.item.mtKind );
+                    			if(optionItem.value == "msKind") {
+                    				$inputSname.val( ui.item.msKind );
                     			}
-                    			if(optionItem.value == "mtName") {
-                    				$inputSname.val( ui.item.mtName );
+                    			if(optionItem.value == "msName") {
+                    				$inputSname.val( ui.item.msName );
                     			}
-                    			if(optionItem.value == "mtVersion") {
-                    				$inputSname.val( ui.item.mtVersion );
+                    			if(optionItem.value == "msVersion") {
+                    				$inputSname.val( ui.item.msVersion );
                     			}
-                    			if(optionItem.value == "mtExplain") {
-                    				$inputSname.val( ui.item.mtExplain );
+                    			if(optionItem.value == "msExplain") {
+                    				$inputSname.val( ui.item.msExplain );
                     			}
                     		} else if(kind == "projects") {
                     			if(optionItem.value == "userId") {
@@ -284,20 +284,20 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                     				$inputSname.val( ui.item.uptStatus );
                     			}
                     		} else if(kind == "tech") {
-                    			if(optionItem.value == "mtSkill") {
-                    				$inputSname.val( ui.item.mtSkill );
+                    			if(optionItem.value == "msSkill") {
+                    				$inputSname.val( ui.item.msSkill );
                     			}
-                    			if(optionItem.value == "mtKind") {
-                    				$inputSname.val( ui.item.mtKind );
+                    			if(optionItem.value == "msKind") {
+                    				$inputSname.val( ui.item.msKind );
                     			}
-                    			if(optionItem.value == "mtName") {
-                    				$inputSname.val( ui.item.mtName );
+                    			if(optionItem.value == "msName") {
+                    				$inputSname.val( ui.item.msName );
                     			}
-                    			if(optionItem.value == "mtVersion") {
-                    				$inputSname.val( ui.item.mtVersion );
+                    			if(optionItem.value == "msVersion") {
+                    				$inputSname.val( ui.item.msVersion );
                     			}
-                    			if(optionItem.value == "mtExplain") {
-                    				$inputSname.val( ui.item.mtExplain );
+                    			if(optionItem.value == "msExplain") {
+                    				$inputSname.val( ui.item.msExplain );
                     			}
                     		} else if(kind == "role") {
                     			if(optionItem.value == "mrName") {
@@ -418,21 +418,21 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 				uiAuto.append('<span>' + item.uptStatus + '</span>');
                 			}
                 		} else if(kind == "tech") {
-                			var uiAuto = $( "<li>" ).attr( "data-value", item.mtSkill );
-                			if(optionItem.value == "mtSkill") {
-                				uiAuto.append('<span>' + item.mtSkill + '</span>');
+                			var uiAuto = $( "<li>" ).attr( "data-value", item.msSkill );
+                			if(optionItem.value == "msSkill") {
+                				uiAuto.append('<span>' + item.msSkill + '</span>');
                 			}
-                			if(optionItem.value == "mtKind") {
-                				uiAuto.append('<span>' + item.mtKind + '</span>');
+                			if(optionItem.value == "msKind") {
+                				uiAuto.append('<span>' + item.msKind + '</span>');
                 			}
-                			if(optionItem.value == "mtName") {
-                				uiAuto.append('<span>' + item.mtName + '</span>');
+                			if(optionItem.value == "msName") {
+                				uiAuto.append('<span>' + item.msName + '</span>');
                 			}
-                			if(optionItem.value == "mtVersion") {
-                				uiAuto.append('<span>' + item.mtVersion + '</span>');
+                			if(optionItem.value == "msVersion") {
+                				uiAuto.append('<span>' + item.msVersion + '</span>');
                 			}
-                			if(optionItem.value == "mtExplain") {
-                				uiAuto.append('<span>' + item.mtExplain + '</span>');
+                			if(optionItem.value == "msExplain") {
+                				uiAuto.append('<span>' + item.msExplain + '</span>');
                 			}
                 		} else if(kind == "role") {
                 			var uiAuto = $( "<li>" ).attr( "data-value", item.mrName );

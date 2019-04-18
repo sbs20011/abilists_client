@@ -14,6 +14,40 @@ function isImageFile(file) {
     }
 }
 
+/**
+ * Check and Get byte length of string.
+ * 
+ * @param x
+ * @param showTagId
+ * @param limitByte
+ * @returns
+ */
+function checkByteLength(x, showTagId, limitByte) {
+	var showTag = document.getElementById(showTagId);
+	
+	strByteLength = getByteLength(x.value,3,1);
+	showTag.innerHTML = strByteLength;
+	
+	if(strByteLength >= limitByte) {
+		showTag.style.color= "red";
+	} else {
+		showTag.style.color= "#707070";
+	}
+}
+/*
+ * https://programmingsummaries.tistory.com/239
+ * https://gist.github.com/mathiasbynens/1010324
+ * 
+ * ex) getByteLength(x.value,3); 3 is byte.
+ * */
+function getByteLength(s,b,i,c){
+    for(b=i=0;c=s.charCodeAt(i++);b+=c>>11?3:c>>7?2:1);
+    return b;
+}
+function getByteLength(s){
+    return s.replace(/[\0-\x7f]|([0-\u07ff]|(.))/g,"$&$1$2").length;
+}
+
 function addLoadEvent(func){
 	var oldonload = window.onload;
 	if(typeof window.onload != 'function'){

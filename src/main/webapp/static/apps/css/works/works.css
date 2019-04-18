@@ -1,0 +1,11 @@
+label {
+    display: inline-block;
+    max-width: 100%;
+    font-weight:normal;
+}
+
+.string-size {
+	float: right;
+	margin: 0 0 0px;
+	padding-top: 7px;
+}

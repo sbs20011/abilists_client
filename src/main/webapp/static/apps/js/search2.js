@@ -36,6 +36,7 @@ function interverKeystroke(e, num, url, kind, ojb, optionId) {
 // 5. This
 // 6. Column name
 */
+var showStringSize = 30;
 function autoSrhItem(e, num, url, kind, ojb, optionId) {
 
 	if(!exceptionKeyByObj(e)) {
@@ -110,17 +111,8 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                     			if(optionItem.value == "userName") {
                     				$inputSname.val( ui.item.userName );
                     			}
-                    			if(optionItem.value == "userAuth") {
-                    				$inputSname.val( ui.item.userAuth );
-                    			}
-                    			if(optionItem.value == "userSex") {
-                    				$inputSname.val( ui.item.userSex );
-                    			}
                     			if(optionItem.value == "userEmail") {
                     				$inputSname.val( ui.item.userEmail );
-                    			}
-                    			if(optionItem.value == "userStatus") {
-                    				$inputSname.val( ui.item.userStatus );
                     			}
                     		} else if(kind == "projects") {
                     			if(optionItem.value == "userId") {
@@ -129,19 +121,10 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                     			if(optionItem.value == "upName") {
                     				$inputSname.val( ui.item.upName );
                     			}
-                    			if(optionItem.value == "upMembers") {
-                    				$inputSname.val( ui.item.upMembers );
-                    			}
                     			if(optionItem.value == "upExplain") {
                     				var str = ui.item.upExplain;
-                    				var res = str.substring(0, 20);
+                    				var res = str.substring(0, showStringSize);
                     				$inputSname.val( res );
-                    			}
-                    			if(optionItem.value == "upCodeRole") {
-                    				$inputSname.val( ui.item.upCodeRole );
-                    			}
-                    			if(optionItem.value == "upCodeIndustry") {
-                    				$inputSname.val( ui.item.upCodeIndustry );
                     			}
                     		} else if(kind == "projectTech") {
                     			if(optionItem.value == "userId") {
@@ -150,45 +133,43 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                     			if(optionItem.value == "uptKind") {
                     				$inputSname.val( ui.item.uptKind );
                     			}
-                    			if(optionItem.value == "uptLevel") {
-                    				$inputSname.val( ui.item.uptLevel );
-                    			}
                     			if(optionItem.value == "uptDetail") {
                     				var str = ui.item.uptDetail;
-                    				var res = str.substring(0, 20);
+                    				var res = str.substring(0, showStringSize);
                     				$inputSname.val( res );
-                    			}
-                    			if(optionItem.value == "uptStatus") {
-                    				$inputSname.val( ui.item.uptStatus );
-                    			}
-                    		} else if(kind == "tech") {
-                    			if(optionItem.value == "mtSkill") {
-                    				$inputSname.val( ui.item.mtSkill );
-                    			}
-                    			if(optionItem.value == "mtKind") {
-                    				$inputSname.val( ui.item.mtKind );
-                    			}
-                    			if(optionItem.value == "mtName") {
-                    				$inputSname.val( ui.item.mtName );
-                    			}
-                    			if(optionItem.value == "mtVersion") {
-                    				$inputSname.val( ui.item.mtVersion );
-                    			}
-                    			if(optionItem.value == "mtExplain") {
-                    				$inputSname.val( ui.item.mtExplain );
                     			}
                     		} else if(kind == "tasks") {
                     			if(optionItem.value == "userId") {
                         			$inputSname.val( ui.item.userId );
-                    			}
-                    			if(optionItem.value == "utKind") {
-                        			$inputSname.val( ui.item.utKind );
                     			}
                     			if(optionItem.value == "utProgress") {
                         			$inputSname.val( ui.item.utProgress );
                     			}
                     			if(optionItem.value == "utTitle") {
                     				$inputSname.val( ui.item.utTitle );
+                    			}
+                    			/*
+                    			if(optionItem.value == "utTask") {
+                    				var str = ui.item.utTask;
+                    				var res = str.substring(0, showStringSize);
+                    				$inputSname.val( res );
+                    			}
+                    			*/
+                    		} else if(kind == "tech") {
+                    			if(optionItem.value == "msSkill") {
+                    				$inputSname.val( ui.item.msSkill );
+                    			}
+                    			if(optionItem.value == "msKind") {
+                    				$inputSname.val( ui.item.msKind );
+                    			}
+                    			if(optionItem.value == "msName") {
+                    				$inputSname.val( ui.item.msName );
+                    			}
+                    			if(optionItem.value == "msVersion") {
+                    				$inputSname.val( ui.item.msVersion );
+                    			}
+                    			if(optionItem.value == "msExplain") {
+                    				$inputSname.val( ui.item.msExplain );
                     			}
                     		} else if(kind == "role") {
                     			if(optionItem.value == "mrName") {
@@ -223,20 +204,24 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                     			if(optionItem.value == "urWorkHour") {
                         			$inputSname.val( ui.item.urWorkHour );
                     			}
-                    			if(optionItem.value == "urReports") {
-                    				var str = ui.item.urReports;
-                    				var res = str.substring(0, 20);
+                    			/*
+                    			if(optionItem.value == "urReport") {
+                    				var str = ui.item.urReport;
+                    				var res = str.substring(0, showStringSize);
                     				$inputSname.val( res );
                     			}
+                    			*/
                     		} else if(kind == "memo") {
                     			if(optionItem.value == "userId") {
                         			$inputSname.val( ui.item.userId );
                     			}
+                    			/*
                     			if(optionItem.value == "umMemo") {
                     				var str = ui.item.umMemo;
-                    				var res = str.substring(0, 20);
+                    				var res = str.substring(0, showStringSize);
                     				$inputSname.val( res );
                     			}
+                    			*/
                     		} else {
                     			console.log("Error search in select");
                     		}
@@ -253,17 +238,8 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 			if(optionItem.value == "userName") {
                 				uiAuto.append('<span>' + item.userName + '</span>');
                 			}
-                			if(optionItem.value == "userAuth") {
-                				uiAuto.append('<span>' + item.userAuth + '</span>');
-                			}
-                			if(optionItem.value == "userSex") {
-                				uiAuto.append('<span>' + item.userSex + '</span>');
-                			}
                 			if(optionItem.value == "userEmail") {
                 				uiAuto.append('<span>' + item.userEmail + '</span>');
-                			}
-                			if(optionItem.value == "userStatus") {
-                				uiAuto.append('<span>' + item.userStatus + '</span>');
                 			}
                 		} else if(kind == "projects") {
 
@@ -276,19 +252,10 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 			if(optionItem.value == "upName") {
                 				uiAuto.append('<span>' + item.upName + '</span>');
                 			}
-                			if(optionItem.value == "upMembers") {
-                				uiAuto.append('<span>' + item.upMembers + '</span>');
-                			}
                 			if(optionItem.value == "upExplain") {
                 				var str = item.upExplain;
-                				var res = str.substring(0, 20);
+                				var res = str.substring(0, showStringSize);
                 				uiAuto.append('<span>' + res + '</span>');
-                			}
-                			if(optionItem.value == "upCodeRole") {
-                				uiAuto.append('<span>' + item.upCodeRole + '</span>');
-                			}
-                			if(optionItem.value == "upCodeIndustry") {
-                				uiAuto.append('<span>' + item.upCodeIndustry + '</span>');
                 			}
                 		} else if(kind == "projectTech") {
                 			var uiAuto = $( "<li>" ).attr( "data-value", item.userId );
@@ -299,33 +266,13 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 			if(optionItem.value == "uptKind") {
                 				uiAuto.append('<span>' + item.uptKind + '</span>');
                 			}
-                			if(optionItem.value == "uptLevel") {
-                				uiAuto.append('<span>' + item.uptLevel + '</span>');
-                			}
                 			if(optionItem.value == "uptDetail") {
                 				var str = item.uptDetail;
-                				var res = str.substring(0, 20);
+                				var res = str.substring(0, showStringSize);
                 				uiAuto.append('<span>' + res + '</span>');
                 			}
                 			if(optionItem.value == "uptStatus") {
                 				uiAuto.append('<span>' + item.uptStatus + '</span>');
-                			}
-                		} else if(kind == "tech") {
-                			var uiAuto = $( "<li>" ).attr( "data-value", item.mtSkill );
-                			if(optionItem.value == "mtSkill") {
-                				uiAuto.append('<span>' + item.mtSkill + '</span>');
-                			}
-                			if(optionItem.value == "mtKind") {
-                				uiAuto.append('<span>' + item.mtKind + '</span>');
-                			}
-                			if(optionItem.value == "mtName") {
-                				uiAuto.append('<span>' + item.mtName + '</span>');
-                			}
-                			if(optionItem.value == "mtVersion") {
-                				uiAuto.append('<span>' + item.mtVersion + '</span>');
-                			}
-                			if(optionItem.value == "mtExplain") {
-                				uiAuto.append('<span>' + item.mtExplain + '</span>');
                 			}
                 		} else if(kind == "tasks") {
                 			var uiAuto = $( "<li>" ).attr( "data-value", item.userId );
@@ -333,14 +280,33 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 			if(optionItem.value == "userId") {
                 				uiAuto.append('<span>' + item.userId + '</span>');
                 			}
-                			if(optionItem.value == "utKind") {
-                				uiAuto.append('<span>' + item.utKind + '</span>');
-                			}
                 			if(optionItem.value == "utProgress") {
                 				uiAuto.append('<span>' + item.utProgress + '</span>');
                 			}
                 			if(optionItem.value == "utTitle") {
                 				uiAuto.append('<span>' + item.utTitle + '</span>');
+                			}
+                			if(optionItem.value == "utTask") {
+                				var str = item.utTask;
+                				var res = str.substring(0, showStringSize);
+                				uiAuto.append('<span>' + res + '</span>');
+                			}
+                		} else if(kind == "tech") {
+                			var uiAuto = $( "<li>" ).attr( "data-value", item.msSkill );
+                			if(optionItem.value == "msSkill") {
+                				uiAuto.append('<span>' + item.msSkill + '</span>');
+                			}
+                			if(optionItem.value == "msKind") {
+                				uiAuto.append('<span>' + item.msKind + '</span>');
+                			}
+                			if(optionItem.value == "msName") {
+                				uiAuto.append('<span>' + item.msName + '</span>');
+                			}
+                			if(optionItem.value == "msVersion") {
+                				uiAuto.append('<span>' + item.msVersion + '</span>');
+                			}
+                			if(optionItem.value == "msExplain") {
+                				uiAuto.append('<span>' + item.msExplain + '</span>');
                 			}
                 		} else if(kind == "role") {
                 			var uiAuto = $( "<li>" ).attr( "data-value", item.mrName );
@@ -379,9 +345,9 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 			if(optionItem.value == "urWorkHour") {
                 				uiAuto.append('<span>' + item.urWorkHour + '</span>');
                 			}
-                			if(optionItem.value == "urReports") {
-                				var str = item.urReports;
-                				var res = str.substring(0, 20);
+                			if(optionItem.value == "urReport") {
+                				var str = item.urReport;
+                				var res = str.substring(0, showStringSize);
                 				uiAuto.append('<span>' + res + '</span>');
                 			}
                 		} else if(kind == "memo") {
@@ -392,7 +358,7 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 			}
                 			if(optionItem.value == "umMemo") {
                 				var str = item.umMemo;
-                				var res = str.substring(0, 20);
+                				var res = str.substring(0, showStringSize);
                 				uiAuto.append('<span>' + res + '</span>');
                 			}
                 		} else {

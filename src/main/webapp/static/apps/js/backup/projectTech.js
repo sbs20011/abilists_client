@@ -5,7 +5,7 @@ function changeSelect(form) {
 	// This is the first select.
 	var kindList = form.uptKind;
 	// This is the second select.
-	var mtNoList = form.mtNo;
+	var mtNoList = form.msNo;
 	var userSelected = kindList.options[kindList.selectedIndex].value;
 
 	// Delete the select's options
@@ -14,13 +14,13 @@ function changeSelect(form) {
 	}
 
 	// Get a option of the first select.
-	var mtechs = mtechList[userSelected];
+	var mtechs = mSkillsList[userSelected];
 	if (mtechs) {
 		var i;
 		var mtech = new Option('<@spring.message "tech.select.default.tech"/>', '0');
 		mtNoList.options.add(mtech);
 		for (i = 0; i < mtechs.length; i++) {
-			mtech = new Option(mtechs[i].mtName, mtechs[i].mtNo);
+			mtech = new Option(mtechs[i].msName, mtechs[i].msNo);
 			mtNoList.options.add(mtech);
 		}
 	}
@@ -32,21 +32,21 @@ function changeSelectInAjax(mTechDetailKeys) {
 	var userSelected = uptKindInput.options[uptKindInput.selectedIndex].value;
 
 	// Delete the select's options in Tech2
-	while (mtNoInput.options.length) {
-		mtNoInput.remove(0);
+	while (msNoInput.options.length) {
+		msNoInput.remove(0);
 	}
 
 	// Get a option of the first select.
-	var mtechs = mtechList[userSelected];
+	var mtechs = mSkillsList[userSelected];
 	if (mtechs) {
 		var i;
 		var mtech = new Option('<@spring.message "tech.select.default.tech"/>', '0');
-		mtNoInput.options.add(mtech);
+		msNoInput.options.add(mtech);
 		for (i = 0; i < mtechs.length; i++) {
-			mtech = new Option(mtechs[i].mtName, mtechs[i].mtNo);
-			mtNoInput.options.add(mtech);
+			mtech = new Option(mtechs[i].msName, mtechs[i].msNo);
+			msNoInput.options.add(mtech);
 		}
-		
+
 		// TODO
 		// Set data as the selected option.
 	}

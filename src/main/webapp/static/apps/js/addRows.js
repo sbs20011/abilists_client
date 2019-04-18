@@ -76,14 +76,14 @@ function confirmData(tableName,rowCnt) {
 		  cell34 = row3.insertCell(3);
 
 		  selectSkillHtml = row1.cells[0].getElementsByTagName("select")[0].value;
-		  // Be mtechList in the page
-		  mtechs = mtechList[selectSkillHtml];
+		  // Be mSkillsList in the page
+		  mtechs = mSkillsList[selectSkillHtml];
 
 		  selectKindHtml = row1.cells[1].getElementsByTagName("select")[0].value;
 		  var j;
 		  for (j = 0; j < mtechs.length; j++) {
-			  if(selectKindHtml == mtechs[j].mtNo) {
-				  selectKindHtml = mtechs[j].mtName;
+			  if(selectKindHtml == mtechs[j].msNo) {
+				  selectKindHtml = mtechs[j].msName;
 				  break;
 			  }
 		  }
