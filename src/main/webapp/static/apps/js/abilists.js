@@ -346,6 +346,17 @@ function clearStyle(nameId, tag) {
 	}
 }
 
+/* Tool tip functions */
+function showPopover(local, tagName) {
+	$jlocal = $(local);
+	$jlocal.popover('show');
+}
+
+function destroyPopover(event) {
+	$jevent = $(event);
+	$jevent.popover('destroy');
+}
+
 /*
 function overChangeColor(obj) {
 	obj.style.cursor = "pointer";
