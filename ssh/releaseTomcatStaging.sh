@@ -100,6 +100,6 @@ all)
 ;;
 
 *)
-	echo "Usage: $0 {build|start|stop}"
+	echo "Usage: $0 {all|build|start|stop}"
 	exit 1
 esac
