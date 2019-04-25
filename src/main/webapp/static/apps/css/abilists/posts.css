@@ -79,15 +79,3 @@ div.posts-link {
 	border-top: 1px solid #f3f3f3;
 }
 
-.show-more-out {
-	overflow: hidden;	
-}
-
-.show-more {
-	height: 100px;
-	overflow: hidden;
-}
-
-.show-more-button {
-	float: right;
-}

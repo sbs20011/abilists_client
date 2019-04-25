@@ -269,5 +269,16 @@ div.center {
 	max-height:100%;
 }
 
-/* Back ground image */
+/* Show more button */
+.show-more-out {
+	overflow: hidden;	
+}
 
+.show-more {
+	height: 100px;
+	overflow: hidden;
+}
+
+.show-more-button {
+	float: right;
+}

@@ -2,7 +2,7 @@ package com.abilists.client.service;
 
 import java.util.List;
 
-import com.abilists.bean.model.user.UsersModel;
+import com.abilists.bean.model.account.UsersModel;
 
 import base.bean.para.CommonPara;
 

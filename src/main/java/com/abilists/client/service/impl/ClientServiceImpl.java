@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.abilists.bean.model.user.UsersModel;
+import com.abilists.bean.model.account.UsersModel;
 import com.abilists.client.service.ClientService;
 import com.abilists.core.service.AbilistsAbstractService;
 

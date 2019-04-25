@@ -1,4 +1,20 @@
 
+/* Show more contents */
+function showMore(self, contentsId) {
+	self.style.display = 'none';
+
+	var showContentsId = document.getElementById(contentsId);
+	showContentsId.style.height = 'auto';
+
+	/*
+	var lineHeight = showContentsId.offsetHeight;
+	console.log("lineHeight >>> " + lineHeight);
+	if (lineHeight > 100) {
+		showContentsId.style.maxHeight = '100px';
+	}
+	*/
+}
+
 /* Validate */
 function isEmpty(str) {
     return (!str || 0 === str.length);
