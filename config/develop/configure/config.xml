@@ -136,32 +136,29 @@
 	</template>
 
 	<email>
+		<!-- Not used -->
 		<from>
 			<address>heyguybug@gmail.com</address>
 		</from>
 		<to>
 			<address>abilists@gmail.com</address>
 		</to>
+		<!-- Not used -->
 		<id>heyguybug@gmail.com</id>
+
 		<pwd></pwd>
 		<signup>
 			<path>/../resources/template/apps/email</path>
 			<filename>signup.ftlh</filename>
 			<outfile>/../resources/template/apps/email/signup.ftl</outfile>
-			<url>http://localhost:9001/login/confirmSingup</url>
+			<url>http://localhost:9003/login/confirmSingup</url>
 		</signup>
 		<resetpwd>
 			<path>/../resources/template/apps/email</path>
 			<filename>resetpwd.ftlh</filename>
 			<outfile>/../resources/template/apps/email/resetpwd.ftl</outfile>
-			<url>http://localhost:9001/login/resetPwd</url>
+			<url>http://localhost:9003/login/resetPwd</url>
 		</resetpwd>
-		<request>
-			<title>This is a request from guest.</title>
-			<path>/../resources/template/apps/email</path>
-			<filename>request.ftlh</filename>
-			<outfile>/../resources/template/apps/email/request.ftl</outfile>
-		</request>
 	</email>
 
 	<login>
