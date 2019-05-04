@@ -3,27 +3,27 @@ function validateSeedKey(passwd, showTxt) {
 	var pwdId = document.getElementById(showTxt);
 
 	if(passwd.value.length > 15) {
-		console.log("seedKey must contain at least 16 characters!");
+		// console.log("seedKey must contain at least 16 characters!");
 		intScore = (intScore+5)
     }
     re = /[0-9]/;
     if(re.test(passwd.value)) {
-    	console.log("seedKey must contain at least one number (0-9)!");
+    	// console.log("seedKey must contain at least one number (0-9)!");
     	intScore = (intScore+5)
     }
     re = /[a-z]/;
     if(re.test(passwd.value)) {
-    	console.log("seedKey must contain at least one lowercase letter (a-z)!");
+    	// console.log("seedKey must contain at least one lowercase letter (a-z)!");
     	intScore = (intScore+5)
     }
     re = /[A-Z]/;
     if(re.test(passwd.value)) {
-    	console.log("seedKey must contain at least one uppercase letter (A-Z)!");
+    	// console.log("seedKey must contain at least one uppercase letter (A-Z)!");
     	intScore = (intScore+5)
     }
     re = /[!,@,#,$,%,^,&,*,?,_,~]/;
     if(re.test(passwd.value)) {
-    	console.log("seedKey must contain at least one uppercase letter (!,@,#,$,%,^,&,*,?,_,~)!");
+    	// console.log("seedKey must contain at least one uppercase letter (!,@,#,$,%,^,&,*,?,_,~)!");
 		intScore = (intScore+2)
 	}
 	if(intScore < 6)
