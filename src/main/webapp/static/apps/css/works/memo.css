@@ -14,7 +14,8 @@ ul.memo li a{
   display:block;
   height:174px;
   width:174px;
-  padding:10px;
+  padding:5px;
+  padding-top:15px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   word-break:break-all;
@@ -26,10 +27,10 @@ ul.memo li a:hover {
 }
 
 ul.memo li{
+  position: relative;
   margin:10px;
   float:left;
 }
-
 
 /* Select color */
 ul.memo-bg-color {
