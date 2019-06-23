@@ -22,7 +22,7 @@
 	<!-- Set The template Path -->
 	<bean id="freemarkerConfig"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
-		<property name="templateLoaderPaths" value="classpath:template/, /templates/" />
+		<property name="templateLoaderPaths" value="classpath:template/, classpath:plugins/, /templates/" />
 		<!-- Hot detection of template changes should be true.-->
 		<!-- If files on resource should be read, preferFileSystemAccess should be false.-->
 		<property name="preferFileSystemAccess" value="true" />
