@@ -1,8 +1,6 @@
 
 .avatar-view {
   display: block;
-/*   margin: 5% auto 5%; */
-  width: 200px;
   border: 3px solid #fff;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0,0,0,.15);

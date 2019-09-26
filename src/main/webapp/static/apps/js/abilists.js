@@ -141,6 +141,7 @@ function requestbyAjax(curl, cdata) {
         dataType: "json",
         data: cdata,
         cache: false,
+        headers: {"X-SoftFran-Authorization" : "adkEadkPadendcodedData1334karakf"},
         async: false,
         beforeSend: function(xhr, settings) {
         	xhr.setRequestHeader("Accept", "application/json");
