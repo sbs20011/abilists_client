@@ -178,7 +178,7 @@
 			<url>https://github.com/minziappa/abilists_plugins/raw/master/plugins/</url>
 		</download>
 		<api>
-			<url>http://localhost:9001/api/plugins</url>
+			<url>http://dev.abilists.com:9001/api/plugins</url>
 		</api>
 	</plugins>
 
