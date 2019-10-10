@@ -28,10 +28,14 @@ build_fuc () {
     cd ~/git/abilists_core
     gradle buildJar
 
+    printf "Starting abilists_plugins."
+    cd ~/git/abilists_plugins
+    gradle buildJar
+
     printf "Starting abilists_apps."
     cd ~/git/abilists_apps
     gradle buildJar
-    
+
     printf "Starting abilists_client."
     cd ~/git/abilists_client
     gradle clean

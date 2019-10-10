@@ -43,6 +43,8 @@ public class ClientController extends HostController {
 		AbilistsModel abilistsModel = new AbilistsModel();
 		abilistsModel.setNavi("index");
 
+		logger.info(System.getProperty("java.class.path"));
+
 	   	model.addAttribute("model", abilistsModel);
 		return "client/index";
 	}
