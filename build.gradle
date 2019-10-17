@@ -121,7 +121,7 @@ dependencies {
 
 /* Multi-users environment */
 // gradle jettyRun -Pprofile=develop
-final String DEFAULT_PROFILE = 'develop'
+final String DEFAULT_PROFILE = 'staging'
 allprojects {
 	if (!project.hasProperty('profile') || !profile) {
 		ext.profile = DEFAULT_PROFILE

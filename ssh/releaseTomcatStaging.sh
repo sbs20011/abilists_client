@@ -39,7 +39,7 @@ build_fuc () {
     printf "Starting abilists_client."
     cd ~/git/abilists_client
     gradle clean
-    gradle -Pprofile=product deployWar
+    gradle -Pprofile=$2 deployWar
 }
 
 start_fuc () { 
@@ -55,11 +55,13 @@ start_fuc () {
 
 	# Build with gradle
 	cd ~/git/abilists_client
-	gradle -Pprofile=product deployWar
+	gradle -Pprofile=$2 deployWar
 	echo "Finished the builds."
   
 	if [ -d "${APP_PATH_ROOT}" ]; then
-		echo "If the path exists."
+		echo "Delete the root directory. ${APP_PATH_ROOT}"
+		echo "Delete ROOT.war file. ${APP_PATH_TO_WAR}"
+		
 		/bin/rm -rf ${APP_PATH_ROOT}
 		/bin/rm ${APP_PATH_TO_WAR}
 	fi
@@ -87,6 +89,7 @@ start)
 ;;
 
 stop)
+
     printf "%-50s" "Starting $NAME..."
 
     ${TOMCAT_PATH}${APP_NAME} stop
@@ -104,6 +107,6 @@ all)
 ;;
 
 *)
-	echo "Usage: $0 {all|build|start|stop}"
+	echo "Usage: $0 {all|build|start|stop} {develop|staging|product}"
 	exit 1
 esac
