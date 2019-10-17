@@ -173,7 +173,7 @@
 			<filename>application.properties</filename>
 		</seedkey>
 	</login>
-
+	
 	<plugins>
 		<download>
 			<url>https://github.com/minziappa/abilists_plugins/raw/master/plugins/</url>
