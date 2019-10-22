@@ -1,12 +1,3 @@
-.breadcrumbs-right-before:before {
-    content: none !important;
-}
-
-.right-works {
-    background: #dc7272; 
-    color: #ffffff;
-}
-
 ul.center {
 	display: inline-block;
 	list-style: none;
@@ -26,4 +17,12 @@ ul li.overview {
 
 .pull-right {
     float: right;
+}
+
+.breadcrumbs-right-before:before {
+    content: none !important;
+}
+
+.breadcrumbs-right-after:after {
+	border-left: 1em solid #dc7272 !important;
 }
