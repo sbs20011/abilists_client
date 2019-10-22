@@ -9,3 +9,11 @@ label {
 	margin: 0 0 0px;
 	padding-top: 7px;
 }
+
+.breadcrumbs-right-before:before {
+    content: none !important;
+}
+
+.breadcrumbs-right-after:after {
+	border-left: 1em solid #7295dc !important;
+}

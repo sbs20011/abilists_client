@@ -118,3 +118,10 @@
     font-size: 10.5px;
     padding: 0.1em 1em;
 }
+
+
+/* Switch button profile-works */
+.profile-works {
+	float:right !important;
+	margin-right: 20px !important;
+}
