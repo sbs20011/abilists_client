@@ -29,8 +29,8 @@
 	<import resource="classpath:spring/fileUpload.xml"/>
 	<import resource="classpath:spring/validate.xml"/>
 	<import resource="classpath:spring/utilities.xml"/>
-	<import resource="classpath:spring/service.xml"/>
 	<import resource="classpath:spring/plugins.xml"/>
+	<import resource="classpath:spring/service.xml"/>
 	<import resource="classpath:spring/quartz.xml"/>
 	<import resource="classpath:spring/async.xml"/>
 

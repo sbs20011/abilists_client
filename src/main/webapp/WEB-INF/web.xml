@@ -56,6 +56,11 @@
 			classpath:applicationContext.xml
 		</param-value>
 	</context-param>
+	<!-- H2db version parameters -->
+	<context-param>
+		<param-name>db2Version</param-name>
+		<param-value>v1.0</param-value>
+	</context-param>
 
 	<listener>
 		<listener-class>
