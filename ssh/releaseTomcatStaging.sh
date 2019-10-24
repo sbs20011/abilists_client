@@ -18,22 +18,27 @@ build_fuc () {
     
     printf "Starting base_core."
     cd ~/git/base_core
+    gradle clean
     gradle buildJar
     
     printf "Starting abilists_bean."
     cd ~/git/abilists_bean
+    gradle clean
     gradle buildJar
 
     printf "Starting abilists_core."
     cd ~/git/abilists_core
+    gradle clean
     gradle buildJar
 
     printf "Starting abilists_plugins."
     cd ~/git/abilists_plugins
+    gradle clean
     gradle buildJar
 
     printf "Starting abilists_apps."
     cd ~/git/abilists_apps
+    gradle clean
     gradle buildJar
 
     printf "Starting abilists_client."

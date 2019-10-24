@@ -8,8 +8,6 @@ import javax.servlet.http.HttpSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,17 +29,11 @@ public class ClientController extends HostController {
     @Autowired
     ServletContext servletContext;
 
-    @Autowired
-    private ApplicationContext appContext;
-
-	@Autowired
-	private ConfigurableApplicationContext configurableContext;
-
 	@Override
     @RequestMapping(value = {"/", "", "index"}, method=RequestMethod.GET)
 	public String index(HttpSession session, ModelMap model) throws Exception {
 		AbilistsModel abilistsModel = new AbilistsModel();
-		abilistsModel.setNavi("index");
+		abilistsModel.setNavi("plugins");
 
 		logger.info(System.getProperty("java.class.path"));
 
@@ -75,7 +67,7 @@ public class ClientController extends HostController {
 
 //    	StandardContext ctx = (StandardContext) tomcat.addContext("", null);
 //    	ctx.reload();
-    	
+
 //    	if (servletContext instanceof StandardContext) {
 //            logger.info("=========== StandardContext ==========");
 //            ((StandardContext) servletContext).reload();

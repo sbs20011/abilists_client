@@ -40,61 +40,61 @@ img.border-line {
 		</div>
 	</div>
 
-	<div class="row fw-row" style="background-color: white;">
+	<div class="row fw-row" style="background-color: white;padding: 30px;">
 		<div class="col-md-8">
 			<img class="border-line" src="static/client/img/client03.png?201808290841"  width="100%" alt="profile">
 		</div>
 		<div class="col-md-4 text-center">
-			<h3>You can add your menu and page, you also can develop your business page.</h3>
+			<h3><@spring.message "client.img.ad.text1"/></h3>
 		</div>
 	</div>
 
 	<div class="row fw-row" style="padding: 35px;">
 		<div class="col-md-12 text-center">
-			<h3>What Makes Our Abilists Service the Best Choice for You?</h3>
-			<h4>With Abilists, you get your great service what you want exactly. It doesn't matter how experienced you are. We support you prefer to have page built for you, Try to request to Abilists. With Abilists, you get the tool package, including Abilists basic service, reliable service qulities, top security, and the best way for your business.</h4>
+			<h3><@spring.message "client.middle.ad.title1"/></h3>
+			<h4><@spring.message "client.middle.ad.text1"/></h4>
 			<br/>
-			<h3><a href="http://www.abilists.com/home/request/">Make an enquire</a></h3>
+			<h3><a href="http://www.abilists.com/home/request/"><@spring.message "client.contact.us"/></a></h3>
 		</div>
 	</div>
 
-	<div class="row fw-row" style="background-color: white;">
+	<div class="row fw-row" style="background-color: white;white;padding: 30px;">
 		<div class="col-md-8">
 			<img class="border-line" src="static/client/img/client01.png?201808290841"  width="100%" alt="profile">
 		</div>
 		<div class="col-md-4">
-			<h3>You have your style <b>charts</b> or you can use the default charts.</h3>
+			<h3><@spring.message "client.img.ad.text2"/></h3>
 		</div>
 	</div>
 
 	<div class="row fw-row">
 		<div class="col-md-12  text-center">
-			<h3>Spechially Client Service</h3>
-			<h4>You’ll love how fast you can get your extra service based on Abilists service. Answer a few simple questions and Abilists will design a stunning page with our dedicated Support Team.</h4>
+			<h3><@spring.message "client.middle.ad.title2"/></h3>
+			<h4><@spring.message "client.middle.ad.text2"/></h4>
 			<br/>
-			<h3><a href="http://www.abilists.com/home/request/">Make an enquire</a></h3>
+			<h3><a href="http://www.abilists.com/home/request/"><@spring.message "client.contact.us"/></a></h3>
 		</div>
 	</div>
 
-	<div class="row fw-row" style="background-color: white;">
+	<div class="row fw-row" style="background-color: white;white;padding: 30px;">
 		<div class="col-md-8">
 			<img class="border-line" src="static/client/img/client02.png?201808290841"  width="100%" alt="profile">
 		</div>
 		<div class="col-md-4">
-			<h3>You have your special <b>desgin</b> or you can use the default design.</h3>
+			<h3><@spring.message "client.img.ad.text3"/></h3>
 		</div>
 	</div>
 
 	<div class="row fw-row">
 		<div class="col-md-12  text-center">
-			<h3>How to create your extra page</h3>
-			<h3>Don't hesitate, <a href="http://www.abilists.com/home/request/">Just make an enquire.</a></h3>
+			<h3><@spring.message "client.middle.ad.title3"/></h3>
+			<h3><@spring.message "client.middle.ad.text3"/></h3>
 		</div>
 	</div>
 
 	<!-- Placed at the end of the document so the pages load faster -->
     <script src="${configBean.contextPath?if_exists}/static/apps/lib/jquery/2.1.4/jquery.min.js"></script>
-    <script src="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.4.1/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
 
