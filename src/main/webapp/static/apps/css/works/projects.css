@@ -20,3 +20,14 @@ ul li.header {
 	display: table-cell;
 }
 
+/*
+ * file uploaded on a project
+ * Not used
+ */
+@media (min-width: 768px) {
+	.silhouette-img-size {
+		width: 32px;
+		height: 32px;
+	}
+
+}

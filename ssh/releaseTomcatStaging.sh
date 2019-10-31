@@ -41,10 +41,11 @@ build_fuc () {
     gradle clean
     gradle buildJar
 
-    printf "Starting abilists_client."
+    printf "Starting abilists_client. parameter count : $#, all parameter=$@, option=$1"
     cd ~/git/abilists_client
     gradle clean
-    gradle -Pprofile=$2 deployWar
+    gradle -Pprofile=$1 deployWar
+    
 }
 
 start_fuc () { 
@@ -60,7 +61,7 @@ start_fuc () {
 
 	# Build with gradle
 	cd ~/git/abilists_client
-	gradle -Pprofile=$2 deployWar
+	gradle -Pprofile=$1 deployWar
 	echo "Finished the builds."
   
 	if [ -d "${APP_PATH_ROOT}" ]; then
@@ -86,11 +87,11 @@ start_fuc () {
 
 case "$1" in
 build)
-    build_fuc
+    build_fuc $2
 ;;
 
 start)
-	start_fuc
+	start_fuc $2
 ;;
 
 stop)
