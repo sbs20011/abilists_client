@@ -93,7 +93,7 @@ img.border-line {
 	</div>
 
 	<!-- Placed at the end of the document so the pages load faster -->
-    <script src="${configBean.contextPath?if_exists}/static/apps/lib/jquery/2.1.4/jquery.min.js"></script>
+    <script src="${configBean.contextPath?if_exists}/static/apps/lib/jquery/3.4.1/jquery.min.js"></script>
     <script src="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.4.1/js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
