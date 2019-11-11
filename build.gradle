@@ -42,7 +42,7 @@ buildscript {
 	}
 }
 
-version = '0.3.0'
+version = '0.3.5'
 
 jar {
 	manifest {
@@ -109,10 +109,8 @@ dependencies {
 	compile "io.utility:email:0.0.3"
 	compile "io.paging:paging:" + pagingVersion
 	compile fileTree(dir: 'libs', include: '*.jar')
-
 	provided 'org.apache.tomcat:tomcat-servlet-api:8.5.42'
 	provided 'org.apache.tomcat:tomcat-catalina:8.5.42'
-
 	testCompile 'org.springframework:spring-test:' + springVersion
 	testCompile "junit:junit:4.12"
 	testCompile 'javax.servlet:javax.servlet-api:4.0.1'
