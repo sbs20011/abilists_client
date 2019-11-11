@@ -59,7 +59,7 @@
 	<!-- H2db version parameters -->
 	<context-param>
 		<param-name>db2Version</param-name>
-		<param-value>v1.0</param-value>
+		<param-value>v1.1</param-value>
 	</context-param>
 
 	<listener>
