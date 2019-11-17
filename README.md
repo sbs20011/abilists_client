@@ -1,4 +1,4 @@
-# Abilists for client
+# <a href="http://www.abilists.com" ><img src="https://github.com/minziappa/abilists_client/blob/master/src/main/webapp/static/apps/img/abilists/logo01.png" alt="Abilists"></a>.com
 
 By Joon Kim
 
@@ -41,9 +41,10 @@ Execute abilists with Jetty.
 $ gradle jettyRun
 ```
 
-
 ## Deploy
 Run this on your local system with tomcat.
 ```
 $ ssh/releaseTomcatStaging.sh
 ```
+## Browser support
+Abilists is only tested for Chrome browser.
