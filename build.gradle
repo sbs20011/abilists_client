@@ -42,7 +42,29 @@ buildscript {
 	}
 }
 
-version = '0.3.5'
+// gradle install -Pprofile=staging -Pmversion=0.3.5
+// gradle -Pprofile=product -Pmversion=0.3.5 deployWar
+final String DEFAULT_PROFILE = 'staging'
+final String DEFAULT_MVERSION = '0.3.5'
+allprojects {
+	if (!project.hasProperty('profile') || !profile) {
+		ext.profile = DEFAULT_PROFILE
+	}
+	sourceSets {
+		main {
+			resources {
+				srcDir "config/${profile}"
+			}
+		}
+	}
+	
+	if (!project.hasProperty('mversion') || !mversion) {
+		ext.mversion = DEFAULT_MVERSION
+	}
+}
+
+// Set master version
+version = mversion
 
 jar {
 	manifest {
@@ -115,22 +137,6 @@ dependencies {
 	testCompile "junit:junit:4.12"
 	testCompile 'javax.servlet:javax.servlet-api:4.0.1'
 	testCompile 'org.glassfish.web:el-impl:2.2' // For Junit
-}
-
-/* Multi-users environment */
-// gradle jettyRun -Pprofile=develop
-final String DEFAULT_PROFILE = 'staging'
-allprojects {
-	if (!project.hasProperty('profile') || !profile) {
-		ext.profile = DEFAULT_PROFILE
-	}
-	sourceSets {
-		main {
-			resources {
-				srcDir "config/${profile}"
-			}
-		}
-	}
 }
 
 // gradle jettyRun
