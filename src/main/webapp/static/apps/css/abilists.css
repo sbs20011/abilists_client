@@ -271,7 +271,8 @@ div.center {
 
 /* Show more button */
 .show-more-out {
-	overflow: hidden;	
+	overflow: hidden;
+	word-break: break-all;
 }
 
 .show-more {
