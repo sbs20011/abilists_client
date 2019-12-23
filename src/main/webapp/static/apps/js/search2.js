@@ -121,11 +121,6 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                     			if(optionItem.value == "upName") {
                     				$inputSname.val( ui.item.upName );
                     			}
-                    			if(optionItem.value == "upExplain") {
-                    				var str = ui.item.upExplain;
-                    				var res = str.substring(0, showStringSize);
-                    				$inputSname.val( res );
-                    			}
                     		} else if(kind == "projectTech") {
                     			if(optionItem.value == "userId") {
                     				$inputSname.val( ui.item.userId );
@@ -148,13 +143,6 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                     			if(optionItem.value == "utTitle") {
                     				$inputSname.val( ui.item.utTitle );
                     			}
-                    			/*
-                    			if(optionItem.value == "utTask") {
-                    				var str = ui.item.utTask;
-                    				var res = str.substring(0, showStringSize);
-                    				$inputSname.val( res );
-                    			}
-                    			*/
                     		} else if(kind == "tech") {
                     			if(optionItem.value == "msSkill") {
                     				$inputSname.val( ui.item.msSkill );
@@ -198,30 +186,10 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                     			if(optionItem.value == "userId") {
                         			$inputSname.val( ui.item.userId );
                     			}
-                    			if(optionItem.value == "urWorkDay") {
-                        			$inputSname.val( ui.item.urWorkDay );
-                    			}
-                    			if(optionItem.value == "urWorkHour") {
-                        			$inputSname.val( ui.item.urWorkHour );
-                    			}
-                    			/*
-                    			if(optionItem.value == "urReport") {
-                    				var str = ui.item.urReport;
-                    				var res = str.substring(0, showStringSize);
-                    				$inputSname.val( res );
-                    			}
-                    			*/
                     		} else if(kind == "memo") {
                     			if(optionItem.value == "userId") {
                         			$inputSname.val( ui.item.userId );
                     			}
-                    			/*
-                    			if(optionItem.value == "umMemo") {
-                    				var str = ui.item.umMemo;
-                    				var res = str.substring(0, showStringSize);
-                    				$inputSname.val( res );
-                    			}
-                    			*/
                     		} else {
                     			console.log("Error search in select");
                     		}
@@ -338,12 +306,6 @@ function autoSrhItem(e, num, url, kind, ojb, optionId) {
                 			uiAuto.append('<img src="' + item.userImgAvatar + '" height="50">');
                 			if(optionItem.value == "userId") {
                 				uiAuto.append('<span>' + item.userId + '</span>');
-                			}
-                			if(optionItem.value == "urWorkDay") {
-                				uiAuto.append('<span>' + item.urWorkDay + '</span>');
-                			}
-                			if(optionItem.value == "urWorkHour") {
-                				uiAuto.append('<span>' + item.urWorkHour + '</span>');
                 			}
                 			if(optionItem.value == "urReport") {
                 				var str = item.urReport;

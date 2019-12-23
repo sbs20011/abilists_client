@@ -42,10 +42,10 @@ buildscript {
 	}
 }
 
-// gradle install -Pprofile=staging -Pmversion=0.3.9
-// gradle -Pprofile=product -Pmversion=0.3.9 deployWar
+// gradle install -Pprofile=staging -Pmversion=0.5.0
+// gradle -Pprofile=product -Pmversion=0.5.0 deployWar
 final String DEFAULT_PROFILE = 'staging'
-final String DEFAULT_MVERSION = '0.4.1'
+final String DEFAULT_MVERSION = '0.5.0'
 allprojects {
 	if (!project.hasProperty('profile') || !profile) {
 		ext.profile = DEFAULT_PROFILE

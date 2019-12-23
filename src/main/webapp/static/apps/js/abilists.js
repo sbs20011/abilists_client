@@ -168,9 +168,10 @@ function requestbyAjax(curl, cdata) {
 }
 
 /*
- * Validate tags for 
+ * Validate input or select tags
+ * isZero if can check 0
  */
-function validateField(inputTag) {
+function validateField(inputTag, isZero) {
 
 	var isError = true;
 
@@ -181,8 +182,9 @@ function validateField(inputTag) {
 
 	for (i=0; i < inputTag.length; i++) {
 	    var x = inputTag[i].value;
-	    if (x==null || x=="" || x=="0") {
+	    if (x==null || x=="") {
 	    	if(isError) {
+	    		console.log("tag name in errors. name=" + inputTag[i].name);
 	    		inputTag[i].focus();
 	    		inputTag[i].scrollIntoView();
 	    	}
@@ -193,6 +195,15 @@ function validateField(inputTag) {
 	    } else {
 	    	inputTag[i].style.border = "";
 	    }
+
+	    if (isZero && x=="0") {
+    		console.log("0 is error. name=" + inputTag[i].name);
+    		inputTag[i].focus();
+    		inputTag[i].scrollIntoView();
+	    	inputTag[i].style.border = "1px solid red";
+	    	isError = false;
+	    }
+
 	}
 
 	return isError;
@@ -200,14 +211,16 @@ function validateField(inputTag) {
 
 /*
  * Validate a tag for single
+ * isZero if can check 0
  */
-function validateTag(inputTag) {
+function validateTag(inputTag, isZero) {
 
 	var isError = true;
     var x = inputTag[0].value;
 
-    if (x==null || x=="" || x=="0") {
+    if (x==null || x=="") {
     	if(isError) {
+    		console.log("tag name in errors. name=" + inputTag[0].name);
     		inputTag[0].focus();
     		inputTag[0].scrollIntoView();
     	}
@@ -217,10 +230,20 @@ function validateTag(inputTag) {
     	inputTag[0].style.border = "";
     }
 
+    if (isZero && x=="0") {
+		console.log("0 is error. name=" + inputTag[0].name);
+		inputTag[0].focus();
+		inputTag[0].scrollIntoView();
+		inputTag[0].style.border = "1px solid red";
+		isError = false;
+    }
+
     return isError;
 }
+
 /*
  * Validate number a tag for single
+ * isZero if can check 0
  */
 function validateNumTag(inputTag) {
 
@@ -241,12 +264,16 @@ function validateNumTag(inputTag) {
     return isError;
 }
 
-function validateId(inputId) {
+/*
+ * Validate input or select by ID
+ * isZero if can check 0
+ */
+function validateId(inputId, isZero) {
 
 	var isError = true;
     var x = inputId.value;
 
-    if (x==null || x=="" || x=="0") {
+    if (x==null || x=="") {
     	if(isError) {
     		inputId.focus();
     		inputId.scrollIntoView();
@@ -255,6 +282,14 @@ function validateId(inputId) {
         isError = false;
     } else {
     	inputId.style.border = "";
+    }
+
+    if (isZero && x=="0") {
+		console.log("0 is error. name=" + inputId.name);
+		inputId.focus();
+		inputId.scrollIntoView();
+		inputId.style.border = "1px solid red";
+		isError = false;
     }
 
     return isError;
