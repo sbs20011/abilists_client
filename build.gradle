@@ -114,6 +114,7 @@ dependencies {
 	compile "org.freemarker:freemarker:2.3.23"
 	compile "org.mybatis:mybatis:3.2.8"
 	compile "org.mybatis:mybatis-spring:1.2.5"
+	compile "mysql:mysql-connector-java:5.1.18"
 	compile 'org.springframework:spring-webmvc:' + springVersion
 	compile 'org.springframework:spring-context:' + springVersion
 	compile 'org.springframework:spring-jdbc:' + springVersion
