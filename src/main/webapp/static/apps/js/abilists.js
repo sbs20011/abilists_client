@@ -269,8 +269,10 @@ function validateNumTag(inputTag) {
  * isZero if can check 0
  */
 function validateId(inputId, isZero) {
-
 	var isError = true;
+	if(inputId==null){
+		return isError;
+	}
     var x = inputId.value;
 
     if (x==null || x=="") {
